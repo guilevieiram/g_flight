@@ -4,7 +4,7 @@ main {
 }
 .background {
     position: absolute;
-    background: linear-gradient(to bottom, rgb(174, 174, 255), white);
+    background: linear-gradient(to bottom, rgb(174, 212, 255), white);
     bottom:0;
 }
 .about-paragraph {

@@ -260,7 +260,7 @@ footer p a{
 }
 /* setting background */
 .page-1 .background {
-    background: linear-gradient(to bottom, rgb(174, 174, 255), white)
+    background: linear-gradient(to bottom, rgb(174, 212, 255), white)
 }
 .page-2 .background {
     background: linear-gradient(to bottom, white, rgb(75, 75, 197))
