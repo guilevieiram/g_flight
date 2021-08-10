@@ -1,0 +1,305 @@
+
+/* general settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+body {
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    color: #11acdd;
+}
+h2 {
+    font-weight: normal;
+    font-size: 3rem;
+    color: rgb(49, 49, 49);
+}
+button {
+    border-style: hidden;
+    background-color: #11acdd;
+    height: 4rem;
+    width: 10rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+button:hover{
+    background: linear-gradient(to bottom right, #11acdd, #1fcbff);
+    transform: scale(1.02, 1.02);
+}
+/* scrolling */
+.pages-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+section {
+    scroll-snap-align: start;
+    position: relative;
+}
+
+/* nav bar */
+nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 1rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c5c5c58a;
+}
+.logo {
+    flex: 2;
+    margin: 1rem 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo img{
+    height: 3rem;
+    margin: 0 1rem;
+}
+.logo p {
+    font-size: 1.5rem;
+    color: rgb(43, 43, 43);
+}
+.hamburguer {
+    display: none;
+}
+.hamburguer div{
+    background-color: black;
+    width: 20px;
+    height: 1px;
+    margin: 5px 0;
+}
+.nav-links {
+    margin: 0 5rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
+/* page settings */
+.page {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.background {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.background img {
+    z-index: -1;
+    position: absolute;
+}
+
+/* page 1 */
+
+.cloud {
+    bottom: 0;
+}
+.plane img{
+    width: 40vw;
+    min-width: 30rem;
+}
+.landing-text h1, h2, button{
+    margin: 2rem 5vw 2rem 5vw;
+}
+
+/* page 2 */
+.cloud-upsidedown, .rain {
+    top: 0;
+}
+.page-2 p {
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.page-2 h1 {
+    transform: translateY(-20vh);
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3rem;
+}
+.text-cloud-1, .text-cloud-2 {
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-cloud-1 {
+    transform: translateY(0);
+}
+.text-cloud-2 {
+    transform: translateY(20vh);
+}
+
+/* page 3 */
+.page-3 h1{
+    color: rgb(233, 233, 233);
+}
+.buildings {
+    bottom: 0;
+    width: 100vw;
+}
+.subscribe-info {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10vh;
+}
+.subscribe-form {
+    background-color: rgb(190, 190, 190);
+    border-radius: 2rem;
+    height: 15rem;
+    min-width: 25rem;
+    max-width: 50rem;
+    width: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+}
+input[type=text] {
+    height: 2rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding-left: 0.5rem;
+}
+label {
+    margin-left: 1vw;
+}
+
+/* footer */
+footer {
+    background-color: rgb(44, 44, 44);
+    height: 25vh;
+    max-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-medias img {
+    margin: 1vw;
+    width: 2vw;
+    min-width: 2rem;
+}
+footer p {
+    color: rgb(226, 226, 226);
+    margin: 1rem;
+}
+footer p a{
+    color: rgb(226, 226, 226);
+}
+/* setting background */
+.page-2 .background {
+    background: linear-gradient(to bottom, rgb(158, 160, 250), rgb(90, 90, 212))
+}
+.page-3 .background {
+    background: linear-gradient(to bottom, rgb(90, 90, 212), rgb(11, 11, 122))
+}
+
+@media only screen and (max-width: 786px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    /* nav-bar */
+    .hamburguer {
+        display: block;
+        margin-right: 15vw;
+        transform: translateX(50%);
+        cursor: pointer;
+    }
+    nav {
+        background-color: #c7c7c7ef;
+    }
+    .nav-links {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 93vh;
+        width: 30vw;
+        background-color: #c7c7c7ef;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+    }
+    .nav-links li {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    /* first page  */
+    .page-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .plane img{
+        display: none;
+    }
+    /* second page */
+    .page-2 {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .page-2 h1 {
+        margin-top: 10vh;
+
+    }
+    .page-2 p {
+        font-size: 0.9rem;
+    }
+    .text-cloud-1, .text-cloud-2, .page-2 h1 {
+        transform: translateY(0);
+    }
+    .text-cloud-1, .text-cloud-2 {
+        width: 13rem;
+        height: 13rem;
+    }
+}

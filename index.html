@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
+    <!-- styles -->
+    <link rel="stylesheet" href="style/master.css">
+    <title>G-Flight</title>
+</head>
+<body>
+    <!-- sourcing animations script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+
+    <header>
+        <nav>
+            <span class="logo">
+                <img src="media/logo.png" alt="logo">
+                <p>G-Flight</p>
+            </span>
+            <div class="hamburguer">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="">Home</a></li>
+                <li class="nav-link"><a href="">About</a></li>
+                <li class="nav-link"><a href="">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pages-container">
+        <main>
+
+            <section class="page page-1">
+                <div class="plane">
+                    <img src="media/plane-tilted.png" alt="">
+                </div>
+                <div class="landing-text">
+                    <h1>Flight high</h1>
+                    <h2>the greatest flight deals one click away.</h2>
+                    <button>Subscribe</button>
+                </div>
+                <div class="background">
+                    <img class="cloud" src="media/cloud-1.png" alt="cloud-1">
+                    <img class="cloud" src="media/cloud-2.png" alt="cloud-2">
+                    <img class="cloud" src="media/cloud-3.png" alt="cloud-3">
+                    <img class="cloud" src="media/cloud-4.png" alt="cloud-4">
+                </div>
+            </section>
+    
+            <section class="page page-2" >
+                <div class="background">
+                    <img class="cloud-upsidedown" src="media/cloud-upsidedown-2.png" alt="">
+                    <img class="cloud-upsidedown" src="media/cloud-upsidedown-1.png" alt="">
+                    <img class="rain" src="media/rain.png" alt="">
+                </div>        
+                <h1>Why?</h1>    
+                <div class="text-cloud-1 text-cloud">
+                    <p>Data from over 500 air companies totaly personalized to fit your needs</p>
+                </div>
+                <div class="text-cloud-2 text-cloud">
+                    <p>Recieve exclusive notifications about the best flight deals to the most wanted destinations</p>
+                </div>
+            </section>
+    
+            <section class="page page-3">
+                <div class="background">
+                    <img class="rain" src="media/rain-2.png" alt="">
+                    <img class="buildings" src="media/buildings.png" alt="">
+                </div>
+                <div class="subscribe-info">
+                    <h1>Subscribe today</h1>
+                    <form class="subscribe-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <section>
+            <footer>
+                <div class="social-medias">
+                    <a href=""><img src="media/gmail.png" alt=""></a>
+                    <a href=""><img src="media/github.png" alt=""></a>
+                    <a href=""><img src="media/linkedin.png" alt=""></a>
+                    <a href=""><img src="media/whatsapp.png" alt=""></a>
+                    <a href=""><img src="media/twitter.png" alt=""></a>
+                    <a href=""><img src="media/facebook.png" alt=""></a>
+                </div>
+                <p>© Guile Vieira 2021</p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </footer>
+        </section>
+
+    </div>
+    <!-- sourcing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
