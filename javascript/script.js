@@ -18,7 +18,7 @@ function loadOnReach (element, animation, parameters) {
 function navSlider () {
     const burguer = document.querySelector('.hamburguer');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+    const navLinks = document.querySelectorAll('.nav-link');
     let open = false;
 
     let toggleNavBar = () => {

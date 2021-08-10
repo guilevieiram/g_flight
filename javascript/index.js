@@ -100,7 +100,7 @@ function animatePages () {
         ease: 'power2'
         }
     );
-
+    
     // page 3 
     loadOnReach( document.querySelector('.page-3 h1'), 
         animation = gsap.to,
@@ -108,7 +108,7 @@ function animatePages () {
         x: 0, 
         opacity: 1, 
         duration: 3, 
-        ease: 'bounce'
+        ease: 'power4'
         }
     );
     loadOnReach( document.querySelector('.subscribe-container'), 
@@ -117,7 +117,7 @@ function animatePages () {
         x: 0, 
         opacity: 1, 
         duration: 3, 
-        ease: 'bounce'
+        ease: 'power4'
         }
     );
 }

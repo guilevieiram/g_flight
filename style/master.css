@@ -59,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #c5c5c58a;
+    background-color: #ffffff41;
     transform: translateY(-100%);
     opacity: 0;
 }
@@ -98,6 +98,9 @@ nav {
 .nav-link a{
     text-decoration: none;
     cursor: pointer;
+    color: rgb(43, 43, 43);
+}
+.nav-link {
     color: rgb(43, 43, 43);
 }
 .nav-link:hover{
@@ -256,8 +259,11 @@ footer p a{
     color: rgb(226, 226, 226);
 }
 /* setting background */
+.page-1 .background {
+    background: linear-gradient(to bottom, rgb(174, 174, 255), white)
+}
 .page-2 .background {
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(75, 75, 197))
+    background: linear-gradient(to bottom, white, rgb(75, 75, 197))
 }
 .page-3 .background {
     background: linear-gradient(to bottom, rgb(75, 75, 197), rgb(11, 11, 54));
@@ -277,24 +283,22 @@ footer p a{
         transform: translateX(50%);
         cursor: pointer;
     }
-    nav {
-        background-color: #c7c7c7ef;
-    }
     .nav-links {
         position: absolute;
         top: 5rem;
         right: 0;
         margin: 0;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
         height: 93vh;
         width: 30vw;
-        background-color: #c7c7c7ef;
+        background-color: #ffffff41;
         transform: translateX(100%);
         transition: 0.5s ease-in-out;
     }
-    .nav-links li {
+    .nav-link {
+        margin: 3vh 0;
         opacity: 0;
         transform: translateX(100px);
     }
