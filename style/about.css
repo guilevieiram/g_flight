@@ -1,0 +1,23 @@
+
+main {
+    min-height: 100vh;
+}
+.background {
+    position: absolute;
+    bottom:0;
+}
+.about-paragraph {
+    width: 90%;
+    max-width: 50rem;
+    padding-top: 20vh;
+    margin: auto;
+    text-align: justify;
+    opacity: 0.5;
+    transform: translateY(20vh);
+}
+.about-paragraph h1 {
+    text-align: center;
+}
+.about-paragraph p {
+    margin: 2rem;
+}

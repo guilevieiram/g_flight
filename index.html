@@ -13,9 +13,6 @@
     <title>G-Flight</title>
 </head>
 <body>
-    <!-- sourcing animations script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-
     <header>
         <nav>
             <span class="logo">
@@ -28,9 +25,9 @@
                 <div class="line-3"></div>
             </div>
             <ul class="nav-links">
-                <li class="nav-link"><a href="">Home</a></li>
-                <li class="nav-link"><a href="">About</a></li>
-                <li class="nav-link"><a href="">Subscribe</a></li>
+                <li class="nav-link"><a onclick="gotoTop()">Home</a></li>
+                <li class="nav-link"><a href="/about.html">About</a></li>
+                <li class="nav-link"><a onclick="gotoSubscribe()">Subscribe</a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +41,7 @@
                 <div class="landing-text">
                     <h1>Flight high</h1>
                     <h2>the greatest flight deals one click away.</h2>
-                    <button>Subscribe</button>
+                    <button onclick="gotoSubscribe()">Subscribe</button>
                 </div>
                 <div class="background">
                     <img class="cloud" src="media/cloud-1.png" alt="cloud-1">
@@ -71,21 +68,24 @@
     
             <section class="page page-3">
                 <div class="background">
-                    <img class="rain" src="media/rain-2.png" alt="">
+                    <img class="rain" src="media/rain.png" alt="">
                     <img class="buildings" src="media/buildings.png" alt="">
                 </div>
                 <div class="subscribe-info">
                     <h1>Subscribe today</h1>
-                    <form class="subscribe-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                        <label for="last-name">Last name</label>
-                        <input type="text" id="last-name" name="last-name">
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email">
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city">
-                    </form>
+                    <div class="subscribe-container">
+                        <form class="subscribe-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+                        </form>
+                        <button class="submit-form-button" type="submit" form="form1" value="Submit">Submit</button>
+                    </div>
                 </div>
             </section>
 
@@ -93,12 +93,13 @@
         <section>
             <footer>
                 <div class="social-medias">
-                    <a href=""><img src="media/gmail.png" alt=""></a>
-                    <a href=""><img src="media/github.png" alt=""></a>
-                    <a href=""><img src="media/linkedin.png" alt=""></a>
-                    <a href=""><img src="media/whatsapp.png" alt=""></a>
-                    <a href=""><img src="media/twitter.png" alt=""></a>
-                    <a href=""><img src="media/facebook.png" alt=""></a>
+                    <a href="mailto:guilhermevmanhaes@gmail.com?subject=Hey, I came from your website!"><img src="media/gmail.png" alt=""></a>
+                    <a href="https://github.com/guilevieiram"><img src="media/github.png" alt=""></a>
+                    <a href="https://linkedin.com/in/guilhermevieiram"><img src="media/linkedin.png" alt=""></a>
+                    <a href="https://wa.me/5531998524668"><img src="media/whatsapp.png" alt=""></a>
+                    <a href="https://twitter.com/guilevieiram"><img src="media/twitter.png" alt=""></a>
+                    <a href="https://instagram.com/guilevieiram"><img src="media/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004110576413"><img src="media/facebook.png" alt=""></a>
                 </div>
                 <p>© Guile Vieira 2021</p>
                 <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
@@ -107,7 +108,9 @@
 
     </div>
     <!-- sourcing scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
