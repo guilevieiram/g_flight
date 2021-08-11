@@ -13,7 +13,7 @@ def main(
 	user_model: user_model.UserModel,
 	data_base: db.DataBase
 	) -> None:
-
+	
 	bot = controller(
 		user_interface=user_interface(),
 		messager=messager(),

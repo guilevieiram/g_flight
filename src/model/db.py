@@ -1,12 +1,16 @@
 import requests
 import pandas as pd
 import os
+import sys
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
-from typing import Union, Optional, Any
+from typing import Union, Optional, Any, List
 
 from src.decorators import log
+
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 # Abstract Classes
 class DataBase(ABC):
@@ -75,9 +79,9 @@ class CSVDB(DataBase):
 		self.load_all_tables()
 
 	def load_table(self, table_name: str) -> None:
-		self.data[table_name]: pd.DataFrame = pd.read_csv(f"{self.path}{table_name}.csv")
+		self.data[table_name] = pd.read_csv(f"{self.path}{table_name}.csv")
 		self.data[table_name].columns = self.data[table_name].columns.map(lambda x: x.lower())
-		self.columns[table_name]: list[str] = list(self.data[table_name].columns)
+		self.columns[table_name]= list(self.data[table_name].columns)
 
 	def create_table_from_template(self, new_table_name: str, parent_table_name: str) -> None:
 		self.data[new_table_name] = self.data[parent_table_name]

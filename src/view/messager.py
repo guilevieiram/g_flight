@@ -2,9 +2,12 @@ from src.decorators import log
 from abc import ABC, abstractmethod
 import os
 import smtplib
+import sys
 
 from typing import Optional
 
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 class Messager(ABC):
 	"""Messager class, responsible for communicating with a given destination"""

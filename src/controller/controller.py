@@ -1,6 +1,8 @@
 import requests
 import datetime
 import json
+import sys
+
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
@@ -14,6 +16,9 @@ from src.controller import controller
 
 from src.model.flight_model import Flight
 from src.model.user_model import User
+
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 # Helper functions
 def get_payload() -> dict:

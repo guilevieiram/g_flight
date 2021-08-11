@@ -3,8 +3,12 @@ from enum import Enum, auto
 from dataclasses import dataclass
 import os
 import time
+import sys
 
 from src.decorators import terminal_action
+
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 # Menu enumerator classes
 class Menu(Enum):

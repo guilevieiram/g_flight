@@ -1,6 +1,7 @@
 import requests
 import datetime
 import os
+import sys
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
@@ -8,6 +9,9 @@ from typing import Union, Optional, Any
 
 from src.decorators import log
 from src.model.db import DataBase
+
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 # Data classes
 @dataclass

@@ -1,5 +1,10 @@
 import json
 import datetime
+import time
+import sys
+
+# preventing __pycache__ files ofbeing created
+sys.dont_write_bytecode = True
 
 def log(name: str):
 	def logger(function):
