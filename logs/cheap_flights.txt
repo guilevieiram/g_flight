@@ -262,3 +262,27 @@ check_cheap_prices
 
 []
 ------------------------------
+11/08/2021 - 09:39:36
+
+check_cheap_prices
+
+[Flight(price=745, departure_date=datetime.datetime(2021, 10, 11, 18, 15), return_date=datetime.datetime(2021, 10, 17, 18, 15), from_city='London', to_city='Okinawa Island', from_code='LON', to_code='OKA', from_airport='LTN', to_airport='OKA', stops=['VNO', 'WAW'], _id=None)]
+------------------------------
+11/08/2021 - 09:40:26
+
+check_cheap_prices
+
+[Flight(price=25, departure_date=datetime.datetime(2021, 9, 17, 17, 20), return_date=datetime.datetime(2021, 9, 29, 17, 20), from_city='London', to_city='Berlin', from_code='LON', to_code='BER', from_airport='STN', to_airport='BER', stops=[], _id=None)]
+------------------------------
+11/08/2021 - 09:42:25
+
+check_cheap_prices
+
+[Flight(price=25, departure_date=datetime.datetime(2021, 9, 16, 6, 30), return_date=datetime.datetime(2021, 9, 22, 6, 30), from_city='London', to_city='Berlin', from_code='LON', to_code='BER', from_airport='STN', to_airport='BER', stops=[], _id=None)]
+------------------------------
+11/08/2021 - 09:56:17
+
+check_cheap_prices
+
+[Flight(price=25, departure_date=datetime.datetime(2021, 9, 15, 18, 45), return_date=datetime.datetime(2021, 9, 29, 18, 45), from_city='London', to_city='Berlin', from_code='LON', to_code='BER', from_airport='STN', to_airport='BER', stops=[], _id=None)]
+------------------------------

@@ -1113,3 +1113,39 @@ This flight has 2 stops at GRU, MAD
 -------------------------------------------------------------------
 
 ------------------------------
+11/08/2021 - 09:42:25
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to bruna.patrus@gmail.com
+Subject: Flight Deal Alert!!!
+
+
+Hello Bruna! We have found some good cheap flights that might interest you!
+
+Fly from London-STN to Berlin-BER leaving on 16/09/21 and returning on 22/09/21.
+For only 25 euros !
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 09:56:17
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to bruna.patrus@gmail.com
+Subject: Flight Deal Alert!!!
+
+
+Hello Bruna! We have found some good cheap flights that might interest you!
+
+Fly from London-STN to Berlin-BER leaving on 15/09/21 and returning on 29/09/21.
+For only 25 euros !
+
+-------------------------------------------------------------------
+
+------------------------------

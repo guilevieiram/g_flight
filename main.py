@@ -34,7 +34,7 @@ def main(
 
 if __name__ == "__main__":
 	main(
-		controller=controller.FlightBotController,
+		controller=controller.FlaskAPIController,
 		user_interface=ui.TerminalUserInteface,
 		messager=messager.TerminalMessager,
 		flight_model=flight_model.TequilaFlightModel,

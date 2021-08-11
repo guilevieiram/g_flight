@@ -84,7 +84,7 @@ class TerminalUserModel(UserModel):
 		if not user.e_mail in all_emails:
 			self.data_base.add_data(table="users", data=[user.__dict__])
 		else:
-			print("User already exists.")
+			raise NameError("User already exists.")
 
 	def delete_user(self, user: User) -> None:
 		user_id: int = self.data_base.get_data(table="users", key_value={"e_mail": user.e_mail})[0]["id"]

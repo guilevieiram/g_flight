@@ -76711,3 +76711,1348 @@ search_flights
     "utc_departure": "2021-10-14T16:35:00.000Z"
 }
 ------------------------------
+11/08/2021 - 09:39:11
+
+search_flights
+
+{
+    "id": "032d004249c600002380a5cc_0|0042032d49c80000eed3ab3b_0",
+    "flyFrom": "STN",
+    "flyTo": "BER",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Berlin",
+    "cityCodeTo": "BER",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "DE",
+        "name": "Germany"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 2,
+    "quality": 77.666535,
+    "distance": 907.07,
+    "duration": {
+        "departure": 6300,
+        "return": 6600,
+        "total": 12900
+    },
+    "price": 25,
+    "conversion": {
+        "EUR": 25
+    },
+    "bags_price": {
+        "1": 61.02,
+        "2": 122.04
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "STN",
+            "BER"
+        ],
+        [
+            "BER",
+            "STN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "032d004249c600002380a5cc_0",
+            "combination_id": "032d004249c600002380a5cc",
+            "flyFrom": "STN",
+            "flyTo": "BER",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Berlin",
+            "cityCodeTo": "BER",
+            "airline": "FR",
+            "flight_no": 145,
+            "operating_carrier": "FR",
+            "operating_flight_no": "145",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:11:30.000Z",
+            "refresh_timestamp": "2021-08-11T12:11:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-16T10:15:00.000Z",
+            "utc_arrival": "2021-09-16T08:15:00.000Z",
+            "local_departure": "2021-09-16T07:30:00.000Z",
+            "utc_departure": "2021-09-16T06:30:00.000Z"
+        },
+        {
+            "id": "0042032d49c80000eed3ab3b_0",
+            "combination_id": "0042032d49c80000eed3ab3b",
+            "flyFrom": "BER",
+            "flyTo": "STN",
+            "cityFrom": "Berlin",
+            "cityCodeFrom": "BER",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 144,
+            "operating_carrier": "FR",
+            "operating_flight_no": "144",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:35:05.000Z",
+            "refresh_timestamp": "2021-08-11T12:35:05.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-18T07:20:00.000Z",
+            "utc_arrival": "2021-09-18T06:20:00.000Z",
+            "local_departure": "2021-09-18T06:30:00.000Z",
+            "utc_departure": "2021-09-18T04:30:00.000Z"
+        }
+    ],
+    "booking_token": "Cbqxx-RLRdyIhIsMO-RZ17ZDBSNNj0usVCSAiHoW2HHGomMQZEievkvT8XzkteEpmKCkpzLQP8m8xDDBLd7HMMhICA_LsxkKx6poyjf9EMi1CLm__vb1wohvB2UGWiuZmCvTup1AUo7_9_71j93Va_67K6bBhlyhGA3qSOD64Z94hvtgmMPB8h4E5J1uneJu6jleCf_8GXTpGpaqwH6eUTQTyvSRyGUAYp8KmoxbjUxFIVCnabEiRTM7PFz0une1WIfFF9j04JTPpHSGGr_yaVDoR-4UNeFYOJa8Z21herjf3Ti52GkxLML3b5ENVUzK1tpG9ZX8ogMz_xZ47ClfPnFtvVhYIBzitsmkZG_D4ereJNWxVemjI7EeBDEshMxWAx4lv2wri_K7ILLhljUtPxn-_zR9vpYR5mQ_u8V7LcYNQNuibHwR0lAI0Jx0HaMPmdmr6k2HF1ChMTCTqZofA4I3pXi-Bn9etWuyIgjMqTtUrjXowU84rxQDSk6da7W9_KonxocRsAlqJ75RcXSNL0g==",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=BER&flightsId=032d004249c600002380a5cc_0%7C0042032d49c80000eed3ab3b_0&price=25&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=Cbqxx-RLRdyIhIsMO-RZ17ZDBSNNj0usVCSAiHoW2HHGomMQZEievkvT8XzkteEpmKCkpzLQP8m8xDDBLd7HMMhICA_LsxkKx6poyjf9EMi1CLm__vb1wohvB2UGWiuZmCvTup1AUo7_9_71j93Va_67K6bBhlyhGA3qSOD64Z94hvtgmMPB8h4E5J1uneJu6jleCf_8GXTpGpaqwH6eUTQTyvSRyGUAYp8KmoxbjUxFIVCnabEiRTM7PFz0une1WIfFF9j04JTPpHSGGr_yaVDoR-4UNeFYOJa8Z21herjf3Ti52GkxLML3b5ENVUzK1tpG9ZX8ogMz_xZ47ClfPnFtvVhYIBzitsmkZG_D4ereJNWxVemjI7EeBDEshMxWAx4lv2wri_K7ILLhljUtPxn-_zR9vpYR5mQ_u8V7LcYNQNuibHwR0lAI0Jx0HaMPmdmr6k2HF1ChMTCTqZofA4I3pXi-Bn9etWuyIgjMqTtUrjXowU84rxQDSk6da7W9_KonxocRsAlqJ75RcXSNL0g==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-16T10:15:00.000Z",
+    "utc_arrival": "2021-09-16T08:15:00.000Z",
+    "local_departure": "2021-09-16T07:30:00.000Z",
+    "utc_departure": "2021-09-16T06:30:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:39:18
+
+search_flights
+
+{
+    "id": "2045004349c0000081625057_0|0043204549c700005098d0e1_0",
+    "flyFrom": "SEN",
+    "flyTo": "BES",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Brest",
+    "cityCodeTo": "BES",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "FR",
+        "name": "France"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 7,
+    "quality": 65.33322,
+    "distance": 504.71,
+    "duration": {
+        "departure": 4800,
+        "return": 4800,
+        "total": 9600
+    },
+    "price": 20,
+    "conversion": {
+        "EUR": 20
+    },
+    "bags_price": {
+        "1": 62.32,
+        "2": 124.64
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "SEN",
+            "BES"
+        ],
+        [
+            "BES",
+            "SEN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "2045004349c0000081625057_0",
+            "combination_id": "2045004349c0000081625057",
+            "flyFrom": "SEN",
+            "flyTo": "BES",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Brest",
+            "cityCodeTo": "BES",
+            "airline": "FR",
+            "flight_no": 2840,
+            "operating_carrier": "",
+            "operating_flight_no": "",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T11:46:11.000Z",
+            "refresh_timestamp": "2021-08-11T11:46:11.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-10T22:00:00.000Z",
+            "utc_arrival": "2021-09-10T20:00:00.000Z",
+            "local_departure": "2021-09-10T19:40:00.000Z",
+            "utc_departure": "2021-09-10T18:40:00.000Z"
+        },
+        {
+            "id": "0043204549c700005098d0e1_0",
+            "combination_id": "0043204549c700005098d0e1",
+            "flyFrom": "BES",
+            "flyTo": "SEN",
+            "cityFrom": "Brest",
+            "cityCodeFrom": "BES",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 2841,
+            "operating_carrier": "",
+            "operating_flight_no": "",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:29:01.000Z",
+            "refresh_timestamp": "2021-08-11T12:29:01.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-17T22:45:00.000Z",
+            "utc_arrival": "2021-09-17T21:45:00.000Z",
+            "local_departure": "2021-09-17T22:25:00.000Z",
+            "utc_departure": "2021-09-17T20:25:00.000Z"
+        }
+    ],
+    "booking_token": "Cftg7py5-rrt0toMp8FbF_2--J6xGCn-PsjWyh3IIzJ_uZ6OAtBg6CGEm_WFwMZyx5lhCzY4rRZHU1B0ULeFKw7kfv-FjlZinKGXs3HQlCBFXdAwQxSGh4DGnknqR-FK6t7NE00xcuXRA_w0ovTkBaErXDVl5VlEtRs0vbGASsrknuchaP9uADssE934eiz6iYNI1F6t8OIGAL0qWUGZmOHUCcd2BPvrKXD2-AA2neZ7KjZWW6PcTrBI-_h9y89dH6TrPJhfiyqdFT0AV8X3yBjadwzoaGKnjUVcj6f7sWFfQBvrUQd3vOeVuX54GjPR9czcjPa2kQRpF55y09mLK8D_CO5NtvdbbV5F2DTnMn72mdNU8BFOF1WQOSEk_EOT1DM3D3LPWYGrDenoXpZIfZkP60VW_4MT8gU3h41hb03K1CIWHfyxQHrkMIna2ZzgoESP1TaAUFRZ4IzRzZmHkfR3KScM5ijoyL-Rfh8-4ig8XAJxbAFEn9-4Sz-DxCVI3",
+    "deep_link": "https://www.kiwi.com/deep?from=SEN&to=BES&flightsId=2045004349c0000081625057_0%7C0043204549c700005098d0e1_0&price=20&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=Cftg7py5-rrt0toMp8FbF_2--J6xGCn-PsjWyh3IIzJ_uZ6OAtBg6CGEm_WFwMZyx5lhCzY4rRZHU1B0ULeFKw7kfv-FjlZinKGXs3HQlCBFXdAwQxSGh4DGnknqR-FK6t7NE00xcuXRA_w0ovTkBaErXDVl5VlEtRs0vbGASsrknuchaP9uADssE934eiz6iYNI1F6t8OIGAL0qWUGZmOHUCcd2BPvrKXD2-AA2neZ7KjZWW6PcTrBI-_h9y89dH6TrPJhfiyqdFT0AV8X3yBjadwzoaGKnjUVcj6f7sWFfQBvrUQd3vOeVuX54GjPR9czcjPa2kQRpF55y09mLK8D_CO5NtvdbbV5F2DTnMn72mdNU8BFOF1WQOSEk_EOT1DM3D3LPWYGrDenoXpZIfZkP60VW_4MT8gU3h41hb03K1CIWHfyxQHrkMIna2ZzgoESP1TaAUFRZ4IzRzZmHkfR3KScM5ijoyL-Rfh8-4ig8XAJxbAFEn9-4Sz-DxCVI3",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-10T22:00:00.000Z",
+    "utc_arrival": "2021-09-10T20:00:00.000Z",
+    "local_departure": "2021-09-10T19:40:00.000Z",
+    "utc_departure": "2021-09-10T18:40:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:39:20
+
+search_flights
+
+None
+------------------------------
+11/08/2021 - 09:39:31
+
+search_flights
+
+{
+    "id": "18ff0c8849df0000a4b71a1d_0|0c88209f49e00000aab66949_0|0c88209f49e00000aab66949_1|209f238849e1000024855c35_0|2388099349e700006f7ced87_0|09930f6449e7000046449a3f_0|09930f6449e7000046449a3f_1",
+    "flyFrom": "LTN",
+    "flyTo": "OKA",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Okinawa Island",
+    "cityCodeTo": "OKA",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 6,
+    "quality": 1317.665235,
+    "distance": 9979.65,
+    "duration": {
+        "departure": 139800,
+        "return": 107100,
+        "total": 246900
+    },
+    "price": 745,
+    "conversion": {
+        "EUR": 745
+    },
+    "bags_price": {
+        "1": 125.62
+    },
+    "baglimit": {
+        "hand_height": 36,
+        "hand_length": 55,
+        "hand_weight": 7,
+        "hand_width": 20,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 15,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 3
+    },
+    "routes": [
+        [
+            "LTN",
+            "OKA"
+        ],
+        [
+            "OKA",
+            "LHR"
+        ]
+    ],
+    "airlines": [
+        "FR",
+        "LO",
+        "EY",
+        "LJ",
+        "GK"
+    ],
+    "route": [
+        {
+            "id": "18ff0c8849df0000a4b71a1d_0",
+            "combination_id": "18ff0c8849df0000a4b71a1d",
+            "flyFrom": "LTN",
+            "flyTo": "VNO",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Vilnius",
+            "cityCodeTo": "VNO",
+            "airline": "FR",
+            "flight_no": 3466,
+            "operating_carrier": "FR",
+            "operating_flight_no": "3466",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:17:32.000Z",
+            "refresh_timestamp": "2021-08-11T12:17:32.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-11T23:55:00.000Z",
+            "utc_arrival": "2021-10-11T20:55:00.000Z",
+            "local_departure": "2021-10-11T19:15:00.000Z",
+            "utc_departure": "2021-10-11T18:15:00.000Z"
+        },
+        {
+            "id": "0c88209f49e00000aab66949_0",
+            "combination_id": "0c88209f49e00000aab66949",
+            "flyFrom": "VNO",
+            "flyTo": "WAW",
+            "cityFrom": "Vilnius",
+            "cityCodeFrom": "VNO",
+            "cityTo": "Warsaw",
+            "cityCodeTo": "WAW",
+            "airline": "LO",
+            "flight_no": 772,
+            "operating_carrier": "LO",
+            "operating_flight_no": "772",
+            "fare_basis": "L1A0ENB",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-11T10:43:06.000Z",
+            "refresh_timestamp": "2021-08-11T10:43:06.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-12T13:40:00.000Z",
+            "utc_arrival": "2021-10-12T11:40:00.000Z",
+            "local_departure": "2021-10-12T13:35:00.000Z",
+            "utc_departure": "2021-10-12T10:35:00.000Z"
+        },
+        {
+            "id": "0c88209f49e00000aab66949_1",
+            "combination_id": "0c88209f49e00000aab66949",
+            "flyFrom": "WAW",
+            "flyTo": "NRT",
+            "cityFrom": "Warsaw",
+            "cityCodeFrom": "WAW",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "LO",
+            "flight_no": 79,
+            "operating_carrier": "LO",
+            "operating_flight_no": "79",
+            "fare_basis": "L1A0ENB",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T10:43:06.000Z",
+            "refresh_timestamp": "2021-08-11T10:43:06.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-13T08:30:00.000Z",
+            "utc_arrival": "2021-10-12T23:30:00.000Z",
+            "local_departure": "2021-10-12T15:00:00.000Z",
+            "utc_departure": "2021-10-12T13:00:00.000Z"
+        },
+        {
+            "id": "209f238849e1000024855c35_0",
+            "combination_id": "209f238849e1000024855c35",
+            "flyFrom": "NRT",
+            "flyTo": "OKA",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Okinawa Island",
+            "cityCodeTo": "OKA",
+            "airline": "GK",
+            "flight_no": 309,
+            "operating_carrier": "GK",
+            "operating_flight_no": "309",
+            "fare_basis": "ELECOE3",
+            "fare_category": "M",
+            "fare_classes": "E",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-11T10:28:58.000Z",
+            "refresh_timestamp": "2021-08-11T10:28:58.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-13T18:05:00.000Z",
+            "utc_arrival": "2021-10-13T09:05:00.000Z",
+            "local_departure": "2021-10-13T15:00:00.000Z",
+            "utc_departure": "2021-10-13T06:00:00.000Z"
+        },
+        {
+            "id": "2388099349e700006f7ced87_0",
+            "combination_id": "2388099349e700006f7ced87",
+            "flyFrom": "OKA",
+            "flyTo": "ICN",
+            "cityFrom": "Okinawa Island",
+            "cityCodeFrom": "OKA",
+            "cityTo": "Seoul",
+            "cityCodeTo": "SEL",
+            "airline": "LJ",
+            "flight_no": 246,
+            "operating_carrier": "LJ",
+            "operating_flight_no": "246",
+            "fare_basis": "X1WOW",
+            "fare_category": "M",
+            "fare_classes": "X",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T11:12:14.000Z",
+            "refresh_timestamp": "2021-08-11T11:12:14.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-19T16:15:00.000Z",
+            "utc_arrival": "2021-10-19T07:15:00.000Z",
+            "local_departure": "2021-10-19T14:00:00.000Z",
+            "utc_departure": "2021-10-19T05:00:00.000Z"
+        },
+        {
+            "id": "09930f6449e7000046449a3f_0",
+            "combination_id": "09930f6449e7000046449a3f",
+            "flyFrom": "ICN",
+            "flyTo": "AUH",
+            "cityFrom": "Seoul",
+            "cityCodeFrom": "SEL",
+            "cityTo": "Abu Dhabi",
+            "cityCodeTo": "AUH",
+            "airline": "EY",
+            "flight_no": 873,
+            "operating_carrier": "EY",
+            "operating_flight_no": "873",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "E",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-10T16:51:47.000Z",
+            "refresh_timestamp": "2021-08-10T16:51:47.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T04:45:00.000Z",
+            "utc_arrival": "2021-10-20T00:45:00.000Z",
+            "local_departure": "2021-10-19T23:45:00.000Z",
+            "utc_departure": "2021-10-19T14:45:00.000Z"
+        },
+        {
+            "id": "09930f6449e7000046449a3f_1",
+            "combination_id": "09930f6449e7000046449a3f",
+            "flyFrom": "AUH",
+            "flyTo": "LHR",
+            "cityFrom": "Abu Dhabi",
+            "cityCodeFrom": "AUH",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "EY",
+            "flight_no": 19,
+            "operating_carrier": "EY",
+            "operating_flight_no": "19",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "E",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-10T16:51:47.000Z",
+            "refresh_timestamp": "2021-08-10T16:51:47.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T11:45:00.000Z",
+            "utc_arrival": "2021-10-20T10:45:00.000Z",
+            "local_departure": "2021-10-20T07:30:00.000Z",
+            "utc_departure": "2021-10-20T03:30:00.000Z"
+        }
+    ],
+    "booking_token": "CjOg6ZulceNrPE08FuQlOgFIUSY9a7qtOlvkIuteRLcsXD2gG5WNCuJtt999UmSX-TrQk8K_0nLJaS_oJ3ItgDy1H2QZdQ2gzLILwvfFut6quzJOR36IzsmCeQCtNNVBtpUfrsfg7MYndXYTheH_WOT1p5aZH50hccPbPeWB79ElyBRl-UxqbIq_SdlkJxgise0ev1h2znfxwPECEqmRqoNFKAmNRSUHBFgxrX1vM0gVJ6KgioroLyOQNE0HCF2Sx6iw6dE7cKhJilVLn7jicU4sTDxXJ373c9gLw-yJ9GbqTFlkFjLFu1PMyfNKhU-HfBl2wv6wGaqVLO02tm3dr5nR8w2QmYjfYKvq55xRr74Zt7vMzjPWUJFfnnLxjY1nOVD4Gto10kP05YAUFXODL9SsS7_uVtAdD4GcdNL0oTG5ig1sdG7sEKpId6LmFlrdclQ987I68LqLIRaXAk4b0jqRw2MgADffBfB_w7Ph7SVZ0nk22_zqZGOyy278oZLWCkxoXpvGqYtDdv-cJ40jJy9bNoZjnIPThqegNM2zjt5xZ7cWELvqUlvR1IuZ5Ji_BwhEJl2VMkc8yaqEsIj3xEKwZvUvNleMlTXVioYSnIhgs_1aRcF-e0jeiE0KGC_mLwZvZ7sWikPps8DmmcJQkOoMSg55DfOoV7Vswx3Ofh_uQYzsaDZJtNXSdcmj2yBj3pJQYUDOLvjQnEE3pnhjBgp8-jdS2YlB4v94fDHGLvYEGLEawmQhS9pZNf0eXtibslcSDsHu79WmmnUkdC_fhnA==",
+    "deep_link": "https://www.kiwi.com/deep?from=LTN&to=OKA&flightsId=18ff0c8849df0000a4b71a1d_0%7C0c88209f49e00000aab66949_0%7C0c88209f49e00000aab66949_1%7C209f238849e1000024855c35_0%7C2388099349e700006f7ced87_0%7C09930f6449e7000046449a3f_0%7C09930f6449e7000046449a3f_1&price=745&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CjOg6ZulceNrPE08FuQlOgFIUSY9a7qtOlvkIuteRLcsXD2gG5WNCuJtt999UmSX-TrQk8K_0nLJaS_oJ3ItgDy1H2QZdQ2gzLILwvfFut6quzJOR36IzsmCeQCtNNVBtpUfrsfg7MYndXYTheH_WOT1p5aZH50hccPbPeWB79ElyBRl-UxqbIq_SdlkJxgise0ev1h2znfxwPECEqmRqoNFKAmNRSUHBFgxrX1vM0gVJ6KgioroLyOQNE0HCF2Sx6iw6dE7cKhJilVLn7jicU4sTDxXJ373c9gLw-yJ9GbqTFlkFjLFu1PMyfNKhU-HfBl2wv6wGaqVLO02tm3dr5nR8w2QmYjfYKvq55xRr74Zt7vMzjPWUJFfnnLxjY1nOVD4Gto10kP05YAUFXODL9SsS7_uVtAdD4GcdNL0oTG5ig1sdG7sEKpId6LmFlrdclQ987I68LqLIRaXAk4b0jqRw2MgADffBfB_w7Ph7SVZ0nk22_zqZGOyy278oZLWCkxoXpvGqYtDdv-cJ40jJy9bNoZjnIPThqegNM2zjt5xZ7cWELvqUlvR1IuZ5Ji_BwhEJl2VMkc8yaqEsIj3xEKwZvUvNleMlTXVioYSnIhgs_1aRcF-e0jeiE0KGC_mLwZvZ7sWikPps8DmmcJQkOoMSg55DfOoV7Vswx3Ofh_uQYzsaDZJtNXSdcmj2yBj3pJQYUDOLvjQnEE3pnhjBgp8-jdS2YlB4v94fDHGLvYEGLEawmQhS9pZNf0eXtibslcSDsHu79WmmnUkdC_fhnA==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 5,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-10-13T18:05:00.000Z",
+    "utc_arrival": "2021-10-13T09:05:00.000Z",
+    "local_departure": "2021-10-11T19:15:00.000Z",
+    "utc_departure": "2021-10-11T18:15:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:39:36
+
+search_flights
+
+{
+    "id": "0f64097b49b949bc9fa82d4c_0|0f64097b49b949bc9fa82d4c_1|0f64097b49b949bc9fa82d4c_2|0f64097b49b949bc9fa82d4c_3",
+    "flyFrom": "LHR",
+    "flyTo": "HND",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Tokyo",
+    "cityCodeTo": "TYO",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 2,
+    "quality": 1043.999035,
+    "distance": 9601.35,
+    "duration": {
+        "departure": 60000,
+        "return": 102900,
+        "total": 162900
+    },
+    "price": 658,
+    "conversion": {
+        "EUR": 658
+    },
+    "bags_price": {
+        "1": 65
+    },
+    "baglimit": {
+        "hand_height": 35,
+        "hand_length": 55,
+        "hand_weight": 8,
+        "hand_width": 25,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 7
+    },
+    "routes": [
+        [
+            "LHR",
+            "HND"
+        ],
+        [
+            "HND",
+            "LHR"
+        ]
+    ],
+    "airlines": [
+        "AZ"
+    ],
+    "route": [
+        {
+            "id": "0f64097b49b949bc9fa82d4c_0",
+            "combination_id": "0f64097b49b949bc9fa82d4c",
+            "flyFrom": "LHR",
+            "flyTo": "FCO",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Rome",
+            "cityCodeTo": "ROM",
+            "airline": "AZ",
+            "flight_no": 203,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "203",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T05:22:38.000Z",
+            "refresh_timestamp": "2021-08-11T05:22:38.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-03T15:25:00.000Z",
+            "utc_arrival": "2021-09-03T13:25:00.000Z",
+            "local_departure": "2021-09-03T11:55:00.000Z",
+            "utc_departure": "2021-09-03T10:55:00.000Z"
+        },
+        {
+            "id": "0f64097b49b949bc9fa82d4c_1",
+            "combination_id": "0f64097b49b949bc9fa82d4c",
+            "flyFrom": "FCO",
+            "flyTo": "HND",
+            "cityFrom": "Rome",
+            "cityCodeFrom": "ROM",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "AZ",
+            "flight_no": 792,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "792",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T05:22:38.000Z",
+            "refresh_timestamp": "2021-08-11T05:22:38.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-04T12:35:00.000Z",
+            "utc_arrival": "2021-09-04T03:35:00.000Z",
+            "local_departure": "2021-09-03T17:10:00.000Z",
+            "utc_departure": "2021-09-03T15:10:00.000Z"
+        },
+        {
+            "id": "0f64097b49b949bc9fa82d4c_2",
+            "combination_id": "0f64097b49b949bc9fa82d4c",
+            "flyFrom": "HND",
+            "flyTo": "FCO",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Rome",
+            "cityCodeTo": "ROM",
+            "airline": "AZ",
+            "flight_no": 793,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "793",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T05:22:38.000Z",
+            "refresh_timestamp": "2021-08-11T05:22:38.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-06T20:30:00.000Z",
+            "utc_arrival": "2021-09-06T18:30:00.000Z",
+            "local_departure": "2021-09-06T14:30:00.000Z",
+            "utc_departure": "2021-09-06T05:30:00.000Z"
+        },
+        {
+            "id": "0f64097b49b949bc9fa82d4c_3",
+            "combination_id": "0f64097b49b949bc9fa82d4c",
+            "flyFrom": "FCO",
+            "flyTo": "LHR",
+            "cityFrom": "Rome",
+            "cityCodeFrom": "ROM",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "AZ",
+            "flight_no": 202,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "202",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T05:22:38.000Z",
+            "refresh_timestamp": "2021-08-11T05:22:38.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-07T11:05:00.000Z",
+            "utc_arrival": "2021-09-07T10:05:00.000Z",
+            "local_departure": "2021-09-07T09:25:00.000Z",
+            "utc_departure": "2021-09-07T07:25:00.000Z"
+        }
+    ],
+    "booking_token": "CR2IirbcpY1IHyqp6GFVQMBRM9vQbsPNUeVzejlvzlVYtDUAhhFyDfZjpbO6BaT8BRNuk36LC042dLQZYZ2Vv2TDQwoX11NzpFyX7yGiU04OGEBaLXbINR4lfJSoRQhoX24vgT7CbWNEER3B8oTAjTUAcZd5VBQiUrh5gc4PG0_mnF2hiC1mggsnwf1Si7z78wmpjuewrWD3XUJixxltMckjAqLkZ6SiAnpFZB5C3zp6HgtYxk5MnfQ6XU5jHjIy8mw-ifOJMXd8-bDDRnNsimWZZLENVrxAoPTJDgQ33K9T7jPfB1j-y1t8Gaa16BNwHGkQ9aV1sSGKKPGLGtbL_L0us267q4J4v0PdcSNe5vJf6owetmQ4SYPZU-GZPAhs6huDmLN2ZpphsGyam46mzt7zKvIvKGdK5gAsDKsGrcjBSNsrz2XrGUF6m6ipKs4JedR_rBnYyyCA140UfyMUylUhb2jEmlTWLtXcAZrrVkVMx4VnHCvruYQ9VAV_l668-T3uKXmGlPVJz22oEK-B3P9vSicO2qxoL99TJwYQC84I=",
+    "deep_link": "https://www.kiwi.com/deep?from=LHR&to=HND&flightsId=0f64097b49b949bc9fa82d4c_0%7C0f64097b49b949bc9fa82d4c_1%7C0f64097b49b949bc9fa82d4c_2%7C0f64097b49b949bc9fa82d4c_3&price=658&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CR2IirbcpY1IHyqp6GFVQMBRM9vQbsPNUeVzejlvzlVYtDUAhhFyDfZjpbO6BaT8BRNuk36LC042dLQZYZ2Vv2TDQwoX11NzpFyX7yGiU04OGEBaLXbINR4lfJSoRQhoX24vgT7CbWNEER3B8oTAjTUAcZd5VBQiUrh5gc4PG0_mnF2hiC1mggsnwf1Si7z78wmpjuewrWD3XUJixxltMckjAqLkZ6SiAnpFZB5C3zp6HgtYxk5MnfQ6XU5jHjIy8mw-ifOJMXd8-bDDRnNsimWZZLENVrxAoPTJDgQ33K9T7jPfB1j-y1t8Gaa16BNwHGkQ9aV1sSGKKPGLGtbL_L0us267q4J4v0PdcSNe5vJf6owetmQ4SYPZU-GZPAhs6huDmLN2ZpphsGyam46mzt7zKvIvKGdK5gAsDKsGrcjBSNsrz2XrGUF6m6ipKs4JedR_rBnYyyCA140UfyMUylUhb2jEmlTWLtXcAZrrVkVMx4VnHCvruYQ9VAV_l668-T3uKXmGlPVJz22oEK-B3P9vSicO2qxoL99TJwYQC84I=",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-09-04T12:35:00.000Z",
+    "utc_arrival": "2021-09-04T03:35:00.000Z",
+    "local_departure": "2021-09-03T11:55:00.000Z",
+    "utc_departure": "2021-09-03T10:55:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:40:26
+
+search_flights
+
+{
+    "id": "032d004249c700004e508514_0|0042032d49d30000262bc758_0",
+    "flyFrom": "STN",
+    "flyTo": "BER",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Berlin",
+    "cityCodeTo": "BER",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "DE",
+        "name": "Germany"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 12,
+    "quality": 77.666535,
+    "distance": 907.07,
+    "duration": {
+        "departure": 6300,
+        "return": 6600,
+        "total": 12900
+    },
+    "price": 25,
+    "conversion": {
+        "EUR": 25
+    },
+    "bags_price": {
+        "1": 59.49,
+        "2": 118.98
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 6
+    },
+    "routes": [
+        [
+            "STN",
+            "BER"
+        ],
+        [
+            "BER",
+            "STN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "032d004249c700004e508514_0",
+            "combination_id": "032d004249c700004e508514",
+            "flyFrom": "STN",
+            "flyTo": "BER",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Berlin",
+            "cityCodeTo": "BER",
+            "airline": "FR",
+            "flight_no": 147,
+            "operating_carrier": "FR",
+            "operating_flight_no": "147",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:11:30.000Z",
+            "refresh_timestamp": "2021-08-11T12:11:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-17T21:05:00.000Z",
+            "utc_arrival": "2021-09-17T19:05:00.000Z",
+            "local_departure": "2021-09-17T18:20:00.000Z",
+            "utc_departure": "2021-09-17T17:20:00.000Z"
+        },
+        {
+            "id": "0042032d49d30000262bc758_0",
+            "combination_id": "0042032d49d30000262bc758",
+            "flyFrom": "BER",
+            "flyTo": "STN",
+            "cityFrom": "Berlin",
+            "cityCodeFrom": "BER",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 144,
+            "operating_carrier": "FR",
+            "operating_flight_no": "144",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T11:45:40.000Z",
+            "refresh_timestamp": "2021-08-11T11:45:40.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-29T06:50:00.000Z",
+            "utc_arrival": "2021-09-29T05:50:00.000Z",
+            "local_departure": "2021-09-29T06:00:00.000Z",
+            "utc_departure": "2021-09-29T04:00:00.000Z"
+        }
+    ],
+    "booking_token": "CRzMxIYLR55tr2sW1fB3dGwqGfFGsdunviGMuAjajU4e8ZblXP8yuVQfYIYYKWajJRdyAU2DmJZxI_s0d4jHeaGBgW-D7e5nVAenM6GBucaQac_2NPrt36_Lc6LCyV9z8Wi_PdCFO9p4mX8NjaWvHu7Bo04eIZbzJoGe-0ZsjnOolQXDBN0jbDd-FHk1mHZCOVYWXKb0jrMFrX7ErylT3I1QRupU68isBnF9oBHh9dpMiVKAoZgxT1QUYp5J4E4I88owUHY1TUZLgUa1inlA71bb97FrrolHY4lzUAQerovyud-UjfMWQouKKMRzXMYedlDW6grTdcevYIgVKkBwtzbLOg1rzu2t1cX5YPvFFkhlmxuV_z9gVW2aEgvszabdWnXRZn7YkRLddC7MBjeO91AqZqaXaWWKbdmNX-GtKeh8S5Zzy_PPw3AnVnsgtxW3M2IYqPxvShwJCkBrjJwjeo-QoKLaxCLLouRKke5wQ2eUngiZNUlbfWBTggWAJmgKc",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=BER&flightsId=032d004249c700004e508514_0%7C0042032d49d30000262bc758_0&price=25&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CRzMxIYLR55tr2sW1fB3dGwqGfFGsdunviGMuAjajU4e8ZblXP8yuVQfYIYYKWajJRdyAU2DmJZxI_s0d4jHeaGBgW-D7e5nVAenM6GBucaQac_2NPrt36_Lc6LCyV9z8Wi_PdCFO9p4mX8NjaWvHu7Bo04eIZbzJoGe-0ZsjnOolQXDBN0jbDd-FHk1mHZCOVYWXKb0jrMFrX7ErylT3I1QRupU68isBnF9oBHh9dpMiVKAoZgxT1QUYp5J4E4I88owUHY1TUZLgUa1inlA71bb97FrrolHY4lzUAQerovyud-UjfMWQouKKMRzXMYedlDW6grTdcevYIgVKkBwtzbLOg1rzu2t1cX5YPvFFkhlmxuV_z9gVW2aEgvszabdWnXRZn7YkRLddC7MBjeO91AqZqaXaWWKbdmNX-GtKeh8S5Zzy_PPw3AnVnsgtxW3M2IYqPxvShwJCkBrjJwjeo-QoKLaxCLLouRKke5wQ2eUngiZNUlbfWBTggWAJmgKc",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-17T21:05:00.000Z",
+    "utc_arrival": "2021-09-17T19:05:00.000Z",
+    "local_departure": "2021-09-17T18:20:00.000Z",
+    "utc_departure": "2021-09-17T17:20:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:42:25
+
+search_flights
+
+{
+    "id": "032d004249c600002380a5cc_0|0042032d49cc00002b2724d9_0",
+    "flyFrom": "STN",
+    "flyTo": "BER",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Berlin",
+    "cityCodeTo": "BER",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "DE",
+        "name": "Germany"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 6,
+    "quality": 77.666535,
+    "distance": 907.07,
+    "duration": {
+        "departure": 6300,
+        "return": 6600,
+        "total": 12900
+    },
+    "price": 25,
+    "conversion": {
+        "EUR": 25
+    },
+    "bags_price": {
+        "1": 61.02,
+        "2": 122.04
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "STN",
+            "BER"
+        ],
+        [
+            "BER",
+            "STN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "032d004249c600002380a5cc_0",
+            "combination_id": "032d004249c600002380a5cc",
+            "flyFrom": "STN",
+            "flyTo": "BER",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Berlin",
+            "cityCodeTo": "BER",
+            "airline": "FR",
+            "flight_no": 145,
+            "operating_carrier": "FR",
+            "operating_flight_no": "145",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:11:30.000Z",
+            "refresh_timestamp": "2021-08-11T12:11:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-16T10:15:00.000Z",
+            "utc_arrival": "2021-09-16T08:15:00.000Z",
+            "local_departure": "2021-09-16T07:30:00.000Z",
+            "utc_departure": "2021-09-16T06:30:00.000Z"
+        },
+        {
+            "id": "0042032d49cc00002b2724d9_0",
+            "combination_id": "0042032d49cc00002b2724d9",
+            "flyFrom": "BER",
+            "flyTo": "STN",
+            "cityFrom": "Berlin",
+            "cityCodeFrom": "BER",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 144,
+            "operating_carrier": "FR",
+            "operating_flight_no": "144",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T11:12:14.000Z",
+            "refresh_timestamp": "2021-08-11T11:12:14.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-22T06:50:00.000Z",
+            "utc_arrival": "2021-09-22T05:50:00.000Z",
+            "local_departure": "2021-09-22T06:00:00.000Z",
+            "utc_departure": "2021-09-22T04:00:00.000Z"
+        }
+    ],
+    "booking_token": "CJrROGt-9cSciV2LuT86UGfEqFqJ8AktIhaHl7Jv02n2RmW3CXBIl-9EYqtLqGKxZEApmBX1Qbwu4_D163p4jiQe-R9JZ_-mCZYkS0tgNUWMJuof823_irpqCQfNntGftsDHBedwGF0nj_L5OluDvRCxr-_I0XWa-bKtBw-B509c4X87FAWMsrTIJX0G1OpviVKZBvNQTm8JhCnujuRUaXr_9Mm_jXx-K_VSK7ikEfCJO7puiy-W3sXlT9Sm0g2uRR8QV2F9yB0Wzk_No70zB6Ity2xG_5_ctjF3yW_3EvOwTvCvLChB1fr3mQhQkblUFnCcTxaxIKA-TvW5U9JIt9b9tiEztDY6O17BFU3KdObbby9ViqjYSXYBiGV7VQsA4xbF43Qx99KdbfmWAS_TnA0oUkLZQTSS5gIGc2ChAelzqhRHo4UAZeq0Ts1qp69I4FECIzVrVPRlOa9OmlbrpUz3eKI97WpmsBcdsuJx5ooY_uPaf2Zk8UI9kBzqM5XIG",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=BER&flightsId=032d004249c600002380a5cc_0%7C0042032d49cc00002b2724d9_0&price=25&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CJrROGt-9cSciV2LuT86UGfEqFqJ8AktIhaHl7Jv02n2RmW3CXBIl-9EYqtLqGKxZEApmBX1Qbwu4_D163p4jiQe-R9JZ_-mCZYkS0tgNUWMJuof823_irpqCQfNntGftsDHBedwGF0nj_L5OluDvRCxr-_I0XWa-bKtBw-B509c4X87FAWMsrTIJX0G1OpviVKZBvNQTm8JhCnujuRUaXr_9Mm_jXx-K_VSK7ikEfCJO7puiy-W3sXlT9Sm0g2uRR8QV2F9yB0Wzk_No70zB6Ity2xG_5_ctjF3yW_3EvOwTvCvLChB1fr3mQhQkblUFnCcTxaxIKA-TvW5U9JIt9b9tiEztDY6O17BFU3KdObbby9ViqjYSXYBiGV7VQsA4xbF43Qx99KdbfmWAS_TnA0oUkLZQTSS5gIGc2ChAelzqhRHo4UAZeq0Ts1qp69I4FECIzVrVPRlOa9OmlbrpUz3eKI97WpmsBcdsuJx5ooY_uPaf2Zk8UI9kBzqM5XIG",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-16T10:15:00.000Z",
+    "utc_arrival": "2021-09-16T08:15:00.000Z",
+    "local_departure": "2021-09-16T07:30:00.000Z",
+    "utc_departure": "2021-09-16T06:30:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:56:17
+
+search_flights
+
+{
+    "id": "032d004249c500006bc4b9f2_0|0042032d49d30000262bc758_0",
+    "flyFrom": "STN",
+    "flyTo": "BER",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Berlin",
+    "cityCodeTo": "BER",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "DE",
+        "name": "Germany"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 14,
+    "quality": 77.666535,
+    "distance": 907.07,
+    "duration": {
+        "departure": 6300,
+        "return": 6600,
+        "total": 12900
+    },
+    "price": 25,
+    "conversion": {
+        "EUR": 25
+    },
+    "bags_price": {
+        "1": 59.49,
+        "2": 118.98
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 6
+    },
+    "routes": [
+        [
+            "STN",
+            "BER"
+        ],
+        [
+            "BER",
+            "STN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "032d004249c500006bc4b9f2_0",
+            "combination_id": "032d004249c500006bc4b9f2",
+            "flyFrom": "STN",
+            "flyTo": "BER",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Berlin",
+            "cityCodeTo": "BER",
+            "airline": "FR",
+            "flight_no": 147,
+            "operating_carrier": "FR",
+            "operating_flight_no": "147",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:11:30.000Z",
+            "refresh_timestamp": "2021-08-11T12:11:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-15T22:30:00.000Z",
+            "utc_arrival": "2021-09-15T20:30:00.000Z",
+            "local_departure": "2021-09-15T19:45:00.000Z",
+            "utc_departure": "2021-09-15T18:45:00.000Z"
+        },
+        {
+            "id": "0042032d49d30000262bc758_0",
+            "combination_id": "0042032d49d30000262bc758",
+            "flyFrom": "BER",
+            "flyTo": "STN",
+            "cityFrom": "Berlin",
+            "cityCodeFrom": "BER",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 144,
+            "operating_carrier": "FR",
+            "operating_flight_no": "144",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T11:45:40.000Z",
+            "refresh_timestamp": "2021-08-11T11:45:40.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-29T06:50:00.000Z",
+            "utc_arrival": "2021-09-29T05:50:00.000Z",
+            "local_departure": "2021-09-29T06:00:00.000Z",
+            "utc_departure": "2021-09-29T04:00:00.000Z"
+        }
+    ],
+    "booking_token": "CK1XQYartfmZGhdqGm1R3TrPz5YYsDoskM-zpHHYFtR2fMFio_5_UUm-yVrpiAdGqdAxASNkLvZOGG6MzWa6PgW7Z-EsngJtakfSHLfzSnkTY58WiXOvrnZ7BZJ8hHtd1uIfjwzHZhyzpsPJaACESvBDnT2RF_jyk_n-i9kwXyAJaCQC94zPP2JQO3MMtN_iCNgkp1T62K5h3EP4gbufUQ1kBQeNfWbkogDfr9ckmj-lm9-rmjfKcYM3fcRFyFGPQ2tlJfAEsMZvHPbjI7yTDDZGD5Ph9uwyDC0EeKfVw4_w-W9WnNcM5V3DEXAS1ZcpKyW7k6rQN9ake_rmYdEr78T1iLFaYzR_qsjn4Z_SQIv3whAdmwnad4q8q5ONsDxszt7_5BjVb09CDNeAc0xNBxq3hhGES3hprviQlDuNICTkPDVsG8Lb1sxktHTF5-mvcYqY2JhL8pw2uQtjHF6rsFB94mHuRGZ1Qq_cBS9nzeEfPilUvQ_j-yUlgk6R2gLMuseNUugqd_ssKAJV6heo1zA==",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=BER&flightsId=032d004249c500006bc4b9f2_0%7C0042032d49d30000262bc758_0&price=25&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CK1XQYartfmZGhdqGm1R3TrPz5YYsDoskM-zpHHYFtR2fMFio_5_UUm-yVrpiAdGqdAxASNkLvZOGG6MzWa6PgW7Z-EsngJtakfSHLfzSnkTY58WiXOvrnZ7BZJ8hHtd1uIfjwzHZhyzpsPJaACESvBDnT2RF_jyk_n-i9kwXyAJaCQC94zPP2JQO3MMtN_iCNgkp1T62K5h3EP4gbufUQ1kBQeNfWbkogDfr9ckmj-lm9-rmjfKcYM3fcRFyFGPQ2tlJfAEsMZvHPbjI7yTDDZGD5Ph9uwyDC0EeKfVw4_w-W9WnNcM5V3DEXAS1ZcpKyW7k6rQN9ake_rmYdEr78T1iLFaYzR_qsjn4Z_SQIv3whAdmwnad4q8q5ONsDxszt7_5BjVb09CDNeAc0xNBxq3hhGES3hprviQlDuNICTkPDVsG8Lb1sxktHTF5-mvcYqY2JhL8pw2uQtjHF6rsFB94mHuRGZ1Qq_cBS9nzeEfPilUvQ_j-yUlgk6R2gLMuseNUugqd_ssKAJV6heo1zA==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-15T22:30:00.000Z",
+    "utc_arrival": "2021-09-15T20:30:00.000Z",
+    "local_departure": "2021-09-15T19:45:00.000Z",
+    "utc_departure": "2021-09-15T18:45:00.000Z"
+}
+------------------------------
+11/08/2021 - 09:56:32
+
+search_flights
+
+None
+------------------------------
+11/08/2021 - 09:58:07
+
+search_flights
+
+{
+    "id": "032d004249c500006bc4b9f2_0|0042032d49c80000eed3ab3b_0",
+    "flyFrom": "STN",
+    "flyTo": "BER",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Berlin",
+    "cityCodeTo": "BER",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "DE",
+        "name": "Germany"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 3,
+    "quality": 77.666535,
+    "distance": 907.07,
+    "duration": {
+        "departure": 6300,
+        "return": 6600,
+        "total": 12900
+    },
+    "price": 25,
+    "conversion": {
+        "EUR": 25
+    },
+    "bags_price": {
+        "1": 59.49,
+        "2": 118.98
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 319,
+        "hold_height": 119,
+        "hold_length": 119,
+        "hold_weight": 20,
+        "hold_width": 81
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "STN",
+            "BER"
+        ],
+        [
+            "BER",
+            "STN"
+        ]
+    ],
+    "airlines": [
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "032d004249c500006bc4b9f2_0",
+            "combination_id": "032d004249c500006bc4b9f2",
+            "flyFrom": "STN",
+            "flyTo": "BER",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Berlin",
+            "cityCodeTo": "BER",
+            "airline": "FR",
+            "flight_no": 147,
+            "operating_carrier": "FR",
+            "operating_flight_no": "147",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:11:30.000Z",
+            "refresh_timestamp": "2021-08-11T12:11:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-15T22:30:00.000Z",
+            "utc_arrival": "2021-09-15T20:30:00.000Z",
+            "local_departure": "2021-09-15T19:45:00.000Z",
+            "utc_departure": "2021-09-15T18:45:00.000Z"
+        },
+        {
+            "id": "0042032d49c80000eed3ab3b_0",
+            "combination_id": "0042032d49c80000eed3ab3b",
+            "flyFrom": "BER",
+            "flyTo": "STN",
+            "cityFrom": "Berlin",
+            "cityCodeFrom": "BER",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "FR",
+            "flight_no": 144,
+            "operating_carrier": "FR",
+            "operating_flight_no": "144",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T12:35:05.000Z",
+            "refresh_timestamp": "2021-08-11T12:35:05.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-18T07:20:00.000Z",
+            "utc_arrival": "2021-09-18T06:20:00.000Z",
+            "local_departure": "2021-09-18T06:30:00.000Z",
+            "utc_departure": "2021-09-18T04:30:00.000Z"
+        }
+    ],
+    "booking_token": "C8w4bYtx4JBkqzAjtJMoTO0WNTcAHGmtRn_dsax4Yy2ydYHiRUwa-axaWb7Knhps4G3pENwiEXEzJivibdj8tAd2IJANcVuxSNz9A_inTx2HJzLacnElJ3JSXdXj_99wFp7hM0BPYXr2QPqCvHFINMK7PR2JXhjEVPVD9BDIrcjXepoU-uhAYcvaqQXKMnB8VHDECppshQY0WeMJZxHmV6OuXLIxgE3tzNou17V6hNJcXnGX_m8hl8gLc0chAWsEZYtLcq5Sr1W3csSUft080AsMNTHzZTNHoFq0Px7jKtY7FvCY41DaujPNpTl_5hqvmeyeXkwgApakvp8GBL9rnpsL2FU8to8CLAxtu0YaT_WrGs9kHOqjiC8UxMin-YVGROlF6RfUcOYbr0Z15tzYEu_q6vJB49P7KCAq0WVlBo_A0IP4A_VuRUY61NjXOE5kv5tudbn9le0YaRMEGqML49hdUIVcGVPvpPXNe6FojnVIlzV6wKX6Adb-21Iw44n8x",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=BER&flightsId=032d004249c500006bc4b9f2_0%7C0042032d49c80000eed3ab3b_0&price=25&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C8w4bYtx4JBkqzAjtJMoTO0WNTcAHGmtRn_dsax4Yy2ydYHiRUwa-axaWb7Knhps4G3pENwiEXEzJivibdj8tAd2IJANcVuxSNz9A_inTx2HJzLacnElJ3JSXdXj_99wFp7hM0BPYXr2QPqCvHFINMK7PR2JXhjEVPVD9BDIrcjXepoU-uhAYcvaqQXKMnB8VHDECppshQY0WeMJZxHmV6OuXLIxgE3tzNou17V6hNJcXnGX_m8hl8gLc0chAWsEZYtLcq5Sr1W3csSUft080AsMNTHzZTNHoFq0Px7jKtY7FvCY41DaujPNpTl_5hqvmeyeXkwgApakvp8GBL9rnpsL2FU8to8CLAxtu0YaT_WrGs9kHOqjiC8UxMin-YVGROlF6RfUcOYbr0Z15tzYEu_q6vJB49P7KCAq0WVlBo_A0IP4A_VuRUY61NjXOE5kv5tudbn9le0YaRMEGqML49hdUIVcGVPvpPXNe6FojnVIlzV6wKX6Adb-21Iw44n8x",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-15T22:30:00.000Z",
+    "utc_arrival": "2021-09-15T20:30:00.000Z",
+    "local_departure": "2021-09-15T19:45:00.000Z",
+    "utc_departure": "2021-09-15T18:45:00.000Z"
+}
+------------------------------
