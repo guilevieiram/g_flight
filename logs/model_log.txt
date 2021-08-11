@@ -1,0 +1,1272 @@
+03/08/2021 - 09:12:38
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 79,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 84,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:13:45
+
+get_request
+
+{
+    "buFlights": [
+        {
+            "city": "Berlin",
+            "price": 22,
+            "id": 2
+        },
+        {
+            "city": "Paris",
+            "price": 19,
+            "id": 3
+        },
+        {
+            "city": "Dubai",
+            "price": 1000,
+            "id": 4
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 1000,
+            "id": 5
+        },
+        {
+            "city": "Florence",
+            "price": 1000,
+            "id": 6
+        },
+        {
+            "city": "Madrid",
+            "price": 1000,
+            "id": 7
+        },
+        {
+            "city": "Okinawa",
+            "price": 1000,
+            "id": 8
+        },
+        {
+            "city": "Tokyo",
+            "price": 1000,
+            "id": 9
+        },
+        {
+            "city": "Amsterdam",
+            "price": 1000,
+            "id": 10
+        },
+        {
+            "city": "Porto",
+            "price": 1000,
+            "id": 11
+        },
+        {
+            "city": "Edimburgh",
+            "price": 1000,
+            "id": 12
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:52
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:53
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:53
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:54
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:54
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:55
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:55
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:55
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:14:55
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Bad Request. The JSON payload should be inside a root property called 'buflight'. Check https://sheety.co/docs for more details."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:18:08
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 79,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 84,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:19:24
+
+get_request
+
+{
+    "buFlights": [
+        {
+            "city": "Berlin",
+            "price": 22,
+            "id": 2
+        },
+        {
+            "city": "Paris",
+            "price": 19,
+            "id": 3
+        },
+        {
+            "city": "Dubai",
+            "price": 1000,
+            "id": 4
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 1000,
+            "id": 5
+        },
+        {
+            "city": "Florence",
+            "price": 1000,
+            "id": 6
+        },
+        {
+            "city": "Madrid",
+            "price": 1000,
+            "id": 7
+        },
+        {
+            "city": "Okinawa",
+            "price": 1000,
+            "id": 8
+        },
+        {
+            "city": "Tokyo",
+            "price": 1000,
+            "id": 9
+        },
+        {
+            "city": "Amsterdam",
+            "price": 1000,
+            "id": 10
+        },
+        {
+            "city": "Porto",
+            "price": 1000,
+            "id": 11
+        },
+        {
+            "city": "Edimburgh",
+            "price": 1000,
+            "id": 12
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:20:40
+
+put_request
+
+{
+    "buFlight": {
+        "price": 465,
+        "id": 4
+    }
+}
+------------------------------
+03/08/2021 - 09:20:41
+
+put_request
+
+{
+    "buFlight": {
+        "price": 527,
+        "id": 5
+    }
+}
+------------------------------
+03/08/2021 - 09:20:42
+
+put_request
+
+{
+    "buFlight": {
+        "price": 65,
+        "id": 6
+    }
+}
+------------------------------
+03/08/2021 - 09:20:44
+
+put_request
+
+{
+    "buFlight": {
+        "price": 25,
+        "id": 7
+    }
+}
+------------------------------
+03/08/2021 - 09:20:45
+
+put_request
+
+{
+    "buFlight": {
+        "price": 759,
+        "id": 8
+    }
+}
+------------------------------
+03/08/2021 - 09:20:47
+
+put_request
+
+{
+    "buFlight": {
+        "price": 655,
+        "id": 9
+    }
+}
+------------------------------
+03/08/2021 - 09:20:48
+
+put_request
+
+{
+    "buFlight": {
+        "price": 95,
+        "id": 10
+    }
+}
+------------------------------
+03/08/2021 - 09:20:50
+
+put_request
+
+{
+    "buFlight": {
+        "price": 33,
+        "id": 11
+    }
+}
+------------------------------
+03/08/2021 - 09:20:51
+
+put_request
+
+{
+    "buFlight": {
+        "price": 92,
+        "id": 12
+    }
+}
+------------------------------
+03/08/2021 - 09:23:29
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 79,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 1000,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 84,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:24:42
+
+put_request
+
+{
+    "flight": {
+        "price": 524,
+        "id": 4
+    }
+}
+------------------------------
+03/08/2021 - 09:24:43
+
+put_request
+
+{
+    "flight": {
+        "price": 34,
+        "id": 6
+    }
+}
+------------------------------
+03/08/2021 - 09:25:31
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 79,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 524,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 84,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:26:37
+
+get_request
+
+{
+    "buFlights": [
+        {
+            "city": "Berlin",
+            "price": 22,
+            "id": 2
+        },
+        {
+            "city": "Paris",
+            "price": 19,
+            "id": 3
+        },
+        {
+            "city": "Dubai",
+            "price": 465,
+            "id": 4
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 5
+        },
+        {
+            "city": "Florence",
+            "price": 65,
+            "id": 6
+        },
+        {
+            "city": "Madrid",
+            "price": 25,
+            "id": 7
+        },
+        {
+            "city": "Okinawa",
+            "price": 759,
+            "id": 8
+        },
+        {
+            "city": "Tokyo",
+            "price": 655,
+            "id": 9
+        },
+        {
+            "city": "Amsterdam",
+            "price": 95,
+            "id": 10
+        },
+        {
+            "city": "Porto",
+            "price": 33,
+            "id": 11
+        },
+        {
+            "city": "Edimburgh",
+            "price": 1000,
+            "id": 12
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:27:59
+
+put_request
+
+{
+    "buFlight": {
+        "price": 139,
+        "id": 4
+    }
+}
+------------------------------
+03/08/2021 - 09:28:01
+
+put_request
+
+{
+    "buFlight": {
+        "price": 100,
+        "id": 12
+    }
+}
+------------------------------
+03/08/2021 - 09:30:37
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 1000,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 524,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 84,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:31:46
+
+put_request
+
+{
+    "flight": {
+        "price": 85,
+        "id": 2
+    }
+}
+------------------------------
+03/08/2021 - 09:31:48
+
+put_request
+
+{
+    "flight": {
+        "price": 71,
+        "id": 11
+    }
+}
+------------------------------
+03/08/2021 - 09:31:55
+
+get_request
+
+{
+    "buFlights": [
+        {
+            "city": "Berlin",
+            "price": 22,
+            "id": 2
+        },
+        {
+            "city": "Paris",
+            "price": 19,
+            "id": 3
+        },
+        {
+            "city": "Dubai",
+            "price": 139,
+            "id": 4
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 5
+        },
+        {
+            "city": "Florence",
+            "price": 65,
+            "id": 6
+        },
+        {
+            "city": "Madrid",
+            "price": 25,
+            "id": 7
+        },
+        {
+            "city": "Okinawa",
+            "price": 759,
+            "id": 8
+        },
+        {
+            "city": "Tokyo",
+            "price": 655,
+            "id": 9
+        },
+        {
+            "city": "Amsterdam",
+            "price": 95,
+            "id": 10
+        },
+        {
+            "city": "Porto",
+            "price": 33,
+            "id": 11
+        },
+        {
+            "city": "Edimburgh",
+            "price": 100,
+            "id": 12
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:43:26
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 85,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 524,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 71,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:45:46
+
+get_request
+
+{
+    "flights": [
+        {
+            "city": "Berlin",
+            "price": 85,
+            "id": 2
+        },
+        {
+            "city": "London",
+            "price": 73,
+            "id": 3
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 524,
+            "id": 4
+        },
+        {
+            "city": "Florence",
+            "price": 87,
+            "id": 5
+        },
+        {
+            "city": "Madrid",
+            "price": 34,
+            "id": 6
+        },
+        {
+            "city": "Okinawa",
+            "price": 746,
+            "id": 7
+        },
+        {
+            "city": "Tokyo",
+            "price": 579,
+            "id": 8
+        },
+        {
+            "city": "Amsterdam",
+            "price": 93,
+            "id": 9
+        },
+        {
+            "city": "Porto",
+            "price": 34,
+            "id": 10
+        },
+        {
+            "city": "Edimburgh",
+            "price": 71,
+            "id": 11
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:45:57
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 2
+    }
+}
+------------------------------
+03/08/2021 - 09:45:58
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 3
+    }
+}
+------------------------------
+03/08/2021 - 09:46:00
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 4
+    }
+}
+------------------------------
+03/08/2021 - 09:46:01
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 5
+    }
+}
+------------------------------
+03/08/2021 - 09:46:03
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 6
+    }
+}
+------------------------------
+03/08/2021 - 09:46:04
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 7
+    }
+}
+------------------------------
+03/08/2021 - 09:46:06
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 8
+    }
+}
+------------------------------
+03/08/2021 - 09:46:07
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 9
+    }
+}
+------------------------------
+03/08/2021 - 09:46:10
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 10
+    }
+}
+------------------------------
+03/08/2021 - 09:46:11
+
+put_request
+
+{
+    "flight": {
+        "price": 0,
+        "id": 11
+    }
+}
+------------------------------
+03/08/2021 - 09:46:13
+
+get_request
+
+{
+    "buFlights": [
+        {
+            "city": "Berlin",
+            "price": 22,
+            "id": 2
+        },
+        {
+            "city": "Paris",
+            "price": 19,
+            "id": 3
+        },
+        {
+            "city": "Dubai",
+            "price": 139,
+            "id": 4
+        },
+        {
+            "city": "Belo Horizonte",
+            "price": 527,
+            "id": 5
+        },
+        {
+            "city": "Florence",
+            "price": 65,
+            "id": 6
+        },
+        {
+            "city": "Madrid",
+            "price": 25,
+            "id": 7
+        },
+        {
+            "city": "Okinawa",
+            "price": 759,
+            "id": 8
+        },
+        {
+            "city": "Tokyo",
+            "price": 655,
+            "id": 9
+        },
+        {
+            "city": "Amsterdam",
+            "price": 95,
+            "id": 10
+        },
+        {
+            "city": "Porto",
+            "price": 33,
+            "id": 11
+        },
+        {
+            "city": "Edimburgh",
+            "price": 100,
+            "id": 12
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:23
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:23
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:25
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:25
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:26
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:27
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:27
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:28
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:28
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:28
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:46:28
+
+put_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 09:49:09
+
+get_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
+03/08/2021 - 10:25:56
+
+get_request
+
+{
+    "errors": [
+        {
+            "detail": "Monthly quota has been reached. Please upgrade to continue making requests."
+        }
+    ]
+}
+------------------------------
