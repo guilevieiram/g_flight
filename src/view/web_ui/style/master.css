@@ -199,7 +199,6 @@ nav {
     margin-top: 5vh;
     background-color: rgba(190, 190, 190, 0.425);
     border-radius: 2rem;
-    height: 25rem;
     min-width: 25rem;
     max-width: 50rem;
     width: 50%;
@@ -211,16 +210,17 @@ nav {
     opacity: 0.2;
 }
 .subscribe-form {
-    margin-top:  2rem;
-    height: 15rem;
+    margin: 2rem auto;
+    height: 100%;
     width: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
+    row-gap: 1.5rem;
     grid-template-columns: auto 70%;
 
 }
-input[type=text] {
+input[type=text], input[type=email] {
     height: 2rem;
     width: 90%;
     border-radius: 0.5rem;
@@ -233,8 +233,52 @@ label {
     font-size: 1.3rem;
 }
 .submit-form-button {
+    border-style: hidden;
+    background-color: #11acdd;
+    height: 4rem;
+    width: 10rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
     height: 3rem;
-    grid-column: 1/2;
+    margin-top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.submit-form-button:hover{
+    background: linear-gradient(to bottom right, #11acdd, #1fcbff);
+    transform: scale(1.02, 1.02);
+}
+
+/* subscription popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+    background-color: rgba(48, 48, 48, 0.95);
+    border-radius: 2rem;
+    overflow: auto; 
+}
+.popup h1, h2 {
+    color: #11acdd;
+}
+.popup p {
+    font-size: 1.3rem;
+    color: white;
+}
+.close-popup {
+    height: 1.5rem;
+    float: right;
+}
+.close-popup:hover,
+.close-popup:focus {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
 }
 /* footer */
 footer {

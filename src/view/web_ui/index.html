@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
     <!-- styles -->
     <link rel="stylesheet" href="style/master.css">
+    <!-- favicon bug temporary fix -->
+    <link rel="shortcut icon" href="#">
     <title>G-Flight</title>
 </head>
 <body>
@@ -28,6 +30,9 @@
                 <li class="nav-link"><a onclick="gotoTop()">Home</a></li>
                 <li class="nav-link"><a href="about.html">About</a></li>
                 <li class="nav-link"><a onclick="gotoSubscribe()">Subscribe</a></li>
+                <!-- buttons for testing connection with backend -->
+                <!-- <li class="nav-link"><a onclick="sendFlights()">Send Flights</a></li>
+                <li class="nav-link"><a onclick="updateFlights()">Update Prices</a></li> -->
             </ul>
         </nav>
     </header>
@@ -76,19 +81,33 @@
                     <div class="subscribe-container">
                         <form class="subscribe-form">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="name" name="name" required>
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                             <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                             <label for="city">City</label>
-                            <input type="text" id="city" name="city">
+                            <input type="text" id="city" name="city" required>
+                            <input class="submit-form-button" type="submit" value="Submit">
                         </form>
-                        <button class="submit-form-button" type="submit" form="form1" value="Submit">Submit</button>
                     </div>
                 </div>
+                <div class="popup user-exists">
+                    <img class="close-popup" src="media/close-button.png" alt="">
+                    <h2>This e-mail is already in use.</h2>
+                    <p>Please try another one.</p>
+                </div>
+                <div class="popup user-okey">
+                    <img class="close-popup" src="media/close-button.png" alt="">
+                    <h2>Thanks for subscribing to our services!</h2>
+                    <p>We'll let you know of the next best offers.</p>
+                </div>
+                <div class="popup error">
+                    <img class="close-popup" src="media/close-button.png" alt="">
+                    <h2>Looks like our servers are down...</h2>
+                    <p>Try again later.</p>
+                </div>
             </section>
-
         </main>
         <section>
             <footer>
@@ -112,5 +131,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/index.js"></script>
+    <script src="javascript/requests.js"></script>
 </body>
 </html>

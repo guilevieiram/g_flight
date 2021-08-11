@@ -1149,3 +1149,323 @@ For only 25 euros !
 -------------------------------------------------------------------
 
 ------------------------------
+11/08/2021 - 10:09:39
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:41
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:41
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:43
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:43
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:44
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:44
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:09:48
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:14:56
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:15:03
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:16:11
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 10:16:39
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 11:39:28
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 11:39:35
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to gui2@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello gui! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 11:39:46
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to test@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello js test! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------
+11/08/2021 - 11:39:58
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to test2@test.com
+Subject: Flight Deal Alert!!!
+
+
+Hello js test! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to Berlin-BER leaving on 05/10/21 and returning on 17/10/21.
+For only 479 euros !
+
+This flight has 2 stops at GRU, MAD
+
+-------------------------------------------------------------------
+
+------------------------------

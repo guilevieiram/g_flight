@@ -109,7 +109,6 @@ class TequilaFlightModel(FlightModel):
 		self.minimum_stay: int = minimum_stay
 		self.maximum_stay: int = maximum_stay
 
-	@log("cheap_flights")
 	def check_cheap_prices(self, from_city: str) -> list[Flight]:
 		"""
 		Compares all the found flights with the stored flight destinations using the FlightComparisson class.
@@ -227,7 +226,6 @@ class TequilaFlightApi:
 	endpoint: str = "https://tequila-api.kiwi.com"
 	api_key: str = os.environ.get("FLIGHT_API")
 
-	@log("flight_search")
 	def search_flights(self, from_code: str, to_code: str, months_window: int, minimum_stay: int, maximum_stay: int) -> Optional[dict]:
 		"""Returns the data for the cheapest flight given two places (to and from) and a set of parameters"""
 		date_from, date_to = self.get_dates(months=months_window)
@@ -250,7 +248,6 @@ class TequilaFlightApi:
 		except Exception as e:
 			print("Error while searching flights:",e)
 
-	@log("getting_IATA_codes")
 	def get_IATA_code(self, city_name: str) -> str:
 		"""Returns the IATA code for a given city name. If no code is found returns 'XXX'. """
 		try:

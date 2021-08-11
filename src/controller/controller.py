@@ -1,7 +1,9 @@
 import requests
 import datetime
+import json
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
+from flask_cors import CORS
 
 from abc import ABC, abstractmethod
 
@@ -13,6 +15,10 @@ from src.controller import controller
 from src.model.flight_model import Flight
 from src.model.user_model import User
 
+# Helper functions
+def get_payload() -> dict:
+	payload_string = request.data.decode('utf8')
+	return json.loads(payload_string)
 
 class Controller(ABC):
 	"""Controller abstract class to control the main flow of the aplication"""
@@ -72,11 +78,23 @@ class FlaskAPIController(Controller):
 
 
 		self.app: Flask = Flask(__name__)
+		CORS(self.app)
 		self.api: Api = Api(self.app)
+
+		self.api.add_resource(self.home(), '/')
 
 		self.api.add_resource(self.user(), '/users')
 		self.api.add_resource(self.send_cheapest_flights(), '/send_flights')
 		self.api.add_resource(self.update_flight_prices(), '/update_flights')
+
+
+	def home(self):
+		"""debugging"""
+		class _home(Resource):
+			def post(self):
+				print(request.data.decode('utf8'))
+				return jsonify(request.data.decode('utf8'))
+		return _home
 
 	def send_cheapest_flights(self) -> None:
 		"""
@@ -145,14 +163,14 @@ class FlaskAPIController(Controller):
 			def get(self):
 				users = user_model.get_all_users()
 				return jsonify(users)
-			def put(self):
-				user_data = dict(request.form)
+			def post(self):
+				user_data = get_payload()
 				try:
 					user_model.add_user(user=User().set(user_data))
 				except NameError:
-					return {'message': 'User already exists'}, 400
+					return {'message': 'User already exists', 'code': -1}
 				else: 
-					return user_data		
+					return {'code': 1, **user_data}
 		return _Users
 
 

@@ -15,6 +15,25 @@ function loadOnReach (element, animation, parameters) {
         };
       });
 }
+
+function showPopup(element) {
+    gsap.to(element, {
+        display: 'block',
+        opacity: 1,
+        ease: 'power1',
+        duration: 0.3
+    })
+}
+function closePopup(element) {
+    gsap.to(element, {
+        display: 'none',
+        opacity: 0,
+        ease: 'power1',
+        duration: 0.3
+    })
+}
+
+
 function navSlider () {
     const burguer = document.querySelector('.hamburguer');
     const nav = document.querySelector('.nav-links');
@@ -50,7 +69,9 @@ function navSlider () {
 
     navLinks.forEach((navLink) => {
         navLink.addEventListener('click', () =>{
-            toggleNavBar();
+            if(window.getComputedStyle(burguer, null).display != 'none'){
+                toggleNavBar();
+            }
         })
     });
 }
@@ -63,7 +84,6 @@ function animateNav() {
             duration: 1
         });
 };
-
 
 navSlider();
 animateNav();
