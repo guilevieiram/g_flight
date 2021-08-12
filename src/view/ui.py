@@ -4,6 +4,10 @@ from dataclasses import dataclass
 import os
 import time
 import sys
+import requests
+import json
+
+from flask import Flask, render_template
 
 from src.decorators import terminal_action
 
@@ -26,13 +30,10 @@ class MainMenu(Menu):
 class UserMenu(Menu):
 	EXIT = 0
 	ADD_USER = auto()
-	DELETE_USER = auto()
-	UPDATE_USER = auto()
-	FIND_USER = auto()
+	SEE_USERS = auto()
 
 	def name() -> str:
 		return "User menu"
-
 
 # Abstract user interface class
 class UserInterface(ABC):
@@ -43,22 +44,37 @@ class UserInterface(ABC):
 		"""A starter, to initiate the interface."""
 		pass
 
-	@abstractmethod
-	def get_actions(self, **actions) -> None:
-		"""
-		Should get all the necessary actions from the controller
-		to associate them to commands on the ui
-		"""
-		pass
+class FlaskUserInterface(UserInterface):
+	"""
+	User interface implementation. Responsible for showing and retrieving information from the user
+	Lauches our web files on a flask server.
+	"""
 
-	@abstractmethod
-	def accquire_info(self, information_needed: list, message: str) -> dict:
-		"""Acquire a new user info, with a list of desired information"""
-		pass
+	app: Flask = Flask(__name__)
 
-# User interface implementation
-class TerminalUserInteface(UserInterface):
+	def __init__(self, backend_endpoint: str) -> None:
+		self.endpoint: str = backend_endpoint
+
+	def start(self) -> None:
+		"""A starter, to initiate the interface."""
+		self.app.run(debug=True)
+
+	@app.route("/")
+	def home():
+		"""Endpoint to the index page"""
+		return render_template("index.html")
+	
+	@app.route("/about")
+	def about():
+		"""Endpoint to the about page"""
+		return render_template("about.html")
+
+# User interface terminal implementation
+class TerminalUserInterface(UserInterface):
 	"""Simple terminal user interface"""
+
+	def __init__(self, backend_endpoint: str) -> None:
+		self.endpoint: str = backend_endpoint
 
 	def start(self) -> None:
 		"""Start screen and main loop"""
@@ -70,20 +86,7 @@ class TerminalUserInteface(UserInterface):
 		"""Main action loop"""
 		while True:
 			user_action: Menu = self.show_menu(MainMenu)
-			self.do_action(action=user_action)
-
-	def get_actions(self, **actions) -> None:
-		"""Updates the class methods with methods provided by the controller."""
-		self.__dict__.update(actions)
-
-	def accquire_info(self, information_needed: list, message: str = "") -> dict:
-		"""Method to be used by the controller to get information from the user."""
-		print(message)
-		information: dict = {}
-		for item in information_needed:
-			# Could use formatting
-			information[item] = input(f"\t{self.to_title_case(item)}: ")
-		return information
+			self.do_menu_actions(action=user_action)
 
 	def show_menu(self, menu: Menu) -> Menu:
 		"""Shows a given menu, subclass of Menu, and executes the action given."""
@@ -102,9 +105,8 @@ class TerminalUserInteface(UserInterface):
 			print(e)
 			return self.show_menu(menu)
 
-	def do_action(self, action: Menu) -> None:
+	def do_menu_actions(self, action: Menu) -> None:
 		"""Executing of all the menu actions"""
-
 		if isinstance(action, MainMenu):
 			self.main_menu_actions(action=action)
 		elif isinstance(action, UserMenu):
@@ -115,36 +117,63 @@ class TerminalUserInteface(UserInterface):
 		if action == MainMenu.EXIT or action == UserMenu.EXIT:
 			self.exit()
 		elif action == MainMenu.MANAGE_USERS:
-			self.do_action(self.show_menu(UserMenu))
+			self.do_menu_actions(self.show_menu(UserMenu))
 		elif action == MainMenu.SEND_FLIGHTS:
-			print("Sending out the best flights...\n")
-			self.cont_send_cheapest_flights()
-			input("\nPress any key to continue ...")
+			self.send_cheapest_flights()
 		elif action == MainMenu.UPDATE_FLIGHTS:
-			print("Updating flight prices...\n")
-			self.cont_update_flight_prices()
-			input("\nPress any key to continue ...")
+			self.update_flights()
 
 	def user_menu_actions(self, action: Menu) -> None:
 		"""Mapping the user menu actions"""
 		if action == UserMenu.ADD_USER:
-			print("Adding user\n")
-			print(self.cont_add_user())
+			self.add_user()
+		elif action == UserMenu.SEE_USERS:
+			self.see_users()
+
+	# user action methods
+	def send_cheapest_flights(self) -> None:
+		print("Sending out the best flights...\n")
+		requests.get(self.endpoint + "/send_flights")
+		input("\nPress any key to continue ...")
+
+	def update_flights(self) -> None:
+		print("Updating flight prices...\n")
+		requests.get(self.endpoint + "/update_flights")
+		input("\nPress any key to continue ...")
+
+	def add_user(self) -> None: 
+		print("Adding user\n")
+		print("Please enter the user information:")
+		data= {
+				"first_name": input("\tFirst name: "),
+				"last_name": input("\tLast name: "),
+				"e_mail": input("\tE-mail: "),
+				"phone": "0",
+				"city": input("\tCity: ")
+			}
+		data_bytes = json.dumps(data).encode("utf-8")
+		response = requests.post(
+			url = self.endpoint + "/users",
+			data = data_bytes
+		)
+		response_code = response.json()["code"]
+		if response_code == -1:
+			print("User already exists...")
+			self.add_user()
+		elif response_code == 1:
+			print("User added!")
 			input("\nPress any key to continue ...")
-		elif action == UserMenu.DELETE_USER:
-			print("Deleting user\n")
-			print(self.cont_delete_user())
-			input("\nPress any key to continue ...")
-		elif action == UserMenu.UPDATE_USER:
-			print("Updating user\n")
-			print(self.cont_update_user())
-			input("\nPress any key to continue ...")
-		elif action == UserMenu.FIND_USER:
-			print("Finding user\n")
-			print(self.cont_find_user())
+		else:
+			print("Looks like our server are down...\nTry again later")
 			input("\nPress any key to continue ...")
 
+	def see_users(self) -> None:
+		print("Here are all the users in our data base:")	
+		response = requests.get(url = self.endpoint + "/users")
+		print(response.json())
+		input("\nPress any key to continue ...")
 
+	# helper methods
 	@staticmethod
 	def exit() -> None:
 		"""Exits the program terminating the script"""

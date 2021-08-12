@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
     <!-- styles -->
-    <link rel="stylesheet" href="src/view/web/style/master.css">
-    <link rel="stylesheet" href="src/view/web/style/about.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/master.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/about.css')}}">
     <!-- favicon bug temporary fix -->
     <link rel="shortcut icon" href="#">
     <title>G-Flight - About</title>
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <span class="logo">
-                <img src="src/view/web/media/logo.png" alt="logo">
+                <img src="{{ url_for('static', filename='media/logo.png')}}" alt="logo">
                 <p>G-Flight</p>
             </span>
             <div class="hamburguer">
@@ -28,9 +28,9 @@
                 <div class="line-3"></div>
             </div>
             <ul class="nav-links">
-                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="/">Home</a></li>
                 <li class="nav-link"><a href="#">About</a></li>
-                <li class="nav-link"><a href="index.html">Subscribe</a></li>
+                <li class="nav-link"><a href="/">Subscribe</a></li>
             </ul>
         </nav>
     </header>
@@ -42,21 +42,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus necessitatibus consequatur aut incidunt aperiam molestias officia quisquam commodi voluptatum? Illum quibusdam modi tenetur magnam ducimus voluptatibus natus perferendis, fuga unde!</p>    
             </div>
             <div class="background">
-                <img class="cloud" src="src/view/web/media/cloud-1.png" alt="cloud-1">
-                <img class="cloud" src="src/view/web/media/cloud-2.png" alt="cloud-2">
-                <img class="cloud" src="src/view/web/media/cloud-3.png" alt="cloud-3">
-                <img class="cloud" src="src/view/web/media/cloud-4.png" alt="cloud-4">
+                <img class="cloud" src="{{ url_for('static', filename='media/cloud-1.png')}}" alt="cloud-1">
+                <img class="cloud" src="{{ url_for('static', filename='media/cloud-2.png')}}" alt="cloud-2">
+                <img class="cloud" src="{{ url_for('static', filename='media/cloud-3.png')}}" alt="cloud-3">
+                <img class="cloud" src="{{ url_for('static', filename='media/cloud-4.png')}}" alt="cloud-4">
             </div>
         </main>
         <footer>
             <div class="social-medias">
-                <a href="mailto:guilhermevmanhaes@gmail.com?subject=Hey, I came from your website!"><img src="src/view/web/media/gmail.png" alt=""></a>
-                <a href="https://github.com/guilevieiram"><img src="src/view/web/media/github.png" alt=""></a>
-                <a href="https://linkedin.com/in/guilhermevieiram"><img src="src/view/web/media/linkedin.png" alt=""></a>
-                <a href="https://wa.me/5531998524668"><img src="src/view/web/media/whatsapp.png" alt=""></a>
-                <a href="https://twitter.com/guilevieiram"><img src="src/view/web/media/twitter.png" alt=""></a>
-                <a href="https://instagram.com/guilevieiram"><img src="src/view/web/media/instagram.png" alt=""></a>
-                <a href="https://www.facebook.com/profile.php?id=100004110576413"><img src="src/view/web/media/facebook.png" alt=""></a>
+                <a href="mailto:guilhermevmanhaes@gmail.com?subject=Hey, I came from your website!"><img src="{{ url_for('static', filename='media/gmail.png')}}" alt=""></a>
+                <a href="https://github.com/guilevieiram"><img src="{{ url_for('static', filename='media/github.png')}}" alt=""></a>
+                <a href="https://linkedin.com/in/guilhermevieiram"><img src="{{ url_for('static', filename='media/linkedin.png')}}" alt=""></a>
+                <a href="https://wa.me/5531998524668"><img src="{{ url_for('static', filename='media/whatsapp.png')}}" alt=""></a>
+                <a href="https://twitter.com/guilevieiram"><img src="{{ url_for('static', filename='media/twitter.png')}}" alt=""></a>
+                <a href="https://instagram.com/guilevieiram"><img src="{{ url_for('static', filename='media/instagram.png')}}" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100004110576413"><img src="{{ url_for('static', filename='media/facebook.png')}}" alt=""></a>
             </div>
             <p>© Guile Vieira 2021</p>
             <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
@@ -66,7 +66,7 @@
     <!-- sourcing scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="src/view/web/javascript/script.js"></script>
-    <script src="src/view/web/javascript/about.js"></script>
+    <script src="{{ url_for('static', filename='javascript/script.js')}}"></script>
+    <script src="{{ url_for('static', filename='javascript/about.js')}}"></script>
 </body>
 </html>
