@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import os
 import sys
+import psycopg2
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
@@ -62,6 +63,111 @@ class DataBase(ABC):
 			a list o key_value pairs containing the desired attributes to be changed
 		"""
 		pass
+
+
+class PostgresqlDataBase(DataBase):
+	"""Implementation for a database using postgresql."""
+
+	def __init__(self, db_name: str) -> None:
+		"""Initializes the data base with the given db name."""
+		self.name: str = db_name
+		self.configurations = {
+        'user': 'klqyvsofizsjcb',
+        'password': 'b6ef78f91f8e3be4f5861c490efe52d99d6c1c1cb3c472839a90bf73db9704a7',
+        'host': 'ec2-54-157-100-65.compute-1.amazonaws.com',
+        'port': 5432,
+        'database': 'd8pld4q9k569uv'
+        }
+		self.connection: psycopg2.connect = self.connect()
+
+	def connect(self) -> psycopg2.connect:
+		connection = psycopg2.connect(
+            database=self.configurations['database'],
+            user=self.configurations['user'],
+            password=self.configurations['password'],
+            host=self.configurations['host'],
+            port=self.configurations['port']
+        )
+		connection.commit()
+		return connection
+
+	def get_columns(self, table) -> list[str]:
+		"""Gets the columns from a given table"""
+		cursor = self.connection.cursor()
+		sql = f"SELECT column_name FROM information_schema.columns WHERE table_name = '{table}'"
+		cursor.execute(sql)
+		column_names = cursor.fetchall()
+		return [name for name, in column_names]
+
+	def load_table(self, table_name: str) -> None:
+		"""Loads a table to be used on the data base. Not needed on this implementation"""
+		pass
+
+	def create_table_from_template(self, new_table_name: str, parent_table_name: str) -> None:
+		"""creates a new table on the data base, by copying an existing table"""
+		cursor = self.connection.cursor()
+		sql = f"CREATE TABLE {new_table_name} AS SELECT * FROM {parent_table_name}"
+		cursor.execute(sql)
+		self.connection.commit()
+
+	def add_data(self, table: str, data: list[dict]) -> None:
+		"""
+		Adds several rows of data in a given table
+		The data is given in the form of a list of dictionaies.
+		Each dictionary shoul have all the columns as keys with the desired values as values.
+		"""
+		cursor = self.connection.cursor()
+
+		for point in data:
+			keys = ', '.join([f"{key}" for key, value in point.items()])
+			values = ', '.join([f"'{value}'" for key, value in point.items()])
+			sql = f"INSERT INTO {table} ({keys}) VALUES ({values})"
+			cursor.execute(sql)
+			self.connection.commit()
+			
+
+	def get_data(self, table: str, key_value: Optional[dict[str, Any]] = None) -> list[dict]:
+		"""
+		Retrieves a list of data points as a list of dictionaries from a given table.
+		Each dictionary has the table column names as keys.
+		key_value is an optional value containing one attribute for the wanted data (as a filter).
+		If no key_value is passed, all the data is retrieved.
+		"""
+		table_columns = self.get_columns(table=table)
+		cursor = self.connection.cursor()
+		sql = f"SELECT * FROM {table}"
+
+		if not key_value is None:
+			key, value = list(key_value.items())[0]
+			sql += f"WHERE {key} = '{value}'"
+
+		cursor.execute(sql)
+		data: List[tuple] = cursor.fetchall()
+
+		return [{
+			key: value for key, value in zip(table_columns, data_point) if key != "id"
+		} for data_point in data
+		]
+
+	def delete_data(self, table: str, key: int) -> None:
+		"""Deletes a row of data in a given table given a key/id for that instance."""
+		cursor = self.connection.cursor()
+		sql = f"DELETE FROM {table} WHERE id = {key}"
+		cursor.execute(sql)
+		self.connection.commit()
+
+	def update_data(self, table: str, key: int, key_values: list[dict[str, Any]]) -> None:
+		"""
+		Updates a row of data in a given table given a key/id and a key_values:
+			a list o key_value pairs containing the desired attributes to be changed
+		"""
+		cursor = self.connection.cursor()
+		key_value_tuples = [list(key_value.items())[0] for key_value in key_values]
+		changes_list = [f"{key} = '{value}'" for key, value in key_value_tuples]
+		sql = f"UPDATE {table} SET {','.join(changes_list)} WHERE id={key}"
+		cursor.execute(sql)
+		self.connection.commit()
+
 
 # Data base implementations		
 class CSVDB(DataBase):
