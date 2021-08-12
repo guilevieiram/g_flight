@@ -74,7 +74,7 @@ class FlaskUserInterface(UserInterface):
 class TerminalUserInterface(UserInterface):
 	"""Simple terminal user interface"""
 
-	def __init__(self, backend_endpoint: str) -> None:
+	def __init__(self, port: int, backend_endpoint: str) -> None:
 		self.endpoint: str = backend_endpoint
 
 	def start(self) -> None:

@@ -82,21 +82,12 @@ class FlightModel(ABC):
 		"""
 		pass
 
-
-# Model implementation
-class DummyFlightModel(FlightModel):
-	"""Dummy implementation on the flight model for debuging other parts of the program."""
-
-	def __init__(self, data_base: DataBase) -> None:
+	@abstractmethod
+	def close_connection(self) -> None:
+		"""Closes the model connection with its data base and terminates processes"""
 		pass
 
-	def check_cheap_prices(self, from_city: str) -> list[Flight]:
-		print("checking for cheap prices")
-		return [Flight(_id=1, price=12313), Flight(_id=2, price=0.3)]
-
-	def update_flight_prices(self, from_city: str) -> None:
-		print("Data base updated with better prices")
-
+# Model implementation
 
 class TequilaFlightModel(FlightModel):
 	"""
@@ -213,6 +204,10 @@ class TequilaFlightModel(FlightModel):
 				) for point in data
 		] 
 
+	def close_connection(self) -> None:
+		"""Closes the model connection with its data base and terminates processes"""
+		self.data_base.close()
+
 	@staticmethod
 	def table_name(city_name: str) -> str:
 		return city_name.replace(" ", "").lower()
@@ -250,7 +245,7 @@ class TequilaFlightApi:
 				)
 			return response.json()["data"][0]
 		except Exception as e:
-			print("Error while searching flights:",e)
+			print("Error while searching flights:", e)
 
 	def get_IATA_code(self, city_name: str) -> str:
 		"""Returns the IATA code for a given city name. If no code is found returns 'XXX'. """

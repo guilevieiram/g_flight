@@ -1469,3 +1469,23 @@ This flight has 2 stops at GRU, MAD
 -------------------------------------------------------------------
 
 ------------------------------
+12/08/2021 - 16:24:33
+
+send_message
+
+
+-------------------------------------------------------------------
+Message to guilhermevmanhaes@gmail.com
+Subject: Flight Deal Alert!!!
+
+
+Hello Guilherme! We have found some good cheap flights that might interest you!
+
+Fly from Belo Horizonte-CNF to London-LHR leaving on 11/10/21 and returning on 18/10/21.
+For only 540 euros !
+
+This flight has 2 stops at SDU, GRU
+
+-------------------------------------------------------------------
+
+------------------------------

@@ -63,6 +63,11 @@ class Controller(ABC):
 		pass
 
 	@abstractmethod
+	def close_backend(self) -> None:
+		"""Closes the connection with the backend/ terminate services"""
+		pass
+
+	@abstractmethod
 	def contact_user(self, user: User, flights: list[Flight]) -> None:
 		"""Sends the message with flight information to the user via messager."""
 		pass
@@ -135,11 +140,29 @@ class FlaskAPIController(Controller):
 	
 	def load_ui(self) -> None:
 		"""Load the main ui screen via user_interface by lauching the API on the server"""
-		self.user_interface.start()
+		try:
+			self.user_interface.start()
+		except Exception as e:
+			print(e)
+		finally:
+			print("closing backend")
+			self.close_backend()
+
 
 	def load_backend(self) -> None:
 		"""Load the flask restful api to be accessed by the frontend"""
-		self.app.run(debug=True)
+		try:
+			self.app.run(debug=True)
+		except Exception as e:
+			print(e)
+		finally:
+			print("closing backend")
+			self.close_backend()
+
+	def close_backend(self) -> None:
+		"""Closes the connection with the backend/ terminate services"""
+		self.flight_model.close_connection()
+		self.user_model.close_connection()
 
 	def contact_user(self, user: User, flights: list[Flight]) -> None:
 		"""Sends the message with flight information to the user via messager."""

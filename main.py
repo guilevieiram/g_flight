@@ -55,9 +55,9 @@ def main(
 if __name__ == "__main__":
 	main(
 		controller=controller.FlaskAPIController,
-		user_interface=ui.FlaskUserInterface,
+		user_interface=ui.TerminalUserInterface,
 		messager=messager.TerminalMessager,
 		flight_model=flight_model.TequilaFlightModel,
 		user_model=user_model.TerminalUserModel,
-		data_base=db.CSVDB
+		data_base=db.PostgresqlDataBase
 		)

@@ -21,6 +21,11 @@ class DataBase(ABC):
 	def __init__(self, db_name: str) -> None:
 		"""Initializes the data base with the given db name."""
 		pass
+	
+	@abstractmethod
+	def close(self) -> None:
+		"""Closes connection with the data base"""
+		pass
 
 	@abstractmethod
 	def load_table(self, table_name: str) -> None:
@@ -91,13 +96,25 @@ class PostgresqlDataBase(DataBase):
 		connection.commit()
 		return connection
 
+	def close(self) -> None:
+		"""Closes connection with the data base"""
+		self.connection.close()
+
 	def get_columns(self, table) -> list[str]:
 		"""Gets the columns from a given table"""
 		cursor = self.connection.cursor()
 		sql = f"SELECT column_name FROM information_schema.columns WHERE table_name = '{table}'"
 		cursor.execute(sql)
-		column_names = cursor.fetchall()
+		column_names: List[tuple] = cursor.fetchall()
 		return [name for name, in column_names]
+
+	def get_tables_names(self) -> list[str]:
+		"""gets the names of all the tables available in the database"""
+		cursor = self.connection.cursor()
+		sql = f"SELECT table_name FROM information_schema.tables"
+		cursor.execute(sql)
+		table_names: List[tuple] = cursor.fetchall()
+		return [name for name, in table_names]
 
 	def load_table(self, table_name: str) -> None:
 		"""Loads a table to be used on the data base. Not needed on this implementation"""
@@ -133,6 +150,10 @@ class PostgresqlDataBase(DataBase):
 		key_value is an optional value containing one attribute for the wanted data (as a filter).
 		If no key_value is passed, all the data is retrieved.
 		"""
+		table_names = self.get_tables_names()
+		if not table in table_names:
+			raise KeyError("Table does not exists")
+
 		table_columns = self.get_columns(table=table)
 		cursor = self.connection.cursor()
 		sql = f"SELECT * FROM {table}"
@@ -145,7 +166,7 @@ class PostgresqlDataBase(DataBase):
 		data: List[tuple] = cursor.fetchall()
 
 		return [{
-			key: value for key, value in zip(table_columns, data_point) if key != "id"
+			key: value for key, value in zip(table_columns, data_point) 
 		} for data_point in data
 		]
 
@@ -183,6 +204,10 @@ class CSVDB(DataBase):
 		self.columns: dict[str, list[str]] = {}
 
 		self.load_all_tables()
+
+	def close(self) -> None:
+		"""Closes connection with the data base"""
+		pass
 
 	def load_table(self, table_name: str) -> None:
 		self.data[table_name] = pd.read_csv(f"{self.path}{table_name}.csv")
