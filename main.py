@@ -24,7 +24,9 @@ def main(
 
 
 	bot = controller(
+		port=5000,
 		user_interface=user_interface(
+			port=5500,
 			backend_endpoint="http://127.0.0.1:5000"
 		),
 		messager=messager(),

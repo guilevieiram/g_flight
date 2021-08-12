@@ -29,7 +29,8 @@ class Controller(ABC):
 	"""Controller abstract class to control the main flow of the aplication"""
 
 	@abstractmethod
-	def __init__(self,	
+	def __init__(self,
+		port: int,	
 		user_interface: ui.UserInterface,
 		messager: messager.Messager,
 		flight_model: flight_model.FlightModel,
@@ -75,6 +76,7 @@ class FlaskAPIController(Controller):
 	"""Implementation for the controller using a flask rest API."""
 	
 	def __init__(self,	
+		port: int,
 		user_interface: ui.UserInterface,
 		messager: messager.Messager,
 		flight_model: flight_model.FlightModel,
@@ -138,7 +140,7 @@ class FlaskAPIController(Controller):
 	def load_backend(self) -> None:
 		"""Load the flask restful api to be accessed by the frontend"""
 		self.app.run(debug=True)
-		
+
 	def contact_user(self, user: User, flights: list[Flight]) -> None:
 		"""Sends the message with flight information to the user via messager."""
 		message = f"\nHello {user.first_name}! We have found some good cheap flights that might interest you!\n"
