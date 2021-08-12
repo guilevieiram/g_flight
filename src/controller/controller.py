@@ -198,4 +198,24 @@ class FlaskAPIController(Controller):
 					return {'message': 'User already exists', 'code': -1}
 				else: 
 					return {'code': 1, **user_data}
+			def delete(self):
+				user_data = get_payload()
+				try:
+					user = user_model.find_user(attribute=user_data)
+				except KeyError:
+					return {'message': 'User not found in database', 'code': -1}
+				else:
+					user_model.delete_user(user=user)
+					return {'message': 'User deleted successfully', 'code': 1}
+
+			def put(self):
+				user_data = get_payload()
+				try:
+					user = user_model.find_user(attribute=user_data["user_data"])
+				except KeyError:
+					return {'message': 'User not found in database', 'code': -1}
+				else:
+					user_model.edit_user(user=user, attribute=user_data["new_user_data"])
+					return {'message': 'User updated successfully', 'code': 1}
+					
 		return _Users

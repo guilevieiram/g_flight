@@ -160,7 +160,7 @@ class PostgresqlDataBase(DataBase):
 
 		if not key_value is None:
 			key, value = list(key_value.items())[0]
-			sql += f"WHERE {key} = '{value}'"
+			sql += f" WHERE {key} = '{value}'"
 
 		cursor.execute(sql)
 		data: List[tuple] = cursor.fetchall()

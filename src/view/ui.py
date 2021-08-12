@@ -31,6 +31,8 @@ class UserMenu(Menu):
 	EXIT = 0
 	ADD_USER = auto()
 	SEE_USERS = auto()
+	DELETE_USER = auto()
+	UPDATE_USER = auto()
 
 	def name() -> str:
 		return "User menu"
@@ -130,16 +132,22 @@ class TerminalUserInterface(UserInterface):
 			self.add_user()
 		elif action == UserMenu.SEE_USERS:
 			self.see_users()
+		elif action == UserMenu.DELETE_USER:
+			self.delete_user()
+		elif action == UserMenu.UPDATE_USER:
+			self.update_user()
 
 	# user action methods
 	def send_cheapest_flights(self) -> None:
 		print("Sending out the best flights...\n")
 		requests.get(self.endpoint + "/send_flights")
+		print("Fights sent!")
 		input("\nPress any key to continue ...")
 
 	def update_flights(self) -> None:
 		print("Updating flight prices...\n")
 		requests.get(self.endpoint + "/update_flights")
+		print("Flight prices updated!")
 		input("\nPress any key to continue ...")
 
 	def add_user(self) -> None: 
@@ -174,11 +182,75 @@ class TerminalUserInterface(UserInterface):
 		print(response.json())
 		input("\nPress any key to continue ...")
 
+	def delete_user(self) -> None: 
+		print("Deleting user\n")
+		print("Please enter the user email:")
+		data= {
+				"e_mail": input("\tE-mail: "),
+			}
+		data_bytes = json.dumps(data).encode("utf-8")
+		response = requests.delete(
+			url = self.endpoint + "/users",
+			data = data_bytes
+		)
+		response_code = response.json()["code"]
+		if response_code == -1:
+			print("User not found in the database...")
+			self.delete_user()
+		elif response_code == 1:
+			print("User deleted!")
+			input("\nPress any key to continue ...")
+		else:
+			print("Looks like our server are down...\nTry again later")
+			input("\nPress any key to continue ...")
+
+	def update_user(self) -> None: 
+		print("Updating user\n")
+		print("Please enter the user email:")
+		user_data = {
+			"e_mail": input("\tE-mail: ")
+		}
+
+		attribute = self.get_atribute()
+		new_value = input("Enter the new value: ")
+		new_user_data = {
+			attribute: new_value
+		}
+
+		data = {
+			"user_data": user_data,
+			"new_user_data": new_user_data
+		}
+		data_bytes = json.dumps(data).encode("utf-8")
+		response = requests.put(
+			url = self.endpoint + "/users",
+			data = data_bytes
+		)
+		response_code = response.json()["code"]
+		if response_code == -1:
+			print("User not found in the database...")
+			self.update_user()
+		elif response_code == 1:
+			print("User atribute changed!")
+			input("\nPress any key to continue ...")
+		else:
+			print("Looks like our server are down...\nTry again later")
+			input("\nPress any key to continue ...")
+
 	# helper methods
 	@staticmethod
 	def exit() -> None:
 		"""Exits the program terminating the script"""
 		exit()
+
+	@staticmethod
+	def get_atribute() -> bool:
+		possible_attributes = ["e_mail", "first_name", "last_name", "phone", "city"]
+		attribute: str = input(f"Choose one atribute from:\n{', '.join(possible_attributes)}:  ")
+		if not attribute in possible_attributes:
+			self.get_atribute()
+		else: 
+			return attribute
 
 	@staticmethod
 	def to_title_case(string_snake_case: str) -> str:
