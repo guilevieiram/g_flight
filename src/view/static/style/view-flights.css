@@ -16,7 +16,7 @@ main {
 
 .flights-panel {
     background: linear-gradient(to bottom right, rgb(0,0,0,0.26), rgb(0,0,0,0.86));
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(12px); 
     height: 80vh;
     width: 80vw;
     margin:auto;
@@ -29,7 +29,7 @@ main {
 
 .search-panel {
     background: linear-gradient(to bottom right, rgb(94,94,94,0.86), rgb(251,251,251,0.25));
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(12px); 
     border-radius: 2rem;
     height: 100%;
     width: 30%;
@@ -79,7 +79,7 @@ main {
 
 .subscribe-panel {
     background-color: rgb(49, 49, 49);
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(12px); 
     border-radius: 2rem;
     width: 80%;
     height: auto;
