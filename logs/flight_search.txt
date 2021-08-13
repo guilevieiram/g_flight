@@ -80379,3 +80379,540 @@ search_flights
     "utc_departure": "2021-10-11T20:10:00.000Z"
 }
 ------------------------------
+13/08/2021 - 15:38:29
+
+search_flights
+
+{
+    "id": "25c322f54a490000647a548e_0|22f525c34a5700007d54a597_0",
+    "flyFrom": "CDG",
+    "flyTo": "LGW",
+    "cityFrom": "Paris",
+    "cityCodeFrom": "PAR",
+    "cityTo": "London",
+    "cityCodeTo": "LON",
+    "countryFrom": {
+        "code": "FR",
+        "name": "France"
+    },
+    "countryTo": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 14,
+    "quality": 107.999895,
+    "distance": 308.04,
+    "duration": {
+        "departure": 3900,
+        "return": 4200,
+        "total": 8100
+    },
+    "price": 66,
+    "conversion": {
+        "EUR": 66
+    },
+    "bags_price": {
+        "1": 41.6
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 3
+    },
+    "routes": [
+        [
+            "CDG",
+            "LGW"
+        ],
+        [
+            "LGW",
+            "CDG"
+        ]
+    ],
+    "airlines": [
+        "VY"
+    ],
+    "route": [
+        {
+            "id": "25c322f54a490000647a548e_0",
+            "combination_id": "25c322f54a490000647a548e",
+            "flyFrom": "CDG",
+            "flyTo": "LGW",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "VY",
+            "flight_no": 8770,
+            "operating_carrier": "VY",
+            "operating_flight_no": "8770",
+            "fare_basis": "DP165400",
+            "fare_category": "M",
+            "fare_classes": "D",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T00:42:21.000Z",
+            "refresh_timestamp": "2021-08-12T00:42:21.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-01-25T07:00:00.000Z",
+            "utc_arrival": "2022-01-25T07:00:00.000Z",
+            "local_departure": "2022-01-25T06:55:00.000Z",
+            "utc_departure": "2022-01-25T05:55:00.000Z"
+        },
+        {
+            "id": "22f525c34a5700007d54a597_0",
+            "combination_id": "22f525c34a5700007d54a597",
+            "flyFrom": "LGW",
+            "flyTo": "CDG",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "VY",
+            "flight_no": 8773,
+            "operating_carrier": "VY",
+            "operating_flight_no": "8773",
+            "fare_basis": "DP165400",
+            "fare_category": "M",
+            "fare_classes": "D",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T21:32:33.000Z",
+            "refresh_timestamp": "2021-08-11T21:32:33.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-08T23:45:00.000Z",
+            "utc_arrival": "2022-02-08T22:45:00.000Z",
+            "local_departure": "2022-02-08T21:35:00.000Z",
+            "utc_departure": "2022-02-08T21:35:00.000Z"
+        }
+    ],
+    "booking_token": "CFryhCd2h3ZI39Ql2-eOHbynk-mvJs-LzGnhstxyh-5xGksbb78q-6GvIHVJoLRshN05L1CtPo6GBMHMdz4lhSLQ4DwD4anojJuMv0OJQW4S3vk05UOdkrz7eJkYQsL_NO9N0_X2XoeEfqln_iOizLEFjdJCWSja4bIiMq4L5c-VSbvdi1AY9yXU2oO1dIi7u9lXBNkx20_UajHMzkOjQjlVTaS40CeBi2hzena8_NKSaWaEhTldU5dvSXM1P0HiJpQIAYhk72X5F_mYIJRncDDafLwJT4WsmMwsKc68wpu2cQYAZpbJmo5_jNcM8d0d07L3_TuGK_gv6cBC1xdJ3QDF1EImGMaEQ4ZkkbZdbD39ayXTsJxU9nSCtfQs-Wsv0p5tynDVDHDL3_tL8VsTqQj6XJeu3OFhZCG_VwbXOTDmJ9qJEIwvfLQ-7Xx82uIT2dApD9CmVp7-nfJA-1BWLpHAro4iCej45S3XIsFpgVNpJBZkfB6rY8xFsey25fHxUf-lhFThi1vJ_rSgYEGpPglzgxS8yDpTejiH7uv2qJyM=",
+    "deep_link": "https://www.kiwi.com/deep?from=CDG&to=LGW&flightsId=25c322f54a490000647a548e_0%7C22f525c34a5700007d54a597_0&price=66&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CFryhCd2h3ZI39Ql2-eOHbynk-mvJs-LzGnhstxyh-5xGksbb78q-6GvIHVJoLRshN05L1CtPo6GBMHMdz4lhSLQ4DwD4anojJuMv0OJQW4S3vk05UOdkrz7eJkYQsL_NO9N0_X2XoeEfqln_iOizLEFjdJCWSja4bIiMq4L5c-VSbvdi1AY9yXU2oO1dIi7u9lXBNkx20_UajHMzkOjQjlVTaS40CeBi2hzena8_NKSaWaEhTldU5dvSXM1P0HiJpQIAYhk72X5F_mYIJRncDDafLwJT4WsmMwsKc68wpu2cQYAZpbJmo5_jNcM8d0d07L3_TuGK_gv6cBC1xdJ3QDF1EImGMaEQ4ZkkbZdbD39ayXTsJxU9nSCtfQs-Wsv0p5tynDVDHDL3_tL8VsTqQj6XJeu3OFhZCG_VwbXOTDmJ9qJEIwvfLQ-7Xx82uIT2dApD9CmVp7-nfJA-1BWLpHAro4iCej45S3XIsFpgVNpJBZkfB6rY8xFsey25fHxUf-lhFThi1vJ_rSgYEGpPglzgxS8yDpTejiH7uv2qJyM=",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2022-01-25T07:00:00.000Z",
+    "utc_arrival": "2022-01-25T07:00:00.000Z",
+    "local_departure": "2022-01-25T06:55:00.000Z",
+    "utc_departure": "2022-01-25T05:55:00.000Z"
+}
+------------------------------
+13/08/2021 - 15:38:36
+
+search_flights
+
+{
+    "id": "25c3005349ad49c28252ff06_0|25c3005349ad49c28252ff06_1|25c3005349ad49c28252ff06_2|25c3005349ad49c28252ff06_3",
+    "flyFrom": "CDG",
+    "flyTo": "GRU",
+    "cityFrom": "Paris",
+    "cityCodeFrom": "PAR",
+    "cityTo": "S\u00e3o Paulo",
+    "cityCodeTo": "SAO",
+    "countryFrom": {
+        "code": "FR",
+        "name": "France"
+    },
+    "countryTo": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 20,
+    "quality": 687.3327,
+    "distance": 9414.64,
+    "duration": {
+        "departure": 50400,
+        "return": 52800,
+        "total": 103200
+    },
+    "price": 434,
+    "conversion": {
+        "EUR": 434
+    },
+    "bags_price": {
+        "1": 254.85,
+        "2": 736.85
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 8,
+        "hand_width": 23,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CDG",
+            "GRU"
+        ],
+        [
+            "GRU",
+            "CDG"
+        ]
+    ],
+    "airlines": [
+        "LX"
+    ],
+    "route": [
+        {
+            "id": "25c3005349ad49c28252ff06_0",
+            "combination_id": "25c3005349ad49c28252ff06",
+            "flyFrom": "CDG",
+            "flyTo": "ZRH",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "Z\u00fcrich",
+            "cityCodeTo": "ZRH",
+            "airline": "LX",
+            "flight_no": 645,
+            "operating_carrier": "LX",
+            "operating_flight_no": "645",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T15:57:45.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-22T21:45:00.000Z",
+            "utc_arrival": "2021-08-22T19:45:00.000Z",
+            "local_departure": "2021-08-22T20:30:00.000Z",
+            "utc_departure": "2021-08-22T18:30:00.000Z"
+        },
+        {
+            "id": "25c3005349ad49c28252ff06_1",
+            "combination_id": "25c3005349ad49c28252ff06",
+            "flyFrom": "ZRH",
+            "flyTo": "GRU",
+            "cityFrom": "Z\u00fcrich",
+            "cityCodeFrom": "ZRH",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LX",
+            "flight_no": 92,
+            "operating_carrier": "LX",
+            "operating_flight_no": "92",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T15:57:45.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-23T05:30:00.000Z",
+            "utc_arrival": "2021-08-23T08:30:00.000Z",
+            "local_departure": "2021-08-22T22:40:00.000Z",
+            "utc_departure": "2021-08-22T20:40:00.000Z"
+        },
+        {
+            "id": "25c3005349ad49c28252ff06_2",
+            "combination_id": "25c3005349ad49c28252ff06",
+            "flyFrom": "GRU",
+            "flyTo": "ZRH",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Z\u00fcrich",
+            "cityCodeTo": "ZRH",
+            "airline": "LX",
+            "flight_no": 93,
+            "operating_carrier": "LX",
+            "operating_flight_no": "93",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T15:57:45.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-13T10:30:00.000Z",
+            "utc_arrival": "2021-09-13T08:30:00.000Z",
+            "local_departure": "2021-09-12T18:10:00.000Z",
+            "utc_departure": "2021-09-12T21:10:00.000Z"
+        },
+        {
+            "id": "25c3005349ad49c28252ff06_3",
+            "combination_id": "25c3005349ad49c28252ff06",
+            "flyFrom": "ZRH",
+            "flyTo": "CDG",
+            "cityFrom": "Z\u00fcrich",
+            "cityCodeFrom": "ZRH",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "LX",
+            "flight_no": 638,
+            "operating_carrier": "LX",
+            "operating_flight_no": "638",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T15:57:45.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-13T13:50:00.000Z",
+            "utc_arrival": "2021-09-13T11:50:00.000Z",
+            "local_departure": "2021-09-13T12:30:00.000Z",
+            "utc_departure": "2021-09-13T10:30:00.000Z"
+        }
+    ],
+    "booking_token": "C0a-c1RPV_r9g-JCu3St3nxQ_YHwbQQ4QyugObTz7CreJHBql_0jjweWWueyzPBuZ3EJWlhxA-MgsqA3RO4MJvMQidrqgUpv-PwOlPIzq5omYTC0mH4UJm0NI3SaSilSCBT6kli_o5NOqc_UCcKV1GHunZ1yy9bMKEzYUo3S1zWAEsyfv9tHCSg24rnc7mAqTOG9N4jdJRGk9V8pgJ5-NhOHZw7H5T6Hsd4iFt5NDgdqabcrSA-US9EBAdUPStf-muHKX9oIe44pEAO_owm0dabSuLecClIYOtvgXFilEQISpCtWr9_Sk0s_cTa8Jy0LT2O5FjuJTMJWFMAfPIl_J_FeUMO_ajzLc0F-biGfvtNnN--vQgz6s-K2I0cu2TozxJTxPdV9DFu1qb0583_h4Q-cKK57VqQXZCMf3gyiVGudEzbRjjvwHdRSHsffEO5urmMVDcC1lT5etAool_rYRlvfYVB8xz5VlIHOvGrs1wxZHLjA315qfwRmEJPSX9NOlnaUyfQg-nvPW6tNyuX7nNg==",
+    "deep_link": "https://www.kiwi.com/deep?from=CDG&to=GRU&flightsId=25c3005349ad49c28252ff06_0%7C25c3005349ad49c28252ff06_1%7C25c3005349ad49c28252ff06_2%7C25c3005349ad49c28252ff06_3&price=434&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C0a-c1RPV_r9g-JCu3St3nxQ_YHwbQQ4QyugObTz7CreJHBql_0jjweWWueyzPBuZ3EJWlhxA-MgsqA3RO4MJvMQidrqgUpv-PwOlPIzq5omYTC0mH4UJm0NI3SaSilSCBT6kli_o5NOqc_UCcKV1GHunZ1yy9bMKEzYUo3S1zWAEsyfv9tHCSg24rnc7mAqTOG9N4jdJRGk9V8pgJ5-NhOHZw7H5T6Hsd4iFt5NDgdqabcrSA-US9EBAdUPStf-muHKX9oIe44pEAO_owm0dabSuLecClIYOtvgXFilEQISpCtWr9_Sk0s_cTa8Jy0LT2O5FjuJTMJWFMAfPIl_J_FeUMO_ajzLc0F-biGfvtNnN--vQgz6s-K2I0cu2TozxJTxPdV9DFu1qb0583_h4Q-cKK57VqQXZCMf3gyiVGudEzbRjjvwHdRSHsffEO5urmMVDcC1lT5etAool_rYRlvfYVB8xz5VlIHOvGrs1wxZHLjA315qfwRmEJPSX9NOlnaUyfQg-nvPW6tNyuX7nNg==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-08-23T05:30:00.000Z",
+    "utc_arrival": "2021-08-23T08:30:00.000Z",
+    "local_departure": "2021-08-22T20:30:00.000Z",
+    "utc_departure": "2021-08-22T18:30:00.000Z"
+}
+------------------------------
+13/08/2021 - 15:38:43
+
+search_flights
+
+{
+    "id": "25c3097b49d849e71556aecd_0|25c3097b49d849e71556aecd_1|25c3097b49d849e71556aecd_2|25c3097b49d849e71556aecd_3",
+    "flyFrom": "CDG",
+    "flyTo": "HND",
+    "cityFrom": "Paris",
+    "cityCodeFrom": "PAR",
+    "cityTo": "Tokyo",
+    "cityCodeTo": "TYO",
+    "countryFrom": {
+        "code": "FR",
+        "name": "France"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 14,
+    "quality": 949.332415,
+    "distance": 9717.86,
+    "duration": {
+        "departure": 90000,
+        "return": 64500,
+        "total": 154500
+    },
+    "price": 582,
+    "conversion": {
+        "EUR": 582
+    },
+    "bags_price": {
+        "1": 0
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 8,
+        "hand_width": 23,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CDG",
+            "HND"
+        ],
+        [
+            "HND",
+            "CDG"
+        ]
+    ],
+    "airlines": [
+        "TK"
+    ],
+    "route": [
+        {
+            "id": "25c3097b49d849e71556aecd_0",
+            "combination_id": "25c3097b49d849e71556aecd",
+            "flyFrom": "CDG",
+            "flyTo": "IST",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "Istanbul",
+            "cityCodeTo": "IST",
+            "airline": "TK",
+            "flight_no": 1822,
+            "operating_carrier": "TK",
+            "operating_flight_no": "1822",
+            "fare_basis": "WN3XPC",
+            "fare_category": "M",
+            "fare_classes": "W",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:25:18.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-04T15:50:00.000Z",
+            "utc_arrival": "2021-10-04T12:50:00.000Z",
+            "local_departure": "2021-10-04T11:20:00.000Z",
+            "utc_departure": "2021-10-04T09:20:00.000Z"
+        },
+        {
+            "id": "25c3097b49d849e71556aecd_1",
+            "combination_id": "25c3097b49d849e71556aecd",
+            "flyFrom": "IST",
+            "flyTo": "HND",
+            "cityFrom": "Istanbul",
+            "cityCodeFrom": "IST",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "TK",
+            "flight_no": 198,
+            "operating_carrier": "TK",
+            "operating_flight_no": "198",
+            "fare_basis": "WN3XPC",
+            "fare_category": "M",
+            "fare_classes": "W",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:25:18.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-05T19:20:00.000Z",
+            "utc_arrival": "2021-10-05T10:20:00.000Z",
+            "local_departure": "2021-10-05T01:40:00.000Z",
+            "utc_departure": "2021-10-04T22:40:00.000Z"
+        },
+        {
+            "id": "25c3097b49d849e71556aecd_2",
+            "combination_id": "25c3097b49d849e71556aecd",
+            "flyFrom": "HND",
+            "flyTo": "IST",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Istanbul",
+            "cityCodeTo": "IST",
+            "airline": "TK",
+            "flight_no": 199,
+            "operating_carrier": "TK",
+            "operating_flight_no": "199",
+            "fare_basis": "WN3XPC",
+            "fare_category": "M",
+            "fare_classes": "W",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:25:18.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T05:20:00.000Z",
+            "utc_arrival": "2021-10-20T02:20:00.000Z",
+            "local_departure": "2021-10-19T22:50:00.000Z",
+            "utc_departure": "2021-10-19T13:50:00.000Z"
+        },
+        {
+            "id": "25c3097b49d849e71556aecd_3",
+            "combination_id": "25c3097b49d849e71556aecd",
+            "flyFrom": "IST",
+            "flyTo": "CDG",
+            "cityFrom": "Istanbul",
+            "cityCodeFrom": "IST",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "TK",
+            "flight_no": 1821,
+            "operating_carrier": "TK",
+            "operating_flight_no": "1821",
+            "fare_basis": "WN3XPC",
+            "fare_category": "M",
+            "fare_classes": "W",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:25:18.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T09:45:00.000Z",
+            "utc_arrival": "2021-10-20T07:45:00.000Z",
+            "local_departure": "2021-10-20T07:05:00.000Z",
+            "utc_departure": "2021-10-20T04:05:00.000Z"
+        }
+    ],
+    "booking_token": "Cy5r8zDW0tuLYr8t04SN159gxTRMpnhRkXRgE_foorIZBG_SseNq5jHYJvIMuiuWvjpz3d2BUhmvwOpJiSBR3806CADsxQFQzNkNmKiy_lqUA_2JcXSHzW5to3QHltIc5lro8jfkxUwrp0HBkBVHCN3zAq-S59IKWXnTwM8XKcCU2VoFAR4X4KWWd9J5xeZIV7QrGqv6dvCHgI42vG65AqdK-51XNVClr17By8SDKjgjdea2v1PjNYZS6IU8Fr-4iQfaZMgY99w1CqehrkJvFREQTX1kDgRcz4MVoQhLssthaK81t9ZVdoxO_-3KVGJUYS4rf9-_4HeVbPbsHCj2ldaK54BwOiBJteMSMSDfIcZNDKqr3YiEaCQnSXofBdLM57mW8lXw9viZPVqR_GssderTXEw0nWVZOueNwhSECuj_F1oDguZFcP-iy59k6f4iBq1DqrDKUNtWrxEWj5jg9oPDOoQAK9bhXVd6oeJlDE8uuP_nbRcw2XUqrLycTOqFnbvEnjQ-n54PAMFFgnXyfyni69la31JGOQOCzfh5GETw=",
+    "deep_link": "https://www.kiwi.com/deep?from=CDG&to=HND&flightsId=25c3097b49d849e71556aecd_0%7C25c3097b49d849e71556aecd_1%7C25c3097b49d849e71556aecd_2%7C25c3097b49d849e71556aecd_3&price=582&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=Cy5r8zDW0tuLYr8t04SN159gxTRMpnhRkXRgE_foorIZBG_SseNq5jHYJvIMuiuWvjpz3d2BUhmvwOpJiSBR3806CADsxQFQzNkNmKiy_lqUA_2JcXSHzW5to3QHltIc5lro8jfkxUwrp0HBkBVHCN3zAq-S59IKWXnTwM8XKcCU2VoFAR4X4KWWd9J5xeZIV7QrGqv6dvCHgI42vG65AqdK-51XNVClr17By8SDKjgjdea2v1PjNYZS6IU8Fr-4iQfaZMgY99w1CqehrkJvFREQTX1kDgRcz4MVoQhLssthaK81t9ZVdoxO_-3KVGJUYS4rf9-_4HeVbPbsHCj2ldaK54BwOiBJteMSMSDfIcZNDKqr3YiEaCQnSXofBdLM57mW8lXw9viZPVqR_GssderTXEw0nWVZOueNwhSECuj_F1oDguZFcP-iy59k6f4iBq1DqrDKUNtWrxEWj5jg9oPDOoQAK9bhXVd6oeJlDE8uuP_nbRcw2XUqrLycTOqFnbvEnjQ-n54PAMFFgnXyfyni69la31JGOQOCzfh5GETw=",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-10-05T19:20:00.000Z",
+    "utc_arrival": "2021-10-05T10:20:00.000Z",
+    "local_departure": "2021-10-04T11:20:00.000Z",
+    "utc_departure": "2021-10-04T09:20:00.000Z"
+}
+------------------------------

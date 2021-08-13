@@ -10,6 +10,16 @@ function animateClouds(){
     });
 }
 
+function animatePage( ) {
+    let panel = document.querySelector('.flights-panel')
+
+    gsap.to(panel , {
+        opacity: 1, 
+        duration: 1.5, 
+        y: 0
+    })
+}
+
 // Functions to help fill table
 function getFlagsMapping () {
     let mapping = {};
@@ -105,6 +115,7 @@ const countriesMapping = getCountriesMapping();
 
 function fillTable(cityName) {
     let rowsContainer = document.querySelector('.content-rows');
+    let loader = document.querySelector('.loader')
     rowsContainer.innerHTML = '';
     getFlights(cityName).then (flightData => {
         flightData.forEach((flight) => {
@@ -119,17 +130,26 @@ function fillTable(cityName) {
                 </div>
             `
         });
+        gsap.set(loader, {
+            display: 'none'
+        })
     });       
 }
 
 
 function addListeners() {
     let searchButton = document.querySelector('.search-button')
+    let loader = document.querySelector('.loader')
     searchButton.addEventListener('click', () => {
         console.log('searching')
         let cityName = document.querySelector('#leave-from').value;
         if(cityName == ''){window.alert('Please enter a city name.')}
-        else{fillTable(cityName);}
+        else{
+            gsap.set(loader, {
+                display: 'block'
+            })
+            fillTable(cityName);
+        }
     });
 
     let subscribeButton = document.querySelector('.subscribe-button')
@@ -140,3 +160,4 @@ function addListeners() {
 
 addListeners();
 animateClouds();
+animatePage();

@@ -88,13 +88,14 @@ main {
     justify-content: space-around;
     align-items: center;
 }
+
 .subscribe-panel * {
     margin: 0.5rem 2rem;
 }
 
 .subscribe-panel p {
     margin-top: 1rem;
-    color: white
+    color: white;
 }
 
 .subscribe-panel button {
@@ -105,7 +106,7 @@ main {
 .view-panel {
     height: 80%;
     width: 60%;
-    margin: 5rem 6rem;
+    margin: auto;
     padding: 1rem;
     border-radius: 2rem;
     background-color: rgba(29, 29, 29, 0.562);
@@ -114,12 +115,14 @@ main {
     align-items: center;
     justify-content: start;
     color: white;
+    position: relative;
     /* not sure about how this looks */
     overflow-y:auto; 
 }
 
 .view-panel div{
-    width: 100%;
+    width: 90%;
+    max-width: 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,12 +132,13 @@ main {
     border-style: hidden;
     background-color: rgb(192, 192, 192);
     width: 80%;
+    max-width: 35rem;
     height: 1px;
     margin-bottom: 2rem;
 }
+
 .header-row p{
     font-size: 1.2rem;
-    padding: 0 20%;
 }
 
 .content-rows {
@@ -143,14 +147,98 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 0 20%;
 }
 
 .content-row {
     width: 100%;
-    margin: auto;
 }
 .content-row img {
     height: 1rem;
     margin-right: 1rem;
+}
+
+
+.loader {
+    display: none;
+    transform: scale(0,0);
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #11acdd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* for setting animation */
+.flights-panel {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+
+
+@media only screen and (max-width: 786px) {
+
+    .flights-panel {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .search-panel{
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .search-panel h1 {
+        font-size: 1.2rem;
+    }
+    .search-panel p {
+        font-size: 1rem;
+    }
+    .search {
+        height: 8rem;
+    }
+    .search button {
+        height: 2rem;
+        width: 5rem;
+        font-size: 1.1rem;
+    }
+    .search input {
+        font-size: 1rem;
+        height: 1.4rem;
+    }
+    .view-panel {
+        width: 100%;
+        height: 100%;
+        margin: 5% 0;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .subscribe-panel {
+        width: 100%;
+        align-items: center;
+    }
 }
