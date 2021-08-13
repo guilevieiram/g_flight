@@ -1,0 +1,156 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.background {
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(75, 75, 197), rgb(11, 11, 54));
+    bottom: 0;
+}
+.cloud {
+    transform: translateY(20vh);
+}
+
+
+.flights-panel {
+    background: linear-gradient(to bottom right, rgb(0,0,0,0.26), rgb(0,0,0,0.86));
+    backdrop-filter: blur(5px); 
+    height: 80vh;
+    width: 80vw;
+    margin:auto;
+    margin-top: 12vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.search-panel {
+    background: linear-gradient(to bottom right, rgb(94,94,94,0.86), rgb(251,251,251,0.25));
+    backdrop-filter: blur(5px); 
+    border-radius: 2rem;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.search-panel div, h1 {
+    margin: auto 2rem;
+}
+.search-panel h1 {
+    font-size: 2.5rem;
+}
+.search {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.search * {
+    margin: auto 2rem;
+    
+}
+.search p {
+    font-size: 1.2rem;
+    color: white;
+}
+.search input {
+    font-size: 1rem;
+    width: 80%;
+}
+.search button {
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.4rem;
+    color: #11acdd;
+    background-color: rgb(49, 49, 49);
+}
+.search button:hover {
+    transform: scale(1.04, 1.04);
+    background: rgb(73, 73, 73);
+}
+
+.subscribe-panel {
+    background-color: rgb(49, 49, 49);
+    backdrop-filter: blur(5px); 
+    border-radius: 2rem;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.subscribe-panel * {
+    margin: 0.5rem 2rem;
+}
+
+.subscribe-panel p {
+    margin-top: 1rem;
+    color: white
+}
+
+.subscribe-panel button {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.view-panel {
+    height: 80%;
+    width: 60%;
+    margin: 5rem 6rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(29, 29, 29, 0.562);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    /* not sure about how this looks */
+    overflow-y:auto; 
+}
+
+.view-panel div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+.view-panel hr {
+    border-style: hidden;
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    height: 1px;
+    margin-bottom: 2rem;
+}
+.header-row p{
+    font-size: 1.2rem;
+    padding: 0 20%;
+}
+
+.content-rows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.content-row {
+    width: 100%;
+    margin: auto;
+}
+.content-row img {
+    height: 1rem;
+    margin-right: 1rem;
+}

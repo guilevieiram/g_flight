@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
     <!-- styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style/master.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/about.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/view-flights.css')}}">
     <!-- favicon bug temporary fix -->
     <link rel="shortcut icon" href="#">
-    <title>G-Flight - About</title>
+    <title>G-Flight - View flights</title>
 </head>
 <body>
-    <header>
+    <header>        
         <nav>
             <span class="logo">
                 <img src="{{ url_for('static', filename='media/logo.png')}}" alt="logo">
@@ -30,17 +30,36 @@
             <ul class="nav-links">
                 <li class="nav-link"><a href="/">Home</a></li>
                 <li class="nav-link"><a href="/view-flights">Search Flights</a></li>
-                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="/about">About</a></li>
                 <li class="nav-link"><a href="/">Subscribe</a></li>
             </ul>
         </nav>
     </header>
     <div  class="pages-container">
         <main>
-            <div class="about-paragraph">
-                <h1>About this service</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, debitis voluptatum maxime dolore cum incidunt in labore ex minima unde, at voluptate repudiandae, asperiores magni eum. Expedita magnam fugiat cumque officia unde laborum perspiciatis, animi placeat eveniet similique, reprehenderit maiores. Voluptate cum vero, pariatur maxime blanditiis odit! Nihil, vitae veritatis?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus necessitatibus consequatur aut incidunt aperiam molestias officia quisquam commodi voluptatum? Illum quibusdam modi tenetur magnam ducimus voluptatibus natus perferendis, fuga unde!</p>    
+            <div class="flights-panel">
+                <div class="search-panel">
+                    <h1>Search for flight prices</h1>
+                    <div class="search">
+                        <p>Leave from:</p>
+                        <input type="text" name="leave-from" id="leave-from">
+                        <button class="search-button">Search</button>
+                    </div>
+
+                    <div class="subscribe-panel">
+                        <p>To recieve the best offers every week:</p>
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="view-panel">
+                    <div class="header-row">
+                        <p>To :</p>
+                        <p>Price (€) :</p>
+                    </div>
+                    <hr>
+                    <div class="content-rows"></div>
+
+                </div>
             </div>
             <div class="background">
                 <img class="cloud" src="{{ url_for('static', filename='media/cloud-1.png')}}" alt="cloud-1">
@@ -63,11 +82,10 @@
             <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         </footer>
     </div>
-    
-    <!-- sourcing scripts -->
+    <!-- Linking scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='javascript/script.js')}}"></script>
-    <script src="{{ url_for('static', filename='javascript/about.js')}}"></script>
+    <script src="{{ url_for('static', filename='javascript/view-flights.js')}}"></script>
 </body>
 </html>

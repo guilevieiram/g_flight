@@ -1,18 +1,9 @@
-from src.model.db import PostgresqlDataBase
-
+import requests
 if __name__ == "__main__":
-	db = PostgresqlDataBase(db_name='name')
-
-	data = [
-		{
-			'city': 'Belo Horizonte',
-			'price': 1000
-		},
-		{
-			'city': 'London',
-			'price': 1000
+	response = requests.post(url = "http://127.0.0.1:5000/current_flights", 
+		data = {
+			"city": "Belo Horizonte"
 		}
-	]
-	print(db.get_data('flights'))
-	db.create_table_from_template('bh', 'flights')
-	print(db.get_data('bh'))
+	)
+
+	print(response)

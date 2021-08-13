@@ -78056,3 +78056,2326 @@ search_flights
     "utc_departure": "2021-09-15T18:45:00.000Z"
 }
 ------------------------------
+13/08/2021 - 14:00:58
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:00:58
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:01:01
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:01:40
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:01:40
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:01:42
+
+search_flights
+
+None
+------------------------------
+13/08/2021 - 14:14:59
+
+search_flights
+
+{
+    "id": "21ca0e1e49df00004aaf9545_0|0e1e0f6449df0000920ed7d5_0|0e1e0f6449df0000920ed7d5_1|032d0a2249e700000968dbff_0|0a22005349e80000d3b0ba78_0|005321ca49e8000094ff81b6_0",
+    "flyFrom": "CNF",
+    "flyTo": "LHR",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "London",
+    "cityCodeTo": "LON",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 7,
+    "quality": 886.999125,
+    "distance": 8976.99,
+    "duration": {
+        "departure": 74400,
+        "return": 72300,
+        "total": 146700
+    },
+    "price": 537,
+    "conversion": {
+        "EUR": 537
+    },
+    "bags_price": {
+        "1": 138.49
+    },
+    "baglimit": {
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "LHR"
+        ],
+        [
+            "STN",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "LA",
+        "G3",
+        "FR"
+    ],
+    "route": [
+        {
+            "id": "21ca0e1e49df00004aaf9545_0",
+            "combination_id": "21ca0e1e49df00004aaf9545",
+            "flyFrom": "CNF",
+            "flyTo": "SDU",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "Rio de Janeiro",
+            "cityCodeTo": "RIO",
+            "airline": "LA",
+            "flight_no": 3226,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "GF0X0M1",
+            "fare_category": "M",
+            "fare_classes": "G",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T14:24:14.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-11T15:30:00.000Z",
+            "utc_arrival": "2021-10-11T18:30:00.000Z",
+            "local_departure": "2021-10-11T14:25:00.000Z",
+            "utc_departure": "2021-10-11T17:25:00.000Z"
+        },
+        {
+            "id": "0e1e0f6449df0000920ed7d5_0",
+            "combination_id": "0e1e0f6449df0000920ed7d5",
+            "flyFrom": "SDU",
+            "flyTo": "CGH",
+            "cityFrom": "Rio de Janeiro",
+            "cityCodeFrom": "RIO",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 3611,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "QLESLZ3E",
+            "fare_category": "M",
+            "fare_classes": "Q",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T10:34:10.000Z",
+            "refresh_timestamp": "2021-08-13T10:34:10.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "following_airport_change": true,
+            "local_arrival": "2021-10-11T18:55:00.000Z",
+            "utc_arrival": "2021-10-11T21:55:00.000Z",
+            "local_departure": "2021-10-11T17:50:00.000Z",
+            "utc_departure": "2021-10-11T20:50:00.000Z"
+        },
+        {
+            "id": "0e1e0f6449df0000920ed7d5_1",
+            "combination_id": "0e1e0f6449df0000920ed7d5",
+            "flyFrom": "GRU",
+            "flyTo": "LHR",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "LA",
+            "flight_no": 8084,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "QLESLZ3E",
+            "fare_category": "M",
+            "fare_classes": "Q",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T10:34:10.000Z",
+            "refresh_timestamp": "2021-08-13T10:34:10.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-12T15:05:00.000Z",
+            "utc_arrival": "2021-10-12T14:05:00.000Z",
+            "local_departure": "2021-10-11T23:50:00.000Z",
+            "utc_departure": "2021-10-12T02:50:00.000Z"
+        },
+        {
+            "id": "032d0a2249e700000968dbff_0",
+            "combination_id": "032d0a2249e700000968dbff",
+            "flyFrom": "STN",
+            "flyTo": "MAD",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Madrid",
+            "cityCodeTo": "MAD",
+            "airline": "FR",
+            "flight_no": 5998,
+            "operating_carrier": "FR",
+            "operating_flight_no": "5998",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T16:34:21.000Z",
+            "refresh_timestamp": "2021-08-13T16:34:21.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-19T21:35:00.000Z",
+            "utc_arrival": "2021-10-19T19:35:00.000Z",
+            "local_departure": "2021-10-19T18:15:00.000Z",
+            "utc_departure": "2021-10-19T17:15:00.000Z"
+        },
+        {
+            "id": "0a22005349e80000d3b0ba78_0",
+            "combination_id": "0a22005349e80000d3b0ba78",
+            "flyFrom": "MAD",
+            "flyTo": "GRU",
+            "cityFrom": "Madrid",
+            "cityCodeFrom": "MAD",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 713,
+            "operating_carrier": "LA",
+            "operating_flight_no": "713",
+            "fare_basis": "ALESLW0R",
+            "fare_category": "M",
+            "fare_classes": "A",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T12:39:35.000Z",
+            "refresh_timestamp": "2021-08-13T12:39:35.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T05:50:00.000Z",
+            "utc_arrival": "2021-10-20T08:50:00.000Z",
+            "local_departure": "2021-10-20T00:10:00.000Z",
+            "utc_departure": "2021-10-19T22:10:00.000Z"
+        },
+        {
+            "id": "005321ca49e8000094ff81b6_0",
+            "combination_id": "005321ca49e8000094ff81b6",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1320,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1320",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T08:51:14.000Z",
+            "refresh_timestamp": "2021-08-13T08:51:14.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T10:20:00.000Z",
+            "utc_arrival": "2021-10-20T13:20:00.000Z",
+            "local_departure": "2021-10-20T09:05:00.000Z",
+            "utc_departure": "2021-10-20T12:05:00.000Z"
+        }
+    ],
+    "booking_token": "CRENugphQjnaKpClK4ig9ZOtV3U34WCG2YNkzpL9JTSaoPkebt9ndsoAoUpoxmrNBFKnfim1PfVddirBinpsakQXEMeUWiw-T6PpdpRgZPDsZUL76WNhIxZvSf22K2ilbmTbXAEkAcIOlDJ26kcGhbnSgyXnoiVvMcys7cTjcsb-sGc85PwL_YNS9BUepvVvxtHsCSEGiimen7HOlYwYkf5Y0KtgZSOLda-5E5o686cNWg5C30szrsE8g0Vzb3oUAgNLz1VW-lWpa8mQec-1po3eD6QU7wSHl7RsysfuwyZlycx183VXPtinS7Ui3Qf96CCkZ1I0l6261v_1D6ZYW2acD-nsxAIYG_tDnZIW1r0Vb-nfiC6bmAmiT30eIli8aOOTpUMOdZRO4VT5QSso0t0rolNbaGFpYiORxbUT9ng1SktIDk_uV6057pYmbztaWTr2lmOsvMdQ88Ee8ZTG-Y8JL6ro5k6kP4dvkR4bcVM9ckz5bXqWJox7Ws9sFKbs83gA75HqoDYW5BsqTmRvNsUj4M_B1XI4QGAvugNcGNCfj-myylHqBRddEi9Q_nAtWwDNZm9ZhAl1sqqrA593G2sulgET1pohtmJ4XjoN2U4IadYz7ZPUwing0E6kv33A2z2b1XUma2dT4W1yp4oujeJMqhXIPQkf3WsF--s79kSeUgHGmdHdPmCRD_zubGdpAPwNgsbHCBS2weETwAx6Vkw==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=LHR&flightsId=21ca0e1e49df00004aaf9545_0%7C0e1e0f6449df0000920ed7d5_0%7C0e1e0f6449df0000920ed7d5_1%7C032d0a2249e700000968dbff_0%7C0a22005349e80000d3b0ba78_0%7C005321ca49e8000094ff81b6_0&price=537&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CRENugphQjnaKpClK4ig9ZOtV3U34WCG2YNkzpL9JTSaoPkebt9ndsoAoUpoxmrNBFKnfim1PfVddirBinpsakQXEMeUWiw-T6PpdpRgZPDsZUL76WNhIxZvSf22K2ilbmTbXAEkAcIOlDJ26kcGhbnSgyXnoiVvMcys7cTjcsb-sGc85PwL_YNS9BUepvVvxtHsCSEGiimen7HOlYwYkf5Y0KtgZSOLda-5E5o686cNWg5C30szrsE8g0Vzb3oUAgNLz1VW-lWpa8mQec-1po3eD6QU7wSHl7RsysfuwyZlycx183VXPtinS7Ui3Qf96CCkZ1I0l6261v_1D6ZYW2acD-nsxAIYG_tDnZIW1r0Vb-nfiC6bmAmiT30eIli8aOOTpUMOdZRO4VT5QSso0t0rolNbaGFpYiORxbUT9ng1SktIDk_uV6057pYmbztaWTr2lmOsvMdQ88Ee8ZTG-Y8JL6ro5k6kP4dvkR4bcVM9ckz5bXqWJox7Ws9sFKbs83gA75HqoDYW5BsqTmRvNsUj4M_B1XI4QGAvugNcGNCfj-myylHqBRddEi9Q_nAtWwDNZm9ZhAl1sqqrA593G2sulgET1pohtmJ4XjoN2U4IadYz7ZPUwing0E6kv33A2z2b1XUma2dT4W1yp4oujeJMqhXIPQkf3WsF--s79kSeUgHGmdHdPmCRD_zubGdpAPwNgsbHCBS2weETwAx6Vkw==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 5,
+    "has_airport_change": true,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-10-12T15:05:00.000Z",
+    "utc_arrival": "2021-10-12T14:05:00.000Z",
+    "local_departure": "2021-10-11T14:25:00.000Z",
+    "utc_departure": "2021-10-11T17:25:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:15:07
+
+search_flights
+
+{
+    "id": "21ca138d4a5300001b4b571e_0|138d21ca4a58000024265559_0",
+    "flyFrom": "CNF",
+    "flyTo": "CGH",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "S\u00e3o Paulo",
+    "cityCodeTo": "SAO",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 5,
+    "quality": 97.333225,
+    "distance": 524.34,
+    "duration": {
+        "departure": 4500,
+        "return": 4200,
+        "total": 8700
+    },
+    "price": 54,
+    "conversion": {
+        "EUR": 54
+    },
+    "bags_price": {
+        "1": 25.19,
+        "2": 67.21
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 25,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "CGH"
+        ],
+        [
+            "CGH",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "G3"
+    ],
+    "route": [
+        {
+            "id": "21ca138d4a5300001b4b571e_0",
+            "combination_id": "21ca138d4a5300001b4b571e",
+            "flyFrom": "CNF",
+            "flyTo": "CGH",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "G3",
+            "flight_no": 1305,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1305",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T12:08:30.000Z",
+            "refresh_timestamp": "2021-08-13T12:08:30.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-04T11:05:00.000Z",
+            "utc_arrival": "2022-02-04T14:05:00.000Z",
+            "local_departure": "2022-02-04T09:50:00.000Z",
+            "utc_departure": "2022-02-04T12:50:00.000Z"
+        },
+        {
+            "id": "138d21ca4a58000024265559_0",
+            "combination_id": "138d21ca4a58000024265559",
+            "flyFrom": "CGH",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1300,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1300",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T17:06:46.000Z",
+            "refresh_timestamp": "2021-08-12T17:06:46.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-09T08:25:00.000Z",
+            "utc_arrival": "2022-02-09T11:25:00.000Z",
+            "local_departure": "2022-02-09T07:15:00.000Z",
+            "utc_departure": "2022-02-09T10:15:00.000Z"
+        }
+    ],
+    "booking_token": "C9x6xd12Q1koSzoBFCkTlX_BinZls8P4X2sETmZUHqLpEa0Dpq5Fmy55GFm_P1tz0SaUL2JmFqBIps649b8x8hWRprQrxjhnnWWTi3GRU-HwFyji0zLwb2m5NpASNl4bQT_FCGhvWcLxAKpcY6fxeyMF44shDiF82xz4sY0wBaHIPaTMnwvxYo_n3vu6IjWXnOImmaY3NBwWRZkrxXjWOH7qXHcx4i6ch9K3UhMxOPlUZNPxez3YBHmfFtC8Km85NmRoJkvR9sJKRYwYZ8iFXqou3eSaavK2Jl-P7LKugbuaf5lN52NIby_NaeeZxFTaHeMhbEAEbTcjaKkesc6aOrzacSohUtIWrwzPflFSRDehXVbuz8KlQbN3gUwFaZFb-URU5Rq9ryeOPv0nkYNvN4bXIFsUQNy8GrU9zwMkUL3Rv_bxkt96-ih-mo7yWscBUknZXOmYG9Syy3WUObGRRVG1m7ngwY2X8B9SsiVBs7CTxhfe0YY28kuZh1A6wIvvWHc6C6aHizITpPswGq49qTA==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=CGH&flightsId=21ca138d4a5300001b4b571e_0%7C138d21ca4a58000024265559_0&price=54&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C9x6xd12Q1koSzoBFCkTlX_BinZls8P4X2sETmZUHqLpEa0Dpq5Fmy55GFm_P1tz0SaUL2JmFqBIps649b8x8hWRprQrxjhnnWWTi3GRU-HwFyji0zLwb2m5NpASNl4bQT_FCGhvWcLxAKpcY6fxeyMF44shDiF82xz4sY0wBaHIPaTMnwvxYo_n3vu6IjWXnOImmaY3NBwWRZkrxXjWOH7qXHcx4i6ch9K3UhMxOPlUZNPxez3YBHmfFtC8Km85NmRoJkvR9sJKRYwYZ8iFXqou3eSaavK2Jl-P7LKugbuaf5lN52NIby_NaeeZxFTaHeMhbEAEbTcjaKkesc6aOrzacSohUtIWrwzPflFSRDehXVbuz8KlQbN3gUwFaZFb-URU5Rq9ryeOPv0nkYNvN4bXIFsUQNy8GrU9zwMkUL3Rv_bxkt96-ih-mo7yWscBUknZXOmYG9Syy3WUObGRRVG1m7ngwY2X8B9SsiVBs7CTxhfe0YY28kuZh1A6wIvvWHc6C6aHizITpPswGq49qTA==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2022-02-04T11:05:00.000Z",
+    "utc_arrival": "2022-02-04T14:05:00.000Z",
+    "local_departure": "2022-02-04T09:50:00.000Z",
+    "utc_departure": "2022-02-04T12:50:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:15:15
+
+search_flights
+
+{
+    "id": "21ca25c349a449a96e860c38_0|21ca25c349a449a96e860c38_1|21ca25c349a449a96e860c38_2|21ca25c349a449a96e860c38_3|21ca25c349a449a96e860c38_4",
+    "flyFrom": "CNF",
+    "flyTo": "CDG",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "Paris",
+    "cityCodeTo": "PAR",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "FR",
+        "name": "France"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 3,
+    "quality": 1142.33202,
+    "distance": 8919.25,
+    "duration": {
+        "departure": 135300,
+        "return": 90300,
+        "total": 225600
+    },
+    "price": 617,
+    "conversion": {
+        "EUR": 617
+    },
+    "bags_price": {
+        "1": 160.19
+    },
+    "baglimit": {
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "CDG"
+        ],
+        [
+            "CDG",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "LA"
+    ],
+    "route": [
+        {
+            "id": "21ca25c349a449a96e860c38_0",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CNF",
+            "flyTo": "CWB",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "Curitiba",
+            "cityCodeTo": "CWB",
+            "airline": "LA",
+            "flight_no": 8480,
+            "operating_carrier": "AD",
+            "operating_flight_no": "4061",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-13T23:30:00.000Z",
+            "utc_arrival": "2021-08-14T02:30:00.000Z",
+            "local_departure": "2021-08-13T21:50:00.000Z",
+            "utc_departure": "2021-08-14T00:50:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_1",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CWB",
+            "flyTo": "GRU",
+            "cityFrom": "Curitiba",
+            "cityCodeFrom": "CWB",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 4794,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-14T19:05:00.000Z",
+            "utc_arrival": "2021-08-14T22:05:00.000Z",
+            "local_departure": "2021-08-14T17:55:00.000Z",
+            "utc_departure": "2021-08-14T20:55:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_2",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "GRU",
+            "flyTo": "CDG",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "LA",
+            "flight_no": 702,
+            "operating_carrier": "LA",
+            "operating_flight_no": "702",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-15T16:25:00.000Z",
+            "utc_arrival": "2021-08-15T14:25:00.000Z",
+            "local_departure": "2021-08-14T23:55:00.000Z",
+            "utc_departure": "2021-08-15T02:55:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_3",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CDG",
+            "flyTo": "GRU",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 701,
+            "operating_carrier": "LA",
+            "operating_flight_no": "701",
+            "fare_basis": "OLESLU0E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-19T05:15:00.000Z",
+            "utc_arrival": "2021-08-19T08:15:00.000Z",
+            "local_departure": "2021-08-18T22:40:00.000Z",
+            "utc_departure": "2021-08-18T20:40:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_4",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "LA",
+            "flight_no": 4631,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "OLESLU0E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-19T18:45:00.000Z",
+            "utc_arrival": "2021-08-19T21:45:00.000Z",
+            "local_departure": "2021-08-19T17:35:00.000Z",
+            "utc_departure": "2021-08-19T20:35:00.000Z"
+        }
+    ],
+    "booking_token": "CDOrIVjs7QERk38AyNjtMlWllCueYFJrAKFYa730I525YkJBk4TeYrbn6qUUAyF8K9L3I5sq1toyDSqC_c6YoDWGVrztzNX-rTMSrTv82J-_dwlaAiGUhV9fNyVDQ0aQsj7pl5wWn7ZJhZloNAVUic8pcHc2nM7Th8kMvAOIQAXjpUyuX09dFbSbOLz40tBQAdMlqVmVzA0WvoBqK322iQ5Wr5InaBARmEGT9ekE6fvCsdu8YWwCFm9xL3TDsg_Kkt5fwxo4o8vtG7N_DajdOL-4kmzuWnG7qMYIpTsLJvGyaI0FOOF5TzI7BVfQIvcdqOWVrXlBRQYFcLySkfTk8ULlfhwjW4vnSW_QNeje-ziKssRF3ZnmI7a2m7s5FnTsgGleQkXGHtVwEwAB3BiZ0Jg5uSSIUjN_Vvb_kj6jml_NddioqGBcLRRpKwSU_lRk5fYA3DMz7BhhRb39ejq-x5nYdySpUYlIVP4kg-8Vp7csvWhqeV3xTU2fcItDg5qkP-jo1F-P72sPSHZtmYW9EKN7aAGSq6oIe-XZabuhJ6Q-4uoPXdaiY4mpPDhnK6xKwjmgPKYAyP_EurCIGt4aFaA==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=CDG&flightsId=21ca25c349a449a96e860c38_0%7C21ca25c349a449a96e860c38_1%7C21ca25c349a449a96e860c38_2%7C21ca25c349a449a96e860c38_3%7C21ca25c349a449a96e860c38_4&price=617&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CDOrIVjs7QERk38AyNjtMlWllCueYFJrAKFYa730I525YkJBk4TeYrbn6qUUAyF8K9L3I5sq1toyDSqC_c6YoDWGVrztzNX-rTMSrTv82J-_dwlaAiGUhV9fNyVDQ0aQsj7pl5wWn7ZJhZloNAVUic8pcHc2nM7Th8kMvAOIQAXjpUyuX09dFbSbOLz40tBQAdMlqVmVzA0WvoBqK322iQ5Wr5InaBARmEGT9ekE6fvCsdu8YWwCFm9xL3TDsg_Kkt5fwxo4o8vtG7N_DajdOL-4kmzuWnG7qMYIpTsLJvGyaI0FOOF5TzI7BVfQIvcdqOWVrXlBRQYFcLySkfTk8ULlfhwjW4vnSW_QNeje-ziKssRF3ZnmI7a2m7s5FnTsgGleQkXGHtVwEwAB3BiZ0Jg5uSSIUjN_Vvb_kj6jml_NddioqGBcLRRpKwSU_lRk5fYA3DMz7BhhRb39ejq-x5nYdySpUYlIVP4kg-8Vp7csvWhqeV3xTU2fcItDg5qkP-jo1F-P72sPSHZtmYW9EKN7aAGSq6oIe-XZabuhJ6Q-4uoPXdaiY4mpPDhnK6xKwjmgPKYAyP_EurCIGt4aFaA==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-08-15T16:25:00.000Z",
+    "utc_arrival": "2021-08-15T14:25:00.000Z",
+    "local_departure": "2021-08-13T21:50:00.000Z",
+    "utc_departure": "2021-08-14T00:50:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:15:25
+
+search_flights
+
+{
+    "id": "21ca005349e60000452db707_0|0053209f49e749f2eb7f2234_0|0053209f49e749f2eb7f2234_1|0053209f49e749f2eb7f2234_2|0053209f49e749f2eb7f2234_3|005321ca49f300009a939de1_0",
+    "flyFrom": "CNF",
+    "flyTo": "NRT",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "Tokyo",
+    "cityCodeTo": "TYO",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 10,
+    "quality": 1511.66516,
+    "distance": 18191.45,
+    "duration": {
+        "departure": 127200,
+        "return": 133200,
+        "total": 260400
+    },
+    "price": 909,
+    "conversion": {
+        "EUR": 909
+    },
+    "bags_price": {
+        "1": 45.19
+    },
+    "baglimit": {
+        "hand_height": 37,
+        "hand_length": 50,
+        "hand_weight": 7,
+        "hand_width": 25,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "NRT"
+        ],
+        [
+            "NRT",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "G3",
+        "QR"
+    ],
+    "route": [
+        {
+            "id": "21ca005349e60000452db707_0",
+            "combination_id": "21ca005349e60000452db707",
+            "flyFrom": "CNF",
+            "flyTo": "GRU",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "G3",
+            "flight_no": 1357,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1357",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T15:12:39.000Z",
+            "refresh_timestamp": "2021-08-13T15:12:39.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-18T21:05:00.000Z",
+            "utc_arrival": "2021-10-19T00:05:00.000Z",
+            "local_departure": "2021-10-18T19:35:00.000Z",
+            "utc_departure": "2021-10-18T22:35:00.000Z"
+        },
+        {
+            "id": "0053209f49e749f2eb7f2234_0",
+            "combination_id": "0053209f49e749f2eb7f2234",
+            "flyFrom": "GRU",
+            "flyTo": "DOH",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Doha",
+            "cityCodeTo": "DOH",
+            "airline": "QR",
+            "flight_no": 774,
+            "operating_carrier": "QR",
+            "operating_flight_no": "774",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T06:56:44.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-19T23:00:00.000Z",
+            "utc_arrival": "2021-10-19T20:00:00.000Z",
+            "local_departure": "2021-10-19T02:40:00.000Z",
+            "utc_departure": "2021-10-19T05:40:00.000Z"
+        },
+        {
+            "id": "0053209f49e749f2eb7f2234_1",
+            "combination_id": "0053209f49e749f2eb7f2234",
+            "flyFrom": "DOH",
+            "flyTo": "NRT",
+            "cityFrom": "Doha",
+            "cityCodeFrom": "DOH",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "QR",
+            "flight_no": 806,
+            "operating_carrier": "QR",
+            "operating_flight_no": "806",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:44.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T18:55:00.000Z",
+            "utc_arrival": "2021-10-20T09:55:00.000Z",
+            "local_departure": "2021-10-20T02:30:00.000Z",
+            "utc_departure": "2021-10-19T23:30:00.000Z"
+        },
+        {
+            "id": "0053209f49e749f2eb7f2234_2",
+            "combination_id": "0053209f49e749f2eb7f2234",
+            "flyFrom": "NRT",
+            "flyTo": "DOH",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Doha",
+            "cityCodeTo": "DOH",
+            "airline": "QR",
+            "flight_no": 807,
+            "operating_carrier": "QR",
+            "operating_flight_no": "807",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:44.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-31T04:00:00.000Z",
+            "utc_arrival": "2021-10-31T01:00:00.000Z",
+            "local_departure": "2021-10-30T22:30:00.000Z",
+            "utc_departure": "2021-10-30T13:30:00.000Z"
+        },
+        {
+            "id": "0053209f49e749f2eb7f2234_3",
+            "combination_id": "0053209f49e749f2eb7f2234",
+            "flyFrom": "DOH",
+            "flyTo": "GRU",
+            "cityFrom": "Doha",
+            "cityCodeFrom": "DOH",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "QR",
+            "flight_no": 773,
+            "operating_carrier": "QR",
+            "operating_flight_no": "773",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:44.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-31T16:50:00.000Z",
+            "utc_arrival": "2021-10-31T19:50:00.000Z",
+            "local_departure": "2021-10-31T08:15:00.000Z",
+            "utc_departure": "2021-10-31T05:15:00.000Z"
+        },
+        {
+            "id": "005321ca49f300009a939de1_0",
+            "combination_id": "005321ca49f300009a939de1",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1326,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1326",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T03:04:39.000Z",
+            "refresh_timestamp": "2021-08-13T03:04:39.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-31T23:30:00.000Z",
+            "utc_arrival": "2021-11-01T02:30:00.000Z",
+            "local_departure": "2021-10-31T22:15:00.000Z",
+            "utc_departure": "2021-11-01T01:15:00.000Z"
+        }
+    ],
+    "booking_token": "Cx8PBfq8DKC4NuO0mGLBWZtMqlKAZDjNib2CcuyiHae4zwwe_ThQBQbkoLaz1CIufhqltlgYexbUHHfDEUj77UaUZmDQhy7RRtguAgC0iVVKY-mrvd2gbljeRuPH_3bB4LVh0BTsPOacBQRdsMSE10PGEHqtCQVBZ9N1zs_h9J70M86BwfhP4FtyDpmzdL-Ix5mHuKGKvAqaIlprGogIEKJw_avXLNTExgh_d-nZWC3cMtGdCoJBxy19ivp0AtpiWM_Z5gxPAbRWohzfMVOyW9Xs0fQwBDN0S9jc3BmHX9Kr4ZzBQE5P9kqjZrZUM19lNi3L8nLCFKAl6pMLcbRx5C6xXJDAlr8KvspmO08GHu29n_b3KVip5nkT5xlrhYIIIE-0C2_TDV_5DvE8HttB-36fO6A-7taXPdz7iglVcQBcxC4FUTigzGymKE1wu93IQX_mZeNiWtHl93DJ1NLz18Bijr2GQG4Zg8wLO-9RvWkX3lUGtEVI-s6wjr6ypywdiQVGUX9xm8jGOc-GLZiIeQEkijtgz96sJcyPlXgEGoN1GbbB63lOSc-V9ngnMJMolJSkOpwIQrhlJVpUTPYm1233_Bslg8xrsH-2ZVjtOikZSTs6W7LnKLhdkFfYgudzE",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=NRT&flightsId=21ca005349e60000452db707_0%7C0053209f49e749f2eb7f2234_0%7C0053209f49e749f2eb7f2234_1%7C0053209f49e749f2eb7f2234_2%7C0053209f49e749f2eb7f2234_3%7C005321ca49f300009a939de1_0&price=909&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=Cx8PBfq8DKC4NuO0mGLBWZtMqlKAZDjNib2CcuyiHae4zwwe_ThQBQbkoLaz1CIufhqltlgYexbUHHfDEUj77UaUZmDQhy7RRtguAgC0iVVKY-mrvd2gbljeRuPH_3bB4LVh0BTsPOacBQRdsMSE10PGEHqtCQVBZ9N1zs_h9J70M86BwfhP4FtyDpmzdL-Ix5mHuKGKvAqaIlprGogIEKJw_avXLNTExgh_d-nZWC3cMtGdCoJBxy19ivp0AtpiWM_Z5gxPAbRWohzfMVOyW9Xs0fQwBDN0S9jc3BmHX9Kr4ZzBQE5P9kqjZrZUM19lNi3L8nLCFKAl6pMLcbRx5C6xXJDAlr8KvspmO08GHu29n_b3KVip5nkT5xlrhYIIIE-0C2_TDV_5DvE8HttB-36fO6A-7taXPdz7iglVcQBcxC4FUTigzGymKE1wu93IQX_mZeNiWtHl93DJ1NLz18Bijr2GQG4Zg8wLO-9RvWkX3lUGtEVI-s6wjr6ypywdiQVGUX9xm8jGOc-GLZiIeQEkijtgz96sJcyPlXgEGoN1GbbB63lOSc-V9ngnMJMolJSkOpwIQrhlJVpUTPYm1233_Bslg8xrsH-2ZVjtOikZSTs6W7LnKLhdkFfYgudzE",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 3,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-10-20T18:55:00.000Z",
+    "utc_arrival": "2021-10-20T09:55:00.000Z",
+    "local_departure": "2021-10-18T19:35:00.000Z",
+    "utc_departure": "2021-10-18T22:35:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:16:30
+
+search_flights
+
+{
+    "id": "032d0a2249ce0000b7d267a4_0|0a22005349ce0000a832e544_0|00530f6449e30000716f5b4c_0|00530f6449e30000716f5b4c_1",
+    "flyFrom": "STN",
+    "flyTo": "GRU",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "S\u00e3o Paulo",
+    "cityCodeTo": "SAO",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 20,
+    "quality": 753.999335,
+    "distance": 9536.5,
+    "duration": {
+        "departure": 55500,
+        "return": 53400,
+        "total": 108900
+    },
+    "price": 488,
+    "conversion": {
+        "EUR": 488
+    },
+    "bags_price": {
+        "1": 306.58
+    },
+    "baglimit": {
+        "hand_height": 35,
+        "hand_length": 55,
+        "hand_weight": 8,
+        "hand_width": 20,
+        "hold_dimensions_sum": 148,
+        "hold_height": 50,
+        "hold_length": 70,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 6
+    },
+    "routes": [
+        [
+            "STN",
+            "GRU"
+        ],
+        [
+            "GRU",
+            "LHR"
+        ]
+    ],
+    "airlines": [
+        "FR",
+        "TP",
+        "UX"
+    ],
+    "route": [
+        {
+            "id": "032d0a2249ce0000b7d267a4_0",
+            "combination_id": "032d0a2249ce0000b7d267a4",
+            "flyFrom": "STN",
+            "flyTo": "MAD",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Madrid",
+            "cityCodeTo": "MAD",
+            "airline": "FR",
+            "flight_no": 5998,
+            "operating_carrier": "FR",
+            "operating_flight_no": "5998",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T16:04:13.000Z",
+            "refresh_timestamp": "2021-08-13T16:04:13.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-24T21:20:00.000Z",
+            "utc_arrival": "2021-09-24T19:20:00.000Z",
+            "local_departure": "2021-09-24T18:00:00.000Z",
+            "utc_departure": "2021-09-24T17:00:00.000Z"
+        },
+        {
+            "id": "0a22005349ce0000a832e544_0",
+            "combination_id": "0a22005349ce0000a832e544",
+            "flyFrom": "MAD",
+            "flyTo": "GRU",
+            "cityFrom": "Madrid",
+            "cityCodeFrom": "MAD",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "UX",
+            "flight_no": 57,
+            "operating_carrier": "UX",
+            "operating_flight_no": "57",
+            "fare_basis": "ZYYO8L",
+            "fare_category": "M",
+            "fare_classes": "Z",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T14:48:46.000Z",
+            "refresh_timestamp": "2021-08-13T14:48:46.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-25T05:25:00.000Z",
+            "utc_arrival": "2021-09-25T08:25:00.000Z",
+            "local_departure": "2021-09-24T23:45:00.000Z",
+            "utc_departure": "2021-09-24T21:45:00.000Z"
+        },
+        {
+            "id": "00530f6449e30000716f5b4c_0",
+            "combination_id": "00530f6449e30000716f5b4c",
+            "flyFrom": "GRU",
+            "flyTo": "LIS",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Lisbon",
+            "cityCodeTo": "LIS",
+            "airline": "TP",
+            "flight_no": 82,
+            "operating_carrier": "TP",
+            "operating_flight_no": "82",
+            "fare_basis": "EBRDSI9E",
+            "fare_category": "M",
+            "fare_classes": "E",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T13:32:25.000Z",
+            "refresh_timestamp": "2021-08-13T13:32:25.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-16T05:20:00.000Z",
+            "utc_arrival": "2021-10-16T04:20:00.000Z",
+            "local_departure": "2021-10-15T15:30:00.000Z",
+            "utc_departure": "2021-10-15T18:30:00.000Z"
+        },
+        {
+            "id": "00530f6449e30000716f5b4c_1",
+            "combination_id": "00530f6449e30000716f5b4c",
+            "flyFrom": "LIS",
+            "flyTo": "LHR",
+            "cityFrom": "Lisbon",
+            "cityCodeFrom": "LIS",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "TP",
+            "flight_no": 1356,
+            "operating_carrier": "TP",
+            "operating_flight_no": "1356",
+            "fare_basis": "EBRDSI9E",
+            "fare_category": "M",
+            "fare_classes": "E",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T13:32:25.000Z",
+            "refresh_timestamp": "2021-08-13T13:32:25.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-16T10:20:00.000Z",
+            "utc_arrival": "2021-10-16T09:20:00.000Z",
+            "local_departure": "2021-10-16T07:35:00.000Z",
+            "utc_departure": "2021-10-16T06:35:00.000Z"
+        }
+    ],
+    "booking_token": "CQU6wo3RdV5HCKIo5KD7SzcyN66cCwpWTXlDMauNtNddQ3hHTz6iuHr9aFxiPQmAPO_31UFUjjjUQb-trZk1o5YeNq1yRBjAE7zJI5G7CeN42PsVRL2Ynr7Vh7qjWnsW5Rq7samNRWpz3olb8rYTn522Vx-Z7_zNequu7y8lFkWXyBIzwQmQSNCvb7XNmVHmh8pxvORvWvjszUx1KYImv612lTXxVnO9fj8sKbghCFOrB88GLb3Fe6SkHUImMZVA22VjmGed3_6asrcVno0y6qJ9xVBrWYrUMSON4vep3RadjQAeEmM2n4Abr0cQzqTqKieziyojbBbfB9f3XrbXM5OfFpEEB4C93FTN-hvdP-pdnYdaFcUjW3EnXsMUMN_feEsioH8oG6scoD8XpBDBUiuJvVkFK1OjD_BAgdmC9ESR2h6yA2th5Fk06UrzCKmseGxaPzJ-o6MWST6a3J6x1ngC5EUZZgDvhhHghtOo2bfXtKpUubP4hN-YPB_hJdMpKpjRHVR3nAf1afbdcmuBHglx2wPTHpfUtTd2-r192VeofxW48BkCYsmL3pvJ2Nag8PegOivSjujCO4xgOwDANVEKeKbrzK-wQsWTz8G-ivM8REBR1nppjjto0FWsoCB-pNd4lcmArhKWwHaEmKZzfvw==",
+    "deep_link": "https://www.kiwi.com/deep?from=STN&to=GRU&flightsId=032d0a2249ce0000b7d267a4_0%7C0a22005349ce0000a832e544_0%7C00530f6449e30000716f5b4c_0%7C00530f6449e30000716f5b4c_1&price=488&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CQU6wo3RdV5HCKIo5KD7SzcyN66cCwpWTXlDMauNtNddQ3hHTz6iuHr9aFxiPQmAPO_31UFUjjjUQb-trZk1o5YeNq1yRBjAE7zJI5G7CeN42PsVRL2Ynr7Vh7qjWnsW5Rq7samNRWpz3olb8rYTn522Vx-Z7_zNequu7y8lFkWXyBIzwQmQSNCvb7XNmVHmh8pxvORvWvjszUx1KYImv612lTXxVnO9fj8sKbghCFOrB88GLb3Fe6SkHUImMZVA22VjmGed3_6asrcVno0y6qJ9xVBrWYrUMSON4vep3RadjQAeEmM2n4Abr0cQzqTqKieziyojbBbfB9f3XrbXM5OfFpEEB4C93FTN-hvdP-pdnYdaFcUjW3EnXsMUMN_feEsioH8oG6scoD8XpBDBUiuJvVkFK1OjD_BAgdmC9ESR2h6yA2th5Fk06UrzCKmseGxaPzJ-o6MWST6a3J6x1ngC5EUZZgDvhhHghtOo2bfXtKpUubP4hN-YPB_hJdMpKpjRHVR3nAf1afbdcmuBHglx2wPTHpfUtTd2-r192VeofxW48BkCYsmL3pvJ2Nag8PegOivSjujCO4xgOwDANVEKeKbrzK-wQsWTz8G-ivM8REBR1nppjjto0FWsoCB-pNd4lcmArhKWwHaEmKZzfvw==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 3,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-09-25T05:25:00.000Z",
+    "utc_arrival": "2021-09-25T08:25:00.000Z",
+    "local_departure": "2021-09-24T18:00:00.000Z",
+    "utc_departure": "2021-09-24T17:00:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:16:35
+
+search_flights
+
+{
+    "id": "22f525c34a5700007a39618e_0|25c322f54a590000766fdf13_0",
+    "flyFrom": "LGW",
+    "flyTo": "CDG",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Paris",
+    "cityCodeTo": "PAR",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "FR",
+        "name": "France"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 2,
+    "quality": 107.999895,
+    "distance": 308.04,
+    "duration": {
+        "departure": 4200,
+        "return": 3900,
+        "total": 8100
+    },
+    "price": 66,
+    "conversion": {
+        "EUR": 66
+    },
+    "bags_price": {
+        "1": 42.9
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 20,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 3
+    },
+    "routes": [
+        [
+            "LGW",
+            "CDG"
+        ],
+        [
+            "CDG",
+            "LGW"
+        ]
+    ],
+    "airlines": [
+        "VY"
+    ],
+    "route": [
+        {
+            "id": "22f525c34a5700007a39618e_0",
+            "combination_id": "22f525c34a5700007a39618e",
+            "flyFrom": "LGW",
+            "flyTo": "CDG",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "VY",
+            "flight_no": 8777,
+            "operating_carrier": "VY",
+            "operating_flight_no": "8777",
+            "fare_basis": "DP165400",
+            "fare_category": "M",
+            "fare_classes": "D",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T21:32:33.000Z",
+            "refresh_timestamp": "2021-08-11T21:32:33.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-08T20:00:00.000Z",
+            "utc_arrival": "2022-02-08T19:00:00.000Z",
+            "local_departure": "2022-02-08T17:50:00.000Z",
+            "utc_departure": "2022-02-08T17:50:00.000Z"
+        },
+        {
+            "id": "25c322f54a590000766fdf13_0",
+            "combination_id": "25c322f54a590000766fdf13",
+            "flyFrom": "CDG",
+            "flyTo": "LGW",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "VY",
+            "flight_no": 8770,
+            "operating_carrier": "VY",
+            "operating_flight_no": "8770",
+            "fare_basis": "DP165400",
+            "fare_category": "M",
+            "fare_classes": "D",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-11T20:10:47.000Z",
+            "refresh_timestamp": "2021-08-11T20:10:47.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-10T07:00:00.000Z",
+            "utc_arrival": "2022-02-10T07:00:00.000Z",
+            "local_departure": "2022-02-10T06:55:00.000Z",
+            "utc_departure": "2022-02-10T05:55:00.000Z"
+        }
+    ],
+    "booking_token": "CXxpuxSOOz31dIFJ1azChtQHYAnoX513fF07upHImPkTNgh9HZAylZhJEqRgz9w5sOyXWMnOwYW2ju7QGZyWPWbynlQF1G1DvLj1PQTqwn_aqeO5zoQE8X--XXlOgBOmLRAcNGcHIzShQM8--3PvMnJJpzDeWlP91BTF8090etLrlKw8vdADsaZcoV9xKOYTkVcghq2H3Urwncl80zA5HBHrvZeeqiSK0AsWDJAMtYoKpB-GGW2i7wAdNrBVPvVcEzpFrN-MTVPSqWXxCzSDYTfnsiwlZNPeY1tGs1j7IZeNWvsbiZU43drv4Dg_3wMWD8U9aO32PCHzlXx325bHbWl2rnRRRNaV_RgMK72Q2ayMcnzHAjWdQqgILN6u8uvExMHJDrKjOJXaH-HK64bmYltz4NnNLOCiP2yNk7JeEV4muIPhT11CGyfgWW0KJFn5VBhHoOHcmaPXGTR3uUPOibJRAlzzBgNzen7l6yIjSeyA_ic5UUcM9T07ORWczRTx8R_nLPzaegTIFPungMhaGdFClOUjDm3A1Ll8694vkIl8=",
+    "deep_link": "https://www.kiwi.com/deep?from=LGW&to=CDG&flightsId=22f525c34a5700007a39618e_0%7C25c322f54a590000766fdf13_0&price=66&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CXxpuxSOOz31dIFJ1azChtQHYAnoX513fF07upHImPkTNgh9HZAylZhJEqRgz9w5sOyXWMnOwYW2ju7QGZyWPWbynlQF1G1DvLj1PQTqwn_aqeO5zoQE8X--XXlOgBOmLRAcNGcHIzShQM8--3PvMnJJpzDeWlP91BTF8090etLrlKw8vdADsaZcoV9xKOYTkVcghq2H3Urwncl80zA5HBHrvZeeqiSK0AsWDJAMtYoKpB-GGW2i7wAdNrBVPvVcEzpFrN-MTVPSqWXxCzSDYTfnsiwlZNPeY1tGs1j7IZeNWvsbiZU43drv4Dg_3wMWD8U9aO32PCHzlXx325bHbWl2rnRRRNaV_RgMK72Q2ayMcnzHAjWdQqgILN6u8uvExMHJDrKjOJXaH-HK64bmYltz4NnNLOCiP2yNk7JeEV4muIPhT11CGyfgWW0KJFn5VBhHoOHcmaPXGTR3uUPOibJRAlzzBgNzen7l6yIjSeyA_ic5UUcM9T07ORWczRTx8R_nLPzaegTIFPungMhaGdFClOUjDm3A1Ll8694vkIl8=",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2022-02-08T20:00:00.000Z",
+    "utc_arrival": "2022-02-08T19:00:00.000Z",
+    "local_departure": "2022-02-08T17:50:00.000Z",
+    "utc_departure": "2022-02-08T17:50:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:16:42
+
+search_flights
+
+{
+    "id": "0f64097b49ba49c90b3d2973_0|0f64097b49ba49c90b3d2973_1|0f64097b49ba49c90b3d2973_2|0f64097b49ba49c90b3d2973_3",
+    "flyFrom": "LHR",
+    "flyTo": "HND",
+    "cityFrom": "London",
+    "cityCodeFrom": "LON",
+    "cityTo": "Tokyo",
+    "cityCodeTo": "TYO",
+    "countryFrom": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 14,
+    "quality": 1040.999035,
+    "distance": 9601.35,
+    "duration": {
+        "departure": 60000,
+        "return": 102900,
+        "total": 162900
+    },
+    "price": 655,
+    "conversion": {
+        "EUR": 655
+    },
+    "bags_price": {
+        "1": 65
+    },
+    "baglimit": {
+        "hand_height": 35,
+        "hand_length": 55,
+        "hand_weight": 8,
+        "hand_width": 25,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "LHR",
+            "HND"
+        ],
+        [
+            "HND",
+            "LHR"
+        ]
+    ],
+    "airlines": [
+        "AZ"
+    ],
+    "route": [
+        {
+            "id": "0f64097b49ba49c90b3d2973_0",
+            "combination_id": "0f64097b49ba49c90b3d2973",
+            "flyFrom": "LHR",
+            "flyTo": "FCO",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Rome",
+            "cityCodeTo": "ROM",
+            "airline": "AZ",
+            "flight_no": 203,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "203",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:10:08.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-04T15:25:00.000Z",
+            "utc_arrival": "2021-09-04T13:25:00.000Z",
+            "local_departure": "2021-09-04T11:55:00.000Z",
+            "utc_departure": "2021-09-04T10:55:00.000Z"
+        },
+        {
+            "id": "0f64097b49ba49c90b3d2973_1",
+            "combination_id": "0f64097b49ba49c90b3d2973",
+            "flyFrom": "FCO",
+            "flyTo": "HND",
+            "cityFrom": "Rome",
+            "cityCodeFrom": "ROM",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "AZ",
+            "flight_no": 792,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "792",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:10:08.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-05T12:35:00.000Z",
+            "utc_arrival": "2021-09-05T03:35:00.000Z",
+            "local_departure": "2021-09-04T17:10:00.000Z",
+            "utc_departure": "2021-09-04T15:10:00.000Z"
+        },
+        {
+            "id": "0f64097b49ba49c90b3d2973_2",
+            "combination_id": "0f64097b49ba49c90b3d2973",
+            "flyFrom": "HND",
+            "flyTo": "FCO",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Rome",
+            "cityCodeTo": "ROM",
+            "airline": "AZ",
+            "flight_no": 793,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "793",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:10:08.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-19T20:30:00.000Z",
+            "utc_arrival": "2021-09-19T18:30:00.000Z",
+            "local_departure": "2021-09-19T14:30:00.000Z",
+            "utc_departure": "2021-09-19T05:30:00.000Z"
+        },
+        {
+            "id": "0f64097b49ba49c90b3d2973_3",
+            "combination_id": "0f64097b49ba49c90b3d2973",
+            "flyFrom": "FCO",
+            "flyTo": "LHR",
+            "cityFrom": "Rome",
+            "cityCodeFrom": "ROM",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "AZ",
+            "flight_no": 202,
+            "operating_carrier": "AZ",
+            "operating_flight_no": "202",
+            "fare_basis": "LPRUE",
+            "fare_category": "M",
+            "fare_classes": "L",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T17:10:08.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-09-20T11:05:00.000Z",
+            "utc_arrival": "2021-09-20T10:05:00.000Z",
+            "local_departure": "2021-09-20T09:25:00.000Z",
+            "utc_departure": "2021-09-20T07:25:00.000Z"
+        }
+    ],
+    "booking_token": "CLE92N0S14rcG96N6_o5IT_CSziuL3fEmWPTVcID947gwvsaIYhs-NCCKHjRxJBGCV94Q6xRx270Aj3EdKfD6NxnYwcDYn0Z2qX7IToFZpIs6mpVUmYP_gEHhgBrmL8cMozS-NppMZtS9Xvk1XGDu_QJWa_YxWc_qfHKfTdFmXHCtfb_oZAfETkST_GSZI1bhg6XrdObYh2BrD_JMxM20Qxfq8zzWBUJlbssqkRzyG8ZkuFsrSTX05f6ZvPlmuOxVpJ1cBZcuvDHC-AhpI3J_AgX4pajwHujkhbRkmFrpNsv3hVdjNHdEFLG7Z2nmeUsrY1h0SphVKUdqhy_tghwVOLgOR_fdKuFeyyqoRpNFuDcu5M6BKrWEuUid6MDsiHPrOt5nZqKhIf3ZdBf1OhU3_H51g427iM1qtbGplfdqeOq3Bxse6pTV0XPkfEAjMNDRl-4gNb2T8fGYeiV88r9xqz1lmH5rRV78qcLUNMjT-daIBtHghyTFDG3hHsoqSYU8sJq3bZRMSmq35xvkYJJ0x-7bYvu5YCmhWmsh4QAttuv-avKBtOL6EpuiicoRPcBl",
+    "deep_link": "https://www.kiwi.com/deep?from=LHR&to=HND&flightsId=0f64097b49ba49c90b3d2973_0%7C0f64097b49ba49c90b3d2973_1%7C0f64097b49ba49c90b3d2973_2%7C0f64097b49ba49c90b3d2973_3&price=655&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CLE92N0S14rcG96N6_o5IT_CSziuL3fEmWPTVcID947gwvsaIYhs-NCCKHjRxJBGCV94Q6xRx270Aj3EdKfD6NxnYwcDYn0Z2qX7IToFZpIs6mpVUmYP_gEHhgBrmL8cMozS-NppMZtS9Xvk1XGDu_QJWa_YxWc_qfHKfTdFmXHCtfb_oZAfETkST_GSZI1bhg6XrdObYh2BrD_JMxM20Qxfq8zzWBUJlbssqkRzyG8ZkuFsrSTX05f6ZvPlmuOxVpJ1cBZcuvDHC-AhpI3J_AgX4pajwHujkhbRkmFrpNsv3hVdjNHdEFLG7Z2nmeUsrY1h0SphVKUdqhy_tghwVOLgOR_fdKuFeyyqoRpNFuDcu5M6BKrWEuUid6MDsiHPrOt5nZqKhIf3ZdBf1OhU3_H51g427iM1qtbGplfdqeOq3Bxse6pTV0XPkfEAjMNDRl-4gNb2T8fGYeiV88r9xqz1lmH5rRV78qcLUNMjT-daIBtHghyTFDG3hHsoqSYU8sJq3bZRMSmq35xvkYJJ0x-7bYvu5YCmhWmsh4QAttuv-avKBtOL6EpuiicoRPcBl",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-09-05T12:35:00.000Z",
+    "utc_arrival": "2021-09-05T03:35:00.000Z",
+    "local_departure": "2021-09-04T11:55:00.000Z",
+    "utc_departure": "2021-09-04T10:55:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:17:19
+
+search_flights
+
+{
+    "id": "21ca0e1e49df00004aaf9545_0|0e1e0f6449df0000920ed7d5_0|0e1e0f6449df0000920ed7d5_1|032d0a2249e700000968dbff_0|0a22005349e80000d3b0ba78_0|005321ca49e8000094ff81b6_0",
+    "flyFrom": "CNF",
+    "flyTo": "LHR",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "London",
+    "cityCodeTo": "LON",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "GB",
+        "name": "United Kingdom"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 7,
+    "quality": 886.999125,
+    "distance": 8976.99,
+    "duration": {
+        "departure": 74400,
+        "return": 72300,
+        "total": 146700
+    },
+    "price": 537,
+    "conversion": {
+        "EUR": 537
+    },
+    "bags_price": {
+        "1": 138.49
+    },
+    "baglimit": {
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 20,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "LHR"
+        ],
+        [
+            "STN",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "LA",
+        "FR",
+        "G3"
+    ],
+    "route": [
+        {
+            "id": "21ca0e1e49df00004aaf9545_0",
+            "combination_id": "21ca0e1e49df00004aaf9545",
+            "flyFrom": "CNF",
+            "flyTo": "SDU",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "Rio de Janeiro",
+            "cityCodeTo": "RIO",
+            "airline": "LA",
+            "flight_no": 3226,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "GF0X0M1",
+            "fare_category": "M",
+            "fare_classes": "G",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T14:24:14.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-11T15:30:00.000Z",
+            "utc_arrival": "2021-10-11T18:30:00.000Z",
+            "local_departure": "2021-10-11T14:25:00.000Z",
+            "utc_departure": "2021-10-11T17:25:00.000Z"
+        },
+        {
+            "id": "0e1e0f6449df0000920ed7d5_0",
+            "combination_id": "0e1e0f6449df0000920ed7d5",
+            "flyFrom": "SDU",
+            "flyTo": "CGH",
+            "cityFrom": "Rio de Janeiro",
+            "cityCodeFrom": "RIO",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 3611,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "QLESLZ3E",
+            "fare_category": "M",
+            "fare_classes": "Q",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T10:34:10.000Z",
+            "refresh_timestamp": "2021-08-13T10:34:10.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "following_airport_change": true,
+            "local_arrival": "2021-10-11T18:55:00.000Z",
+            "utc_arrival": "2021-10-11T21:55:00.000Z",
+            "local_departure": "2021-10-11T17:50:00.000Z",
+            "utc_departure": "2021-10-11T20:50:00.000Z"
+        },
+        {
+            "id": "0e1e0f6449df0000920ed7d5_1",
+            "combination_id": "0e1e0f6449df0000920ed7d5",
+            "flyFrom": "GRU",
+            "flyTo": "LHR",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "London",
+            "cityCodeTo": "LON",
+            "airline": "LA",
+            "flight_no": 8084,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "QLESLZ3E",
+            "fare_category": "M",
+            "fare_classes": "Q",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T10:34:10.000Z",
+            "refresh_timestamp": "2021-08-13T10:34:10.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-12T15:05:00.000Z",
+            "utc_arrival": "2021-10-12T14:05:00.000Z",
+            "local_departure": "2021-10-11T23:50:00.000Z",
+            "utc_departure": "2021-10-12T02:50:00.000Z"
+        },
+        {
+            "id": "032d0a2249e700000968dbff_0",
+            "combination_id": "032d0a2249e700000968dbff",
+            "flyFrom": "STN",
+            "flyTo": "MAD",
+            "cityFrom": "London",
+            "cityCodeFrom": "LON",
+            "cityTo": "Madrid",
+            "cityCodeTo": "MAD",
+            "airline": "FR",
+            "flight_no": 5998,
+            "operating_carrier": "FR",
+            "operating_flight_no": "5998",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T16:34:21.000Z",
+            "refresh_timestamp": "2021-08-13T16:34:21.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-19T21:35:00.000Z",
+            "utc_arrival": "2021-10-19T19:35:00.000Z",
+            "local_departure": "2021-10-19T18:15:00.000Z",
+            "utc_departure": "2021-10-19T17:15:00.000Z"
+        },
+        {
+            "id": "0a22005349e80000d3b0ba78_0",
+            "combination_id": "0a22005349e80000d3b0ba78",
+            "flyFrom": "MAD",
+            "flyTo": "GRU",
+            "cityFrom": "Madrid",
+            "cityCodeFrom": "MAD",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 713,
+            "operating_carrier": "LA",
+            "operating_flight_no": "713",
+            "fare_basis": "ALESLW0R",
+            "fare_category": "M",
+            "fare_classes": "A",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T12:39:35.000Z",
+            "refresh_timestamp": "2021-08-13T12:39:35.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T05:50:00.000Z",
+            "utc_arrival": "2021-10-20T08:50:00.000Z",
+            "local_departure": "2021-10-20T00:10:00.000Z",
+            "utc_departure": "2021-10-19T22:10:00.000Z"
+        },
+        {
+            "id": "005321ca49e8000094ff81b6_0",
+            "combination_id": "005321ca49e8000094ff81b6",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1320,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1320",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T17:15:25.000Z",
+            "refresh_timestamp": "2021-08-13T17:15:25.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T10:20:00.000Z",
+            "utc_arrival": "2021-10-20T13:20:00.000Z",
+            "local_departure": "2021-10-20T09:05:00.000Z",
+            "utc_departure": "2021-10-20T12:05:00.000Z"
+        }
+    ],
+    "booking_token": "CgZpjofdI9_67ifZI9ywriiWuHX1mWfo3nPR71byJUcSce3ts_B1CK6O9vc8ccJRLc6rVyAiQGc-1-pN1Dkgnwc1mfU1t8mKlqeTon-rnjnN_N72Mj35hqMMhHqEMCZMowYP0fQA8gyzCvhnzm9cVnPuxgMFsyy4CaaneLTtN0pcxl8PZo2w2U70LmbLi5Jey284sCgB2Qdknldl4s_FO2v5xYhSQC6kh51YXeS0BLNG5Pj7ZRReNDzc4IOEpmMkWZiFvkIUaJq7qidGz8TQBIfXhfvXSpVx68xNRTQHvES_C7JbsYqzoIL-9eycFnWu8-ZRTt6Dt2J_GwfMa3L9trS-QLSdFjcCODWA99MmlPduV-4jLIBxpKrX43MvGYBpmU9EtEtxzGmvkYd3_TwgImGnRTtAMQb4fpn0hN74c48OgWDGiBjWcaU9fVuQx_0M32AIxY-ldbudDwrkxqobWZnl4thogKPWTeqkhBSkOxkNMc-8Icr6fc9BkqPc6oWvo2S2S7ysAhRxqBgya6xi5S4hkDZfKj7YGau5h4yG8GB3fijhB7pvrmyjk4t6mPAmFu5xDFnleaL1xUR6OMG21oLqVp4saQMkeMHt2LUT63e7q3nV58dw4kS7jK3ZWBPZjZ_3brkHv_fHU72OfMo895RAE76M8loYz0cKUmg8h5Xd51Q45efLtCec1gZj8uo1ARnCBH97M3JAHE7Nt6u1y6Q==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=LHR&flightsId=21ca0e1e49df00004aaf9545_0%7C0e1e0f6449df0000920ed7d5_0%7C0e1e0f6449df0000920ed7d5_1%7C032d0a2249e700000968dbff_0%7C0a22005349e80000d3b0ba78_0%7C005321ca49e8000094ff81b6_0&price=537&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=CgZpjofdI9_67ifZI9ywriiWuHX1mWfo3nPR71byJUcSce3ts_B1CK6O9vc8ccJRLc6rVyAiQGc-1-pN1Dkgnwc1mfU1t8mKlqeTon-rnjnN_N72Mj35hqMMhHqEMCZMowYP0fQA8gyzCvhnzm9cVnPuxgMFsyy4CaaneLTtN0pcxl8PZo2w2U70LmbLi5Jey284sCgB2Qdknldl4s_FO2v5xYhSQC6kh51YXeS0BLNG5Pj7ZRReNDzc4IOEpmMkWZiFvkIUaJq7qidGz8TQBIfXhfvXSpVx68xNRTQHvES_C7JbsYqzoIL-9eycFnWu8-ZRTt6Dt2J_GwfMa3L9trS-QLSdFjcCODWA99MmlPduV-4jLIBxpKrX43MvGYBpmU9EtEtxzGmvkYd3_TwgImGnRTtAMQb4fpn0hN74c48OgWDGiBjWcaU9fVuQx_0M32AIxY-ldbudDwrkxqobWZnl4thogKPWTeqkhBSkOxkNMc-8Icr6fc9BkqPc6oWvo2S2S7ysAhRxqBgya6xi5S4hkDZfKj7YGau5h4yG8GB3fijhB7pvrmyjk4t6mPAmFu5xDFnleaL1xUR6OMG21oLqVp4saQMkeMHt2LUT63e7q3nV58dw4kS7jK3ZWBPZjZ_3brkHv_fHU72OfMo895RAE76M8loYz0cKUmg8h5Xd51Q45efLtCec1gZj8uo1ARnCBH97M3JAHE7Nt6u1y6Q==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 5,
+    "has_airport_change": true,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-10-12T15:05:00.000Z",
+    "utc_arrival": "2021-10-12T14:05:00.000Z",
+    "local_departure": "2021-10-11T14:25:00.000Z",
+    "utc_departure": "2021-10-11T17:25:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:17:25
+
+search_flights
+
+{
+    "id": "21ca138d4a520000325ad7e4_0|138d21ca4a5e0000ec6f93af_0",
+    "flyFrom": "CNF",
+    "flyTo": "CGH",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "S\u00e3o Paulo",
+    "cityCodeTo": "SAO",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 12,
+    "quality": 97.333225,
+    "distance": 524.34,
+    "duration": {
+        "departure": 4500,
+        "return": 4200,
+        "total": 8700
+    },
+    "price": 54,
+    "conversion": {
+        "EUR": 54
+    },
+    "bags_price": {
+        "1": 25.19,
+        "2": 67.21
+    },
+    "baglimit": {
+        "hand_height": 40,
+        "hand_length": 55,
+        "hand_weight": 10,
+        "hand_width": 25,
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "CGH"
+        ],
+        [
+            "CGH",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "G3"
+    ],
+    "route": [
+        {
+            "id": "21ca138d4a520000325ad7e4_0",
+            "combination_id": "21ca138d4a520000325ad7e4",
+            "flyFrom": "CNF",
+            "flyTo": "CGH",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "G3",
+            "flight_no": 1305,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1305",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T11:37:28.000Z",
+            "refresh_timestamp": "2021-08-12T11:37:28.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-03T11:05:00.000Z",
+            "utc_arrival": "2022-02-03T14:05:00.000Z",
+            "local_departure": "2022-02-03T09:50:00.000Z",
+            "utc_departure": "2022-02-03T12:50:00.000Z"
+        },
+        {
+            "id": "138d21ca4a5e0000ec6f93af_0",
+            "combination_id": "138d21ca4a5e0000ec6f93af",
+            "flyFrom": "CGH",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1300,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1300",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T22:35:50.000Z",
+            "refresh_timestamp": "2021-08-12T22:35:50.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2022-02-15T08:25:00.000Z",
+            "utc_arrival": "2022-02-15T11:25:00.000Z",
+            "local_departure": "2022-02-15T07:15:00.000Z",
+            "utc_departure": "2022-02-15T10:15:00.000Z"
+        }
+    ],
+    "booking_token": "C3YPMqndUkZ3V0Hv42Dovti1RCdbwAO7sklnyAHAXAMZc6GR3fu-gKPu8otqIIH578vlREirUHxf2xJ3e_vzv62VXmS01DPiPBBPQveGop4hnDDxzwpx5iHma6NlzyWB7h2x75mApi1MjVGWj682sD63yn23y27gufh8-FcP-WYQpMHgTxAfEvgpdHqwsSSArHrAMacd9i5RcRVhOR1eoye3xB2IJleE78u_jF_9lj1Z2u1BUk-Msxpl4kMzVzlp4yibmTe8EJBdR__1xXZ-RZ3FLji6vTf4D0VeWZcYRR1-bB3qYs2c6DGjHRbtLS-Ylb76xbZH2l-5xpSzkFDWlJ_6wbadauR8D_XzBBrCSB-cKHdVtZyqmDhz1QFEbCXeyd8UE4gc-VU4Ja9B6A1Bwje1Qsvyfx_7f-X8lyUFy1wSiXeyuoj_kjXDl5oAArjOnJKES4ZAriaVQcCCI9MAmi19YgI-LxYPjHbDGM8xlPpCfkBqL1_mdXqp472vz9GO1_siBjlCBPI_08rHyeLWXOw==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=CGH&flightsId=21ca138d4a520000325ad7e4_0%7C138d21ca4a5e0000ec6f93af_0&price=54&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C3YPMqndUkZ3V0Hv42Dovti1RCdbwAO7sklnyAHAXAMZc6GR3fu-gKPu8otqIIH578vlREirUHxf2xJ3e_vzv62VXmS01DPiPBBPQveGop4hnDDxzwpx5iHma6NlzyWB7h2x75mApi1MjVGWj682sD63yn23y27gufh8-FcP-WYQpMHgTxAfEvgpdHqwsSSArHrAMacd9i5RcRVhOR1eoye3xB2IJleE78u_jF_9lj1Z2u1BUk-Msxpl4kMzVzlp4yibmTe8EJBdR__1xXZ-RZ3FLji6vTf4D0VeWZcYRR1-bB3qYs2c6DGjHRbtLS-Ylb76xbZH2l-5xpSzkFDWlJ_6wbadauR8D_XzBBrCSB-cKHdVtZyqmDhz1QFEbCXeyd8UE4gc-VU4Ja9B6A1Bwje1Qsvyfx_7f-X8lyUFy1wSiXeyuoj_kjXDl5oAArjOnJKES4ZAriaVQcCCI9MAmi19YgI-LxYPjHbDGM8xlPpCfkBqL1_mdXqp472vz9GO1_siBjlCBPI_08rHyeLWXOw==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 2,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2022-02-03T11:05:00.000Z",
+    "utc_arrival": "2022-02-03T14:05:00.000Z",
+    "local_departure": "2022-02-03T09:50:00.000Z",
+    "utc_departure": "2022-02-03T12:50:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:17:38
+
+search_flights
+
+{
+    "id": "21ca25c349a449a96e860c38_0|21ca25c349a449a96e860c38_1|21ca25c349a449a96e860c38_2|21ca25c349a449a96e860c38_3|21ca25c349a449a96e860c38_4",
+    "flyFrom": "CNF",
+    "flyTo": "CDG",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "Paris",
+    "cityCodeTo": "PAR",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "FR",
+        "name": "France"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 3,
+    "quality": 1142.33202,
+    "distance": 8919.25,
+    "duration": {
+        "departure": 135300,
+        "return": 90300,
+        "total": 225600
+    },
+    "price": 617,
+    "conversion": {
+        "EUR": 617
+    },
+    "bags_price": {
+        "1": 160.19
+    },
+    "baglimit": {
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "CDG"
+        ],
+        [
+            "CDG",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "LA"
+    ],
+    "route": [
+        {
+            "id": "21ca25c349a449a96e860c38_0",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CNF",
+            "flyTo": "CWB",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "Curitiba",
+            "cityCodeTo": "CWB",
+            "airline": "LA",
+            "flight_no": 8480,
+            "operating_carrier": "AD",
+            "operating_flight_no": "4061",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-13T23:30:00.000Z",
+            "utc_arrival": "2021-08-14T02:30:00.000Z",
+            "local_departure": "2021-08-13T21:50:00.000Z",
+            "utc_departure": "2021-08-14T00:50:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_1",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CWB",
+            "flyTo": "GRU",
+            "cityFrom": "Curitiba",
+            "cityCodeFrom": "CWB",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 4794,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-14T19:05:00.000Z",
+            "utc_arrival": "2021-08-14T22:05:00.000Z",
+            "local_departure": "2021-08-14T17:55:00.000Z",
+            "utc_departure": "2021-08-14T20:55:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_2",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "GRU",
+            "flyTo": "CDG",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Paris",
+            "cityCodeTo": "PAR",
+            "airline": "LA",
+            "flight_no": 702,
+            "operating_carrier": "LA",
+            "operating_flight_no": "702",
+            "fare_basis": "OLESE40E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-15T16:25:00.000Z",
+            "utc_arrival": "2021-08-15T14:25:00.000Z",
+            "local_departure": "2021-08-14T23:55:00.000Z",
+            "utc_departure": "2021-08-15T02:55:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_3",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "CDG",
+            "flyTo": "GRU",
+            "cityFrom": "Paris",
+            "cityCodeFrom": "PAR",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 701,
+            "operating_carrier": "LA",
+            "operating_flight_no": "701",
+            "fare_basis": "OLESLU0E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-19T05:15:00.000Z",
+            "utc_arrival": "2021-08-19T08:15:00.000Z",
+            "local_departure": "2021-08-18T22:40:00.000Z",
+            "utc_departure": "2021-08-18T20:40:00.000Z"
+        },
+        {
+            "id": "21ca25c349a449a96e860c38_4",
+            "combination_id": "21ca25c349a449a96e860c38",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "LA",
+            "flight_no": 4631,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "OLESLU0E",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-12T20:29:46.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-08-19T18:45:00.000Z",
+            "utc_arrival": "2021-08-19T21:45:00.000Z",
+            "local_departure": "2021-08-19T17:35:00.000Z",
+            "utc_departure": "2021-08-19T20:35:00.000Z"
+        }
+    ],
+    "booking_token": "C6VneUYFrzANd20BwhSeCD7ULvxeZoncrQ5BjtHCL02z_8smHECmJeFuneX-veXP9Xck5UKKKAbDnDYNviAhMvnP51RhOWhZLy2obYWh4S-8Kkvo88nDEtR0zdDySdIc7R0JjE3Ci8zFHGFBQq6A6nRYidA8jRQvfP9rMJtXlMM_HM01AS9uTMjxJoYwBtBdKG57cSKw5khTH_4a2rga6vihtwNmM7KcgXAJoeC_mWwVT9WBYAAz5LyAaDixYLXMXnwiH0cVZZmH13Xg84Q8n4I-HsgdUEVk9ifGYs7SpxJCXjFY-j3xIC4Ik0VuUFBst9DAdsWMHhv9NUZGJIdrSMjw-ZlLdd5VOqcRRYVMq2_fqW13e9IAICC-CNmDHAsLn4-41zKkbwN1MsEFE928ezxtUBus00QBkOPwe9woiJ7ujHmZKJofBvx__d0CyolvW2oxpkDs9bikVSxlhbuOCy9qKmNT-5BaVqhkeP2BQNjsISjM1fP8xalPu8Odd53x7VTz0A7-blgAHXExUXwZURzqUJMgrayGszYyNpQJMZVk21d4H8KDyOmT5SDRvtjVtbZIMj8XFr5gcoNQd_nCPAg==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=CDG&flightsId=21ca25c349a449a96e860c38_0%7C21ca25c349a449a96e860c38_1%7C21ca25c349a449a96e860c38_2%7C21ca25c349a449a96e860c38_3%7C21ca25c349a449a96e860c38_4&price=617&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C6VneUYFrzANd20BwhSeCD7ULvxeZoncrQ5BjtHCL02z_8smHECmJeFuneX-veXP9Xck5UKKKAbDnDYNviAhMvnP51RhOWhZLy2obYWh4S-8Kkvo88nDEtR0zdDySdIc7R0JjE3Ci8zFHGFBQq6A6nRYidA8jRQvfP9rMJtXlMM_HM01AS9uTMjxJoYwBtBdKG57cSKw5khTH_4a2rga6vihtwNmM7KcgXAJoeC_mWwVT9WBYAAz5LyAaDixYLXMXnwiH0cVZZmH13Xg84Q8n4I-HsgdUEVk9ifGYs7SpxJCXjFY-j3xIC4Ik0VuUFBst9DAdsWMHhv9NUZGJIdrSMjw-ZlLdd5VOqcRRYVMq2_fqW13e9IAICC-CNmDHAsLn4-41zKkbwN1MsEFE928ezxtUBus00QBkOPwe9woiJ7ujHmZKJofBvx__d0CyolvW2oxpkDs9bikVSxlhbuOCy9qKmNT-5BaVqhkeP2BQNjsISjM1fP8xalPu8Odd53x7VTz0A7-blgAHXExUXwZURzqUJMgrayGszYyNpQJMZVk21d4H8KDyOmT5SDRvtjVtbZIMj8XFr5gcoNQd_nCPAg==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": true,
+    "pnr_count": 1,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": false,
+    "transfers": [],
+    "local_arrival": "2021-08-15T16:25:00.000Z",
+    "utc_arrival": "2021-08-15T14:25:00.000Z",
+    "local_departure": "2021-08-13T21:50:00.000Z",
+    "utc_departure": "2021-08-14T00:50:00.000Z"
+}
+------------------------------
+13/08/2021 - 14:17:45
+
+search_flights
+
+{
+    "id": "21ca005349df00000632c89f_0|0053209f49df49e776e5bf5e_0|0053209f49df49e776e5bf5e_1|0053209f49df49e776e5bf5e_2|0053209f49df49e776e5bf5e_3|005321ca49e80000939245af_0",
+    "flyFrom": "CNF",
+    "flyTo": "NRT",
+    "cityFrom": "Belo Horizonte",
+    "cityCodeFrom": "BHZ",
+    "cityTo": "Tokyo",
+    "cityCodeTo": "TYO",
+    "countryFrom": {
+        "code": "BR",
+        "name": "Brazil"
+    },
+    "countryTo": {
+        "code": "JP",
+        "name": "Japan"
+    },
+    "type_flights": [
+        "deprecated"
+    ],
+    "nightsInDest": 6,
+    "quality": 1504.33187,
+    "distance": 18191.45,
+    "duration": {
+        "departure": 135900,
+        "return": 116700,
+        "total": 252600
+    },
+    "price": 919,
+    "conversion": {
+        "EUR": 919
+    },
+    "bags_price": {
+        "1": 44.99
+    },
+    "baglimit": {
+        "hold_dimensions_sum": 158,
+        "hold_height": 52,
+        "hold_length": 78,
+        "hold_weight": 23,
+        "hold_width": 28
+    },
+    "availability": {
+        "seats": 1
+    },
+    "routes": [
+        [
+            "CNF",
+            "NRT"
+        ],
+        [
+            "NRT",
+            "CNF"
+        ]
+    ],
+    "airlines": [
+        "G3",
+        "LA",
+        "QR"
+    ],
+    "route": [
+        {
+            "id": "21ca005349df00000632c89f_0",
+            "combination_id": "21ca005349df00000632c89f",
+            "flyFrom": "CNF",
+            "flyTo": "GRU",
+            "cityFrom": "Belo Horizonte",
+            "cityCodeFrom": "BHZ",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "LA",
+            "flight_no": 3250,
+            "operating_carrier": "JJ",
+            "operating_flight_no": "",
+            "fare_basis": "OJKU0N1",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T14:24:25.000Z",
+            "refresh_timestamp": "2021-08-13T14:24:25.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-11T18:30:00.000Z",
+            "utc_arrival": "2021-10-11T21:30:00.000Z",
+            "local_departure": "2021-10-11T17:10:00.000Z",
+            "utc_departure": "2021-10-11T20:10:00.000Z"
+        },
+        {
+            "id": "0053209f49df49e776e5bf5e_0",
+            "combination_id": "0053209f49df49e776e5bf5e",
+            "flyFrom": "GRU",
+            "flyTo": "DOH",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Doha",
+            "cityCodeTo": "DOH",
+            "airline": "QR",
+            "flight_no": 780,
+            "operating_carrier": "QR",
+            "operating_flight_no": "780",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T06:56:42.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-12T17:30:00.000Z",
+            "utc_arrival": "2021-10-12T14:30:00.000Z",
+            "local_departure": "2021-10-11T21:10:00.000Z",
+            "utc_departure": "2021-10-12T00:10:00.000Z"
+        },
+        {
+            "id": "0053209f49df49e776e5bf5e_1",
+            "combination_id": "0053209f49df49e776e5bf5e",
+            "flyFrom": "DOH",
+            "flyTo": "NRT",
+            "cityFrom": "Doha",
+            "cityCodeFrom": "DOH",
+            "cityTo": "Tokyo",
+            "cityCodeTo": "TYO",
+            "airline": "QR",
+            "flight_no": 806,
+            "operating_carrier": "QR",
+            "operating_flight_no": "806",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 0,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:42.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-13T18:55:00.000Z",
+            "utc_arrival": "2021-10-13T09:55:00.000Z",
+            "local_departure": "2021-10-13T02:30:00.000Z",
+            "utc_departure": "2021-10-12T23:30:00.000Z"
+        },
+        {
+            "id": "0053209f49df49e776e5bf5e_2",
+            "combination_id": "0053209f49df49e776e5bf5e",
+            "flyFrom": "NRT",
+            "flyTo": "DOH",
+            "cityFrom": "Tokyo",
+            "cityCodeFrom": "TYO",
+            "cityTo": "Doha",
+            "cityCodeTo": "DOH",
+            "airline": "QR",
+            "flight_no": 807,
+            "operating_carrier": "QR",
+            "operating_flight_no": "807",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:42.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T04:00:00.000Z",
+            "utc_arrival": "2021-10-20T01:00:00.000Z",
+            "local_departure": "2021-10-19T22:30:00.000Z",
+            "utc_departure": "2021-10-19T13:30:00.000Z"
+        },
+        {
+            "id": "0053209f49df49e776e5bf5e_3",
+            "combination_id": "0053209f49df49e776e5bf5e",
+            "flyFrom": "DOH",
+            "flyTo": "GRU",
+            "cityFrom": "Doha",
+            "cityCodeFrom": "DOH",
+            "cityTo": "S\u00e3o Paulo",
+            "cityCodeTo": "SAO",
+            "airline": "QR",
+            "flight_no": 773,
+            "operating_carrier": "QR",
+            "operating_flight_no": "773",
+            "fare_basis": "OLBRP1RE",
+            "fare_category": "M",
+            "fare_classes": "O",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": false,
+            "guarantee": false,
+            "last_seen": "2021-08-13T06:56:42.000Z",
+            "refresh_timestamp": "1970-01-01T00:00:00.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T15:40:00.000Z",
+            "utc_arrival": "2021-10-20T18:40:00.000Z",
+            "local_departure": "2021-10-20T07:30:00.000Z",
+            "utc_departure": "2021-10-20T04:30:00.000Z"
+        },
+        {
+            "id": "005321ca49e80000939245af_0",
+            "combination_id": "005321ca49e80000939245af",
+            "flyFrom": "GRU",
+            "flyTo": "CNF",
+            "cityFrom": "S\u00e3o Paulo",
+            "cityCodeFrom": "SAO",
+            "cityTo": "Belo Horizonte",
+            "cityCodeTo": "BHZ",
+            "airline": "G3",
+            "flight_no": 1324,
+            "operating_carrier": "G3",
+            "operating_flight_no": "1324",
+            "fare_basis": "",
+            "fare_category": "M",
+            "fare_classes": "",
+            "fare_family": "",
+            "return": 1,
+            "bags_recheck_required": true,
+            "guarantee": true,
+            "last_seen": "2021-08-13T17:15:25.000Z",
+            "refresh_timestamp": "2021-08-13T17:15:25.000Z",
+            "equipment": null,
+            "vehicle_type": "aircraft",
+            "local_arrival": "2021-10-20T18:55:00.000Z",
+            "utc_arrival": "2021-10-20T21:55:00.000Z",
+            "local_departure": "2021-10-20T17:40:00.000Z",
+            "utc_departure": "2021-10-20T20:40:00.000Z"
+        }
+    ],
+    "booking_token": "C8Fc4sqR1XayAUyiYIf_auu5UAcm1c7XA_KNNLs5tJK-cWqh2q0zo1aekxSEDeFkbYeyHV2-dvIcrYPb26Rhtdx1ZPlstXp2VNXFs5ph2cpa0u4WPje5BmYRtbngkuDfuvPaLri83nbDbr5Le-wK55P0VyzsB4yEwZEPeNvSgyPD17YBV1FAB9LYVYvDq5-WzrpQeppqxG_lBdEozKA7Z22MnV3jtqd3abiT9ga5eG6tKqjZcYA2ixsN-YNcOSV561Cj0aDNWnK8DQKV9-5cDdZ1Mz8taVa8yPY8RWOztMtBDKmOSeY5I9BVPd9D-gXv_7TlTgq0iA8y5cpp2BeM5rZhrNh8piy_JNpamWsJhF-V-L6RUHJ6JA3vUIaLSk6TX1FkEF5FZuo3TnAofnzfyLrifEpIqruqsE02NtdMrEftkNt3tx4wWSv-5R9_mOegmhCH4Vo0S93Ims5-Rbn8qSFLS4KxT-Fswj40wqSAG3--1t4MQRDLgv61ckXNF4bkd5MoAE2HDqVjctYSodu4cKyrksNMOXaRMrN7aGiN-h_3dpoOU_X9weFhXKTcmPAfxsnSwHohsCH7nY9HRA_-gI7VmISqsPzE_VtQSXWNQUynmGL6eX6tkHQff9G_SwMim4Qb4DypRlPhS494TTng8Ig==",
+    "deep_link": "https://www.kiwi.com/deep?from=CNF&to=NRT&flightsId=21ca005349df00000632c89f_0%7C0053209f49df49e776e5bf5e_0%7C0053209f49df49e776e5bf5e_1%7C0053209f49df49e776e5bf5e_2%7C0053209f49df49e776e5bf5e_3%7C005321ca49e80000939245af_0&price=919&passengers=1&affilid=guilhermemanhaesflightbot&lang=en&currency=EUR&booking_token=C8Fc4sqR1XayAUyiYIf_auu5UAcm1c7XA_KNNLs5tJK-cWqh2q0zo1aekxSEDeFkbYeyHV2-dvIcrYPb26Rhtdx1ZPlstXp2VNXFs5ph2cpa0u4WPje5BmYRtbngkuDfuvPaLri83nbDbr5Le-wK55P0VyzsB4yEwZEPeNvSgyPD17YBV1FAB9LYVYvDq5-WzrpQeppqxG_lBdEozKA7Z22MnV3jtqd3abiT9ga5eG6tKqjZcYA2ixsN-YNcOSV561Cj0aDNWnK8DQKV9-5cDdZ1Mz8taVa8yPY8RWOztMtBDKmOSeY5I9BVPd9D-gXv_7TlTgq0iA8y5cpp2BeM5rZhrNh8piy_JNpamWsJhF-V-L6RUHJ6JA3vUIaLSk6TX1FkEF5FZuo3TnAofnzfyLrifEpIqruqsE02NtdMrEftkNt3tx4wWSv-5R9_mOegmhCH4Vo0S93Ims5-Rbn8qSFLS4KxT-Fswj40wqSAG3--1t4MQRDLgv61ckXNF4bkd5MoAE2HDqVjctYSodu4cKyrksNMOXaRMrN7aGiN-h_3dpoOU_X9weFhXKTcmPAfxsnSwHohsCH7nY9HRA_-gI7VmISqsPzE_VtQSXWNQUynmGL6eX6tkHQff9G_SwMim4Qb4DypRlPhS494TTng8Ig==",
+    "tracking_pixel": "",
+    "facilitated_booking_available": false,
+    "pnr_count": 3,
+    "has_airport_change": false,
+    "technical_stops": 0,
+    "virtual_interlining": true,
+    "transfers": [],
+    "local_arrival": "2021-10-13T18:55:00.000Z",
+    "utc_arrival": "2021-10-13T09:55:00.000Z",
+    "local_departure": "2021-10-11T17:10:00.000Z",
+    "utc_departure": "2021-10-11T20:10:00.000Z"
+}
+------------------------------

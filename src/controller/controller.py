@@ -53,6 +53,12 @@ class Controller(ABC):
 		pass
 
 	@abstractmethod
+	def get_wanted_destinations(self) -> None:
+		"""
+		Returns the present data for the lowest prices for a given city.
+		"""
+		pass
+	@abstractmethod
 	def load_ui(self) -> None:
 		"""Load the main ui screen via user_interface."""
 		pass
@@ -100,6 +106,7 @@ class FlaskAPIController(Controller):
 		self.api.add_resource(self.user(), '/users')
 		self.api.add_resource(self.send_cheapest_flights(), '/send_flights')
 		self.api.add_resource(self.update_flight_prices(), '/update_flights')
+		self.api.add_resource(self.get_wanted_destinations(), '/current_flights')
 
 	def send_cheapest_flights(self) -> None:
 		"""
@@ -138,12 +145,30 @@ class FlaskAPIController(Controller):
 				return {'message': 'flights updated.'}
 		return _update_flight_prices
 	
+	def get_wanted_destinations(self) -> None:
+		"""
+		Returns the present data for the lowest prices for a given city.
+		"""
+		flight_model = self.flight_model
+		class _get_wanted_destinations(Resource):
+			def post(self):
+				city: dict = get_payload()["city"]
+				flights: List[Flight] = flight_model.get_wanted_destinations(from_city=city)
+				flights_list = [{
+					"city": flight.to_city,
+					"price": flight.price 
+				} for flight in flights]
+
+				return {"code": 1, "flights": flights_list}
+				
+		return _get_wanted_destinations
+
 	def load_ui(self) -> None:
 		"""Load the main ui screen via user_interface by lauching the API on the server"""
 		try:
 			self.user_interface.start()
 		except Exception as e:
-			print(e)
+			print("error while loading ui", e)
 		finally:
 			print("closing backend")
 			self.close_backend()

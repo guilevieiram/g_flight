@@ -64,12 +64,13 @@ nav {
     opacity: 0;
 }
 .logo {
-    flex: 2;
     margin: 1rem 5rem;
+    margin-right: 20vw;
     display: flex;
     justify-content: start;
     align-items: center;
 }
+
 .logo img{
     height: 3rem;
     margin: 0 1rem;

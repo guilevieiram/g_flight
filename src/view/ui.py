@@ -23,6 +23,7 @@ class MainMenu(Menu):
 	MANAGE_USERS = auto()
 	SEND_FLIGHTS = auto()
 	UPDATE_FLIGHTS = auto()
+	GET_FLIGHTS = auto()
 
 	def name() -> str:
 		return "Main menu"
@@ -71,6 +72,11 @@ class FlaskUserInterface(UserInterface):
 	def about():
 		"""Endpoint to the about page"""
 		return render_template("about.html")
+
+	@app.route("/view-flights")
+	def view_flights():
+		"""Endpoint to the view-flights page"""
+		return render_template("view-flights.html")
 
 # User interface terminal implementation
 class TerminalUserInterface(UserInterface):
@@ -125,6 +131,8 @@ class TerminalUserInterface(UserInterface):
 			self.send_cheapest_flights()
 		elif action == MainMenu.UPDATE_FLIGHTS:
 			self.update_flights()
+		elif action == MainMenu.GET_FLIGHTS:
+			self.get_flights()
 
 	def user_menu_actions(self, action: Menu) -> None:
 		"""Mapping the user menu actions"""
@@ -148,6 +156,20 @@ class TerminalUserInterface(UserInterface):
 		print("Updating flight prices...\n")
 		requests.get(self.endpoint + "/update_flights")
 		print("Flight prices updated!")
+		input("\nPress any key to continue ...")
+
+	def get_flights(self) -> None:
+		print("Getting flights\n")
+		print("Please enter the:")
+		data= {
+				"city": input("\tCity: ")
+			}
+		data_bytes = json.dumps(data).encode("utf-8")
+		response = requests.post(
+			url = self.endpoint + "/current_flights",
+			data = data_bytes
+		)		
+		print(response.json())
 		input("\nPress any key to continue ...")
 
 	def add_user(self) -> None: 
@@ -243,8 +265,7 @@ class TerminalUserInterface(UserInterface):
 		"""Exits the program terminating the script"""
 		exit()
 
-	@staticmethod
-	def get_atribute() -> bool:
+	def get_atribute(self) -> bool:
 		possible_attributes = ["e_mail", "first_name", "last_name", "phone", "city"]
 		attribute: str = input(f"Choose one atribute from:\n{', '.join(possible_attributes)}:  ")
 		if not attribute in possible_attributes:

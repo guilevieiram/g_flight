@@ -75,10 +75,27 @@ class FlightModel(ABC):
 	@abstractmethod
 	def update_flight_prices(self, from_city: str) -> None:
 		"""
-		Given a city of departure: from_city (e.g. Paris) 
-		Must get a list of flights leaving that city.
-		If the found flight price is lower than the one found in the data base,
-		it must update the database		
+		Gets the found flights and the stored flight destinations
+		Updates the flight prices with the average between the stored and the found price.
+		With time this should reflect the average price for a flight.
+		"""
+		pass
+
+	@abstractmethod
+	def set_flight_prices(self, from_city: str) -> None:
+		"""
+		Gets all the wanted destinations from a city
+		Sets all the flight prices with the price found that day.
+		Used as an initializer for newly created tables
+		"""
+		pass
+	
+	@abstractmethod
+	def get_wanted_destinations(self, from_city: str) -> list[Flight]:
+		"""
+		Given a departure city, should check the data base to get all the flights leaving that city.
+		If a table of that city does not exists, must create one from the template and update 
+		the prices with the current up to date value.		
 		"""
 		pass
 
@@ -122,16 +139,30 @@ class TequilaFlightModel(FlightModel):
 
 	def update_flight_prices(self, from_city: str) -> None:
 		"""
-		Compares all the found flights with the stored flight destinations using the FlightComparisson class.
-		If the found flight is better, it updates the database with a new flight value 
+		Gets the found flights and the stored flight destinations
+		Updates the flight prices with the average between the stored and the found price.
+		With time this should reflect the average price for a flight.
 		"""
-		
-		comparissons = [FlightComparisson(initial=destination, found=self.get_cheapest_flight(destination))
-			for destination in self.get_wanted_destinations(from_city=from_city)]
+		for destination in self.get_wanted_destinations(from_city=from_city):
+			flight: Flight = self.get_cheapest_flight(destination)
+			print(type(destination.price))
+			self.update_data(
+				destination=destination,
+				new_price= (destination.price + flight.price) / 2
+				)
 
-		for comparisson in comparissons:
-			if comparisson.is_found_better():
-				self.update_data(destination=comparisson.initial, new_price=comparisson.found.price)
+	def set_flight_prices(self, from_city: str) -> None:
+		"""
+		Gets all the wanted destinations from a city
+		Sets all the flight prices with the price found that day.
+		Used as an initializer for newly created tables
+		"""
+		for destination in self.get_wanted_destinations(from_city=from_city):
+			flight: Flight = self.get_cheapest_flight(destination)
+			self.update_data(
+				destination=destination,
+				new_price=flight.price
+				)
 				
 	def get_cheapest_flight(self, destination: Flight) -> Flight:
 		"""
@@ -186,12 +217,16 @@ class TequilaFlightModel(FlightModel):
 				)
 
 	def get_wanted_destinations(self, from_city: str) -> list[Flight]:
-		"""Gets the list of wanted destinations from the database encoded in flight type objects"""
+		"""
+		Given a departure city, should check the data base to get all the flights leaving that city.
+		If a table of that city does not exists, must create one from the template and update 
+		the prices with the current up to date value.		
+		"""
 		table_name: str = self.table_name(city_name=from_city)
 		try:
 			data: list[dict] = self.data_base.get_data(table=table_name)
 		except KeyError:
-			self.data_base.create_table_from_template(new_table_name=table_name, parent_table_name="flights")
+			self.create_flights_table(table_name=table_name, from_city=from_city)
 			data: list[dict] = self.data_base.get_data(table=table_name)
 		return [
 			Flight(
@@ -207,6 +242,19 @@ class TequilaFlightModel(FlightModel):
 	def close_connection(self) -> None:
 		"""Closes the model connection with its data base and terminates processes"""
 		self.data_base.close()
+
+	def create_flights_table (self, table_name: str, from_city: str) -> None:
+		"""Creates a flights table with a certain table name, excluding desinations equals to the 'from_city'."""
+		self.data_base.create_table_from_template(new_table_name=table_name, parent_table_name="flights")
+		try:
+			city_key = self.data_base.get_data(table=table_name, key_value = {"city": from_city})[0]["id"]
+		except IndexError:
+			print("City not included in desired table")
+		else:
+			self.data_base.delete_data(table=table_name, key=city_key)
+		finally:
+			self.set_flight_prices(from_city=from_city)
+
 
 	@staticmethod
 	def table_name(city_name: str) -> str:
@@ -225,6 +273,7 @@ class TequilaFlightApi:
 	endpoint: str = "https://tequila-api.kiwi.com"
 	api_key: str = os.environ.get("FLIGHT_API")
 
+	@log(name='flight_search')
 	def search_flights(self, from_code: str, to_code: str, months_window: int, minimum_stay: int, maximum_stay: int) -> Optional[dict]:
 		"""Returns the data for the cheapest flight given two places (to and from) and a set of parameters"""
 		date_from, date_to = self.get_dates(months=months_window)
