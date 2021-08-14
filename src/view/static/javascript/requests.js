@@ -1,5 +1,7 @@
+const backendEndpoint = 'https://g-flights-backend.herokuapp.com';
+
 function sendFlights() {
-    const endPoint = 'http://127.0.0.1:5000/send_flights';
+    const endPoint = backendEndpoint + '/send_flights';
     const parameters = {
         method: 'GET'
     };
@@ -16,7 +18,7 @@ function sendFlights() {
 }
 
 function updateFlights() {
-    const endPoint = 'http://127.0.0.1:5000/update_flights';
+    const endPoint = backendEndpoint + '/update_flights';
     const parameters = {
         method: 'GET'
     };
@@ -33,7 +35,7 @@ function updateFlights() {
 }
 
 async function addUser(name, lastName, email, city) {
-    const endPoint = 'http://127.0.0.1:5000/users';
+    const endPoint = backendEndpoint + '/users';
     const data = {
         first_name: name,
         last_name: lastName,

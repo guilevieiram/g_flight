@@ -1,3 +1,6 @@
+const backendEndpoint = 'https://g-flights-backend.herokuapp.com';
+
+
 // animating clouds
 function animateClouds(){
     let clouds = document.querySelectorAll('.cloud');
@@ -116,7 +119,7 @@ function getFlag(city) {
 
 
 async function getFlights(cityName) {
-    const endPoint = 'http://127.0.0.1:5000/current_flights';
+    const endPoint = backendEndpoint + '/current_flights';
     const data = {
         city: cityName,
     }

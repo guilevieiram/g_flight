@@ -14,7 +14,7 @@ def setup_parser() -> ArgumentParser:
 def main() -> None:
 
 	_controller = controller.FlaskAPIController
-	_user_interface = ui.FlaskUserInterface
+	_user_interface = ui.TerminalUserInterface
 	_messager = messager.TerminalMessager
 	_flight_model = flight_model.TequilaFlightModel
 	_user_model = user_model.TerminalUserModel
@@ -24,8 +24,7 @@ def main() -> None:
 	bot = _controller(
 		port=5000,
 		user_interface=_user_interface(
-			port=4000,
-			backend_endpoint="http://127.0.0.1:5000"
+			backend_endpoint="https://g-flights-backend.herokuapp.com"
 		),
 		messager=_messager(),
 		flight_model=_flight_model(

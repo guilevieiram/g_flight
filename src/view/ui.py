@@ -55,13 +55,12 @@ class FlaskUserInterface(UserInterface):
 
 	app: Flask = Flask(__name__)
 
-	def __init__(self, port: int, backend_endpoint: str) -> None:
+	def __init__(self, backend_endpoint: str) -> None:
 		self.endpoint: str = backend_endpoint
-		self.port: int = port
 
 	def start(self) -> None:
 		"""A starter, to initiate the interface."""
-		self.app.run(debug=True, port=self.port)
+		self.app.run(debug=True)
 
 	@app.route("/")
 	def home():
@@ -82,7 +81,7 @@ class FlaskUserInterface(UserInterface):
 class TerminalUserInterface(UserInterface):
 	"""Simple terminal user interface"""
 
-	def __init__(self, port: int, backend_endpoint: str) -> None:
+	def __init__(self, backend_endpoint: str) -> None:
 		self.endpoint: str = backend_endpoint
 
 	def start(self) -> None:
