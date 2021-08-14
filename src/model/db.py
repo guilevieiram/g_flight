@@ -69,6 +69,11 @@ class DataBase(ABC):
 		"""
 		pass
 
+	@abstractmethod
+	def delete_table(self, table: str) -> None:
+		"""Should delete the given table by the name. If such table does not exists, raise key error"""
+		pass
+
 
 class PostgresqlDataBase(DataBase):
 	"""Implementation for a database using postgresql."""
@@ -189,6 +194,16 @@ class PostgresqlDataBase(DataBase):
 		cursor.execute(sql)
 		self.connection.commit()
 
+	def delete_table(self, table: str) -> None:
+		"""Should delete the given table by the name. If such table does not exists, raise key error"""
+		cursor = self.connection.cursor()
+		sql = f"DROP TABLE {table}"
+		try: 
+			cursor.execute(sql)
+			self.connection.commit()
+		except Exception as e:
+			print("Error while deleting table: ", e)
+			raise KeyError("Table not found")
 
 # Data base implementations		
 class CSVDB(DataBase):

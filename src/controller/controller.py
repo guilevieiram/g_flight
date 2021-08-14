@@ -153,13 +153,15 @@ class FlaskAPIController(Controller):
 		class _get_wanted_destinations(Resource):
 			def post(self):
 				city: dict = get_payload()["city"]
-				flights: List[Flight] = flight_model.get_wanted_destinations(from_city=city)
-				flights_list = [{
-					"city": flight.to_city,
-					"price": flight.price 
-				} for flight in flights]
-
-				return {"code": 1, "flights": flights_list}
+				try:
+					flights: List[Flight] = flight_model.get_wanted_destinations(from_city=city)
+					flights_list = [{
+						"city": flight.to_city,
+						"price": flight.price 
+					} for flight in flights]
+					return {"code": 1, "flights": flights_list}
+				except KeyError:
+					return {"code": -1, "message": "location invalid"}
 				
 		return _get_wanted_destinations
 

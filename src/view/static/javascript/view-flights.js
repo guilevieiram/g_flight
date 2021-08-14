@@ -20,6 +20,19 @@ function animatePage( ) {
     })
 }
 
+function loaderOn() {
+    let loader = document.querySelector('.loader')
+    gsap.set(loader, {
+        display: 'block'
+    })
+}
+
+function loaderOff() {
+    let loader = document.querySelector('.loader')
+    gsap.set(loader, {
+        display: 'none'
+    })
+}
 // Functions to help fill table
 let countryFlagsMapping = {};
 function getFlagsMapping () {
@@ -120,18 +133,22 @@ async function getFlights(cityName) {
         return data.json();
     })
     .then( response => {
-        console.log(response)
         flights = response.flights;
-        responseCode = response.codePointAt;
+        responseCode = response.code;
     })
     .catch( error => {
         responseCode = -2;
     });
 
-    if (responseCode < 0) {
-        console.log('error on request')
+    if (responseCode === -1) {
+        window.alert("Couldn't find that location.\nTry another one!");
+        loaderOff();
     }
-    return flights
+    else if (responseCode === -2) {
+        window.alert("Looks like our servers are down...\nTry again later!")
+        loaderOff();
+    }
+    else {return flights}
 }
 
 
@@ -143,9 +160,9 @@ async function getFlights(cityName) {
 
 function fillTable(cityName) {
     let rowsContainer = document.querySelector('.content-rows');
-    let loader = document.querySelector('.loader')
     rowsContainer.innerHTML = '';
-    getFlights(cityName).then (flightData => {
+    getFlights(cityName).then(flightData => {
+        if (typeof(flightData) === "undefined"){return}
         flightData.forEach((flight) => {
             rowsContainer.innerHTML += 
             `
@@ -155,24 +172,19 @@ function fillTable(cityName) {
                 </div>
             `
         });
-        gsap.set(loader, {
-            display: 'none'
-        })
+        loaderOff();
     });       
 }
 
 
 function addListeners() {
     let searchButton = document.querySelector('.search-button')
-    let loader = document.querySelector('.loader')
     searchButton.addEventListener('click', () => {
         console.log('searching')
         let cityName = document.querySelector('#leave-from').value;
         if(cityName == ''){window.alert('Please enter a city name.')}
         else{
-            gsap.set(loader, {
-                display: 'block'
-            })
+            loaderOn();
             fillTable(cityName);
         }
     });

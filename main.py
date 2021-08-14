@@ -7,7 +7,7 @@ from src.controller import controller
 
 def setup_parser() -> ArgumentParser:
 	parser = ArgumentParser()
-	parser.add_argument('--backend', '-b', default=False, action='store_true', help='Load the backend API server')
+	parser.add_argument('--backend', '-b', default=True, action='store_true', help='Load the backend API server')
 	parser.add_argument('--frontend', '-f', default=False, action='store_true', help='Loads the app frontend.')
 	return parser
 
@@ -46,10 +46,11 @@ def main(
 	parser = setup_parser()
 	arguments = vars(parser.parse_args())
 
-	if arguments["backend"]:
-		bot.load_backend()
-	elif arguments["frontend"]:
+	if arguments["frontend"]:
 		bot.load_ui()
+	elif arguments["backend"]:
+		bot.load_backend()
+
 	
 
 if __name__ == "__main__":

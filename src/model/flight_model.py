@@ -127,8 +127,14 @@ class TequilaFlightModel(FlightModel):
 		If the found flight is better, it appends that new flight to a list that is then returned.
 		"""
 		
-		comparissons = [FlightComparisson(initial=destination, found=self.get_cheapest_flight(destination))
-			for destination in self.get_wanted_destinations(from_city=from_city)]
+		comparissons: List[FlightComparisson] = []
+		for destination in self.get_wanted_destinations(from_city=from_city):
+			initial_flight = destination
+			try:
+				found_flight = self.get_cheapest_flight(destination)
+			except KeyError as e:
+				found_flight = Flight(price=100_000)
+			comparissons.append(FlightComparisson(initial=initial_flight, found=found_flight))
 
 		flights_data: list[Flight] = []
 		for comparisson in comparissons:
@@ -144,12 +150,15 @@ class TequilaFlightModel(FlightModel):
 		With time this should reflect the average price for a flight.
 		"""
 		for destination in self.get_wanted_destinations(from_city=from_city):
-			flight: Flight = self.get_cheapest_flight(destination)
-			print(type(destination.price))
-			self.update_data(
-				destination=destination,
-				new_price= (destination.price + flight.price) / 2
-				)
+			try:
+				flight: Flight = self.get_cheapest_flight(destination)
+			except Exception as e:
+				print("error while update_flight_prices: ", e)
+			else:
+				self.update_data(
+					destination=destination,
+					new_price= (destination.price + flight.price) / 2
+					)
 
 	def set_flight_prices(self, from_city: str) -> None:
 		"""
@@ -158,11 +167,15 @@ class TequilaFlightModel(FlightModel):
 		Used as an initializer for newly created tables
 		"""
 		for destination in self.get_wanted_destinations(from_city=from_city):
-			flight: Flight = self.get_cheapest_flight(destination)
-			self.update_data(
-				destination=destination,
-				new_price=flight.price
-				)
+			try:
+				flight: Flight = self.get_cheapest_flight(destination)
+				self.update_data(
+					destination=destination,
+					new_price=flight.price
+					)
+			except KeyError:
+				self.data_base.delete_table(table=self.table_name(city_name=from_city))
+				raise KeyError("from_city not valid")
 				
 	def get_cheapest_flight(self, destination: Flight) -> Flight:
 		"""
@@ -176,21 +189,22 @@ class TequilaFlightModel(FlightModel):
 			minimum_stay=self.minimum_stay,
 			maximum_stay=self.maximum_stay
 			)
-		if data:
-			return Flight(
-				price=data["price"],
-				departure_date=self.flight_search_engine.decode_dates(data["utc_departure"]),
-				return_date=self.flight_search_engine.decode_dates(data["utc_departure"], day_delta = data["nightsInDest"]),
-				from_city=data["cityFrom"],
-				to_city=data["cityTo"],
-				from_code=data["cityCodeFrom"],
-				to_code=data["cityCodeTo"],
-				from_airport=data["flyFrom"],
-				to_airport=data["flyTo"],
-				stops=[route["flyFrom"] for route in self.flight_search_engine.get_routes(routes=data["route"])]
-				)
-		else:
-			return Flight(price=100_000)
+		if not data:
+			raise KeyError("No Flights found for destination: ", destination)
+
+		return Flight(
+			price=data["price"],
+			departure_date=self.flight_search_engine.decode_dates(data["utc_departure"]),
+			return_date=self.flight_search_engine.decode_dates(data["utc_departure"], day_delta = data["nightsInDest"]),
+			from_city=data["cityFrom"],
+			to_city=data["cityTo"],
+			from_code=data["cityCodeFrom"],
+			to_code=data["cityCodeTo"],
+			from_airport=data["flyFrom"],
+			to_airport=data["flyTo"],
+			stops=[route["flyFrom"] for route in self.flight_search_engine.get_routes(routes=data["route"])]
+			)
+
 
 	def update_data(self, destination: Flight, new_price: float) -> None:
 		"""
@@ -237,7 +251,7 @@ class TequilaFlightModel(FlightModel):
 				from_city=from_city,
 				from_code=self.flight_search_engine.get_IATA_code(from_city)
 				) for point in data
-		] 
+			] 
 
 	def close_connection(self) -> None:
 		"""Closes the model connection with its data base and terminates processes"""
@@ -294,7 +308,7 @@ class TequilaFlightApi:
 				)
 			return response.json()["data"][0]
 		except Exception as e:
-			print("Error while searching flights:", e)
+			print("Error while searching flights: ", e)
 
 	def get_IATA_code(self, city_name: str) -> str:
 		"""Returns the IATA code for a given city name. If no code is found returns 'XXX'. """
