@@ -21,8 +21,8 @@ function animatePage( ) {
 }
 
 // Functions to help fill table
+let countryFlagsMapping = {};
 function getFlagsMapping () {
-    let mapping = {};
     const url = 'https://countriesnow.space/api/v0.1/countries/flag/unicode';
     const parameters = {
         method: 'GET'
@@ -33,17 +33,21 @@ function getFlagsMapping () {
     })
     .then( response => {
         response.data.forEach((responseData) => {
-            mapping[responseData.name] = responseData.unicodeFlag
+            let countryName = responseData.name.toLowerCase();
+            // handling country names that differ;
+            if(countryName === 'united kingdom'){countryName = 'united kingdom of great britain and northern ireland'}
+            countryFlagsMapping[countryName] = responseData.unicodeFlag
         });
     })
     .catch( error => {
         console.log(error)
     });
-    return mapping;
 }
+// getFlagsMapping();
 
+
+let cityFlagMapping = [];
 function getCountriesMapping () {
-    let mapping = {};
     const url = 'https://countriesnow.space/api/v0.1/countries/population/cities';
     const parameters = {
         method: 'GET'
@@ -54,24 +58,49 @@ function getCountriesMapping () {
     })
     .then( response => {
         response.data.forEach((responseData) => {
-            mapping[responseData.city] = responseData.country
+            let flag = countryFlagsMapping[responseData.country.toLowerCase()]
+            let currentPopulation = parseFloat(responseData.populationCounts[0].value);
+            let existingCity = (cityFlagMapping.find( ({city}) => city.toLowerCase()===responseData.city.toLowerCase()));
+            let existingPopulation = (typeof existingCity != "undefined") ? parseFloat(existingCity.population) : 0;
+
+            if(existingPopulation < currentPopulation){
+                if(existingPopulation !== 0){
+                    cityFlagMapping = cityFlagMapping.filter(({city}) => {
+                        return city.toLowerCase() !== existingCity.city.toLowerCase()
+                    })
+                }
+                cityFlagMapping.push({
+                    city: responseData.city,
+                    flag: (typeof flag != "undefined") ? flag : 'no flag',
+                    population: currentPopulation
+                });
+            }
         });
     })
     .catch( error => {
         console.log(error)
     });
-    return mapping;
 }
+// getCountriesMapping();
 
 const flagemojiToPNG = (flag) => {
     try{    
         var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt()).map(char => String.fromCharCode(char-127397).toLowerCase()).join('')
         return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
     }catch(error){
-        return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
+        return ""
     }
 
 }
+
+function getFlag(city) {
+    let cityUnicode = cityFlagMapping.find(element => {
+        return element.city.toLowerCase() === city.toLowerCase();
+    })
+    let flagUnicode = (typeof(cityUnicode) !== "undefined") ? cityUnicode.flag : undefined    
+    return flagemojiToPNG(flagUnicode)
+}
+
 
 async function getFlights(cityName) {
     const endPoint = 'http://127.0.0.1:5000/current_flights';
@@ -105,9 +134,8 @@ async function getFlights(cityName) {
     return flights
 }
 
-// Constants for filling table
-const flagsMapping = getFlagsMapping();
-const countriesMapping = getCountriesMapping();
+
+
 
 // FLAGS ARE STILL NOT WORKING
 // the mapping above has superposition (e.g. london, Canada is a fucking city )
@@ -119,9 +147,6 @@ function fillTable(cityName) {
     rowsContainer.innerHTML = '';
     getFlights(cityName).then (flightData => {
         flightData.forEach((flight) => {
-            // let country = countriesMapping[flight.city]
-            // let flag = flagsMapping[country]
-            // let flagPNG = flagemojiToPNG(flag)
             rowsContainer.innerHTML += 
             `
                 <div class="content-row">
