@@ -2,9 +2,8 @@ from src.decorators import log
 from src.model import db, flight_model, user_model
 from src.view import messager, ui
 from src.controller import controller
-from main import main
 
-def app (environ, start_response):
+def create_app (environ, start_response):
 	_controller = controller.FlaskAPIController
 	_user_interface = ui.FlaskUserInterface
 	_messager = messager.TerminalMessager
