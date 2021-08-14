@@ -41,7 +41,6 @@ def main(
 				)
 			),
 		)
-
 	
 	parser = setup_parser()
 	arguments = vars(parser.parse_args())
