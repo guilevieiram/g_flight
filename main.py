@@ -11,32 +11,30 @@ def setup_parser() -> ArgumentParser:
 	parser.add_argument('--frontend', '-f', default=False, action='store_true', help='Loads the app frontend.')
 	return parser
 
-def main(
-	user_interface: ui.UserInterface,
-	messager: messager.Messager,
+def main() -> None:
 
-	controller: controller.Controller,
-
-	flight_model: flight_model.FlightModel,
-	user_model: user_model.UserModel,
-	data_base: db.DataBase
-	) -> None:
+	_controller = controller.FlaskAPIController
+	_user_interface = ui.FlaskUserInterface
+	_messager = messager.TerminalMessager
+	_flight_model = flight_model.TequilaFlightModel
+	_user_model = user_model.TerminalUserModel
+	_data_base = db.PostgresqlDataBase
 
 
-	bot = controller(
+	bot = _controller(
 		port=5000,
-		user_interface=user_interface(
+		user_interface=_user_interface(
 			port=4000,
 			backend_endpoint="http://127.0.0.1:5000"
 		),
-		messager=messager(),
-		flight_model=flight_model(
-			data_base=data_base(
+		messager=_messager(),
+		flight_model=_flight_model(
+			data_base=_data_base(
 				db_name="flight_data"
 				)
 			),
-		user_model=user_model(
-			data_base=data_base(
+		user_model=_user_model(
+			data_base=_data_base(
 				db_name="user_data"
 				)
 			),
@@ -50,14 +48,5 @@ def main(
 	elif arguments["backend"]:
 		bot.load_backend()
 
-	
-
 if __name__ == "__main__":
-	main(
-		controller=controller.FlaskAPIController,
-		user_interface=ui.FlaskUserInterface,
-		messager=messager.TerminalMessager,
-		flight_model=flight_model.TequilaFlightModel,
-		user_model=user_model.TerminalUserModel,
-		data_base=db.PostgresqlDataBase
-		)
+	main()
