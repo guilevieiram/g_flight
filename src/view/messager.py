@@ -46,6 +46,13 @@ class TrustifiMessager(Messager):
 
 	def send_message(self, destination: str, message: str, subject: str) -> None:
 		"""Sends a message with a subject to the destination (email, phone, ...)"""
+		# debuger		
+		content = "\n-------------------------------------------------------------------"
+		content += f"\nMessage to {destination}\nSubject: {subject}\n\n{message}"
+		content += "\n-------------------------------------------------------------------\n"
+		print(content)
+		# debuger
+
 		data = {
 			"recipients": [{
 				"email": destination,
