@@ -1,9 +1,8 @@
-import requests
-if __name__ == "__main__":
-	response = requests.post(url = "http://127.0.0.1:5000/current_flights", 
-		data = {
-			"city": "Belo Horizonte"
-		}
-	)
+from email.mime.text import MIMEText
 
-	print(response)
+
+message = MIMEText("uhuuuul")
+message["Subject"] = "G-Flight cheap flights alert!"
+msg=MIMEText(message).as_string()
+
+print(msg)
