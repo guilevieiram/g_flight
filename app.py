@@ -10,7 +10,7 @@ It is not the most organized but its the only way I could get gunicorn to work.
 
 _controller = controller.FlaskAPIController
 _user_interface = ui.FlaskUserInterface
-_messager = messager.EmailMessager
+_messager = messager.TrustifiMessager
 _flight_model = flight_model.TequilaFlightModel
 _user_model = user_model.TerminalUserModel
 _data_base = db.PostgresqlDataBase
