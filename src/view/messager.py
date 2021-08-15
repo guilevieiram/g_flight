@@ -5,6 +5,7 @@ import smtplib
 import sys
 import requests
 import json
+from email.mime.text import MIMEText
 
 from typing import Optional
 
@@ -119,7 +120,7 @@ class EmailMessager(Messager):
 	@log("mail_log")
 	def logout(self) -> None:
 		"""Logs out, closing the connection (a good practice)"""
-		self.connection.close()
+		self.connection.quit()
 
 	@log("mail_log")
 	def send_message(self, destination: str, message: str, subject: str) -> Optional[str]:
@@ -129,6 +130,6 @@ class EmailMessager(Messager):
 		self.connection.sendmail(
 			from_addr=self.user,
 			to_addrs=destination,
-			msg=f"Subject:{subject}\n\n{message}"
+			msg=MIMEText(f"Subject:{subject}\n\n{message}").as_string()
 			)
 		self.logout()
