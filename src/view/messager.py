@@ -3,8 +3,6 @@ from abc import ABC, abstractmethod
 import os
 import smtplib
 import sys
-import requests
-import json
 from email.mime.text import MIMEText
 
 from typing import Optional
@@ -31,63 +29,6 @@ class TerminalMessager(Messager):
 		content += "\n-------------------------------------------------------------------\n"
 		print(content)
 		return content
-
-
-class TrustifiMessager(Messager):
-	"""
-	Messager class implementation for intended use on heroku deployment.
-	Uses the Trustifi API to complete the request
-	"""
-	def __init__(self) -> None:
-		self.endpoint: str = "https://be.trustifi.com/api/i/v1/email"
-
-		# needs to be implemented as env variables
-		self.key: str = "fff4a63b544f6dc658b86bba0d1e4310c663a4c3cbc2ed4d"
-		self.secret: str = "b0f3d23c21ce4b55fc53e8c05c1a09d3"
-
-	def send_message(self, destination: str, message: str, subject: str) -> None:
-		"""Sends a message with a subject to the destination (email, phone, ...)"""
-		# debuger		
-		content = "\n-------------------------------------------------------------------"
-		content += f"\nMessage to {destination}\nSubject: {subject}\n\n{message}"
-		content += "\n-------------------------------------------------------------------\n"
-		print(content)
-		# debuger
-
-		data = {
-			"recipients": [{
-				"email": destination,
-				"name": "",
-				"phone": {"country_code": "+1","phone_number": "1111111111"}
-			}],
-			"lists": [],
-			"contacts": [],
-			"attachments": [],
-			"title": subject,
-			"html": message,
-			"methods": {
-				"postmark": False,
-				"secureSend": False,
-				"encryptContent": False,
-				"secureReply": False
-  			} 
-		}
-		self.make_request(data=data)
-		
-	def make_request(self, data: dict) -> None:
-		"""Given the payload, dumps and makes the request"""
-		headers = {
-			"x-trustifi-key": self.key,
-			"x-trustifi-secret": self.secret,
-			"Content-Type": "application/json"
-		}
-		response = requests.request(
-			"POST",
-			self.endpoint,
-			headers=headers,
-			data=json.dumps(data)
-		)
-		print(response.text)
 
 
 class EmailMessager(Messager):
@@ -127,9 +68,11 @@ class EmailMessager(Messager):
 		"""Connects, logs in, sends a formatted message and logs out."""
 		self.connect_to_server()
 		self.login()
+		message = MIMEText(f"{message}")
+		message["Subject"] = "G-Flight cheap flights alert!"
 		self.connection.sendmail(
 			from_addr=self.user,
 			to_addrs=destination,
-			msg=MIMEText(f"Subject:{subject}\n\n{message}").as_string()
+			msg=MIMEText(f"{message}").as_string()
 			)
 		self.logout()

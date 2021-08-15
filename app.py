@@ -3,6 +3,8 @@ from src.model import db, flight_model, user_model
 from src.view import messager, ui
 from src.controller import controller
 
+import os
+
 """
 This file servs only to start the flask app on heroku.
 It is not the most organized but its the only way I could get gunicorn to work.
@@ -25,8 +27,8 @@ app = _controller(
 	messager=_messager(
 		server="smtp.mailgun.org",
 		port=587,
-		user="postmaster@sandbox5c725b2cd6e14cacbb1cf89697024fa1.mailgun.org",
-		password="b3744b23ca9cd21f013da1449dbac525-9ad3eb61-40edec17"
+		user=os.environ.get("MAILGUN_SMTP_LOGIN"),
+		password=os.environ.get("MAILGUN_SMTP_PASSWORD")
 	),
 	flight_model=_flight_model(
 		data_base=_data_base(
