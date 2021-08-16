@@ -268,6 +268,10 @@ class CSVDB(DataBase):
 		for name in table_names:
 			self.load_table(table_name=name.replace(".csv", ""))
 
+	def delete_table(self, table: str) -> None:
+		"""Should delete the given table by the name. If such table does not exists, raise key error"""
+		os.remove(f"{self.path}{table}.csv")
+
 
 # Needs updating
 class Sheety(DataBase):
