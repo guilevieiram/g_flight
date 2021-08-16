@@ -71,6 +71,6 @@ class EmailMessager(Messager):
 		self.connection.sendmail(
 			from_addr=self.user,
 			to_addrs=destination,
-			msg=f"Subject: {subject} \n{message}"
+			msg=f"Subject: {subject.encode('utf-8')} \n{message.encode('utf-8')}"
 			)
 		self.logout()
