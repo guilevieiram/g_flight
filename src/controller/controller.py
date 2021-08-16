@@ -206,7 +206,7 @@ class FlaskAPIController(Controller):
 
 		self.messager.send_message(
 			destination=user.e_mail,
-			subject="Flight Deal Alert!!!",
+			subject="G-Flight good deal alert!",
 			message=message
 			)
 
