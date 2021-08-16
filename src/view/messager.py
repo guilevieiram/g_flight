@@ -68,9 +68,11 @@ class EmailMessager(Messager):
 		"""Connects, logs in, sends a formatted message and logs out."""
 		self.connect_to_server()
 		self.login()
+		msg = MIMEText(message,"plain", "utf-8")
+		msg["Subject"] = subject
 		self.connection.sendmail(
 			from_addr=self.user,
 			to_addrs=destination,
-			msg=f"Subject: {subject.encode('utf-8')} \n{message.encode('utf-8')}"
+			msg=msg.as_string()
 			)
 		self.logout()
