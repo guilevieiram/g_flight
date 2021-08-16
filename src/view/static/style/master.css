@@ -197,6 +197,7 @@ nav {
     margin: 10vh;
 }
 .subscribe-container {
+    position: relative;
     margin-top: 5vh;
     background-color: rgba(190, 190, 190, 0.425);
     border-radius: 2rem;

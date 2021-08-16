@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet"> 
     <!-- styles -->
     <link rel="stylesheet" href="src/view/static/style/master.css">
-    <link rel="stylesheet" href="src/view/static/style/about.css">
+    <link rel="stylesheet" href="src/view/static/style/subscribe.css">
     <!-- favicon bug temporary fix -->
     <link rel="shortcut icon" href="#">
-    <title>G-Flight - About</title>
+    <title>G-Flight - Subscribe</title>
 </head>
 <body>
     <header>
@@ -29,18 +29,41 @@
             </div>
             <ul class="nav-links">
                 <li class="nav-link"><a href="index.html">Home</a></li>
-                <li class="nav-link"><a onclick="gotoTop()">About</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
                 <li class="nav-link"><a href="view-flights.html">Search Flights</a></li>
-                <li class="nav-link"><a href="subscribe.html">Subscribe</a></li>
+                <li class="nav-link"><a onclick="gotoTop()">Subscribe</a></li>
             </ul>
-        </nav>
     </header>
-    <div  class="pages-container">
+    <div class="pages-container">
         <main>
-            <div class="about-paragraph">
-                <h1>About this service</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, debitis voluptatum maxime dolore cum incidunt in labore ex minima unde, at voluptate repudiandae, asperiores magni eum. Expedita magnam fugiat cumque officia unde laborum perspiciatis, animi placeat eveniet similique, reprehenderit maiores. Voluptate cum vero, pariatur maxime blanditiis odit! Nihil, vitae veritatis?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus necessitatibus consequatur aut incidunt aperiam molestias officia quisquam commodi voluptatum? Illum quibusdam modi tenetur magnam ducimus voluptatibus natus perferendis, fuga unde!</p>    
+            <h1>Subscribe today</h1>
+            <div class="subscribe-container">
+                <form class="subscribe-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    <input class="submit-form-button" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="popup user-exists">
+                <img class="close-popup" src="src/view/static/media/close-button.png" alt="">
+                <h2>This e-mail is already in use.</h2>
+                <p>Please try another one.</p>
+            </div>
+            <div class="popup user-okey">
+                <img class="close-popup" src="src/view/static/media/close-button.png" alt="">
+                <h2>Thanks for subscribing to our services!</h2>
+                <p>We'll let you know of the next best offers.</p>
+            </div>
+            <div class="popup error">
+                <img class="close-popup" src="src/view/static/media/close-button.png" alt="">
+                <h2>Looks like our servers are down...</h2>
+                <p>Try again later.</p>
             </div>
             <div class="background">
                 <img class="cloud" src="src/view/static/media/cloud-1.png" alt="cloud-1">
@@ -51,7 +74,7 @@
         </main>
         <footer>
             <div class="social-medias">
-                <a href="mailto:guilhermevmanhaes@gmail.com?subject=Hey, I came from your website!"><img src="src/view/static/media/gmail.png" alt=""></a>
+                <a href="mailto:guilhermevmanhaes@gmail.com?subject=Hey, I came from your website!"><img src="media/gmail.png" alt=""></a>
                 <a href="https://github.com/guilevieiram"><img src="src/view/static/media/github.png" alt=""></a>
                 <a href="https://linkedin.com/in/guilhermevieiram"><img src="src/view/static/media/linkedin.png" alt=""></a>
                 <a href="https://wa.me/5531998524668"><img src="src/view/static/media/whatsapp.png" alt=""></a>
@@ -63,11 +86,13 @@
             <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         </footer>
     </div>
-    
-    <!-- sourcing scripts -->
+
+
+    <!-- linking scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="src/view/static/javascript/script.js"></script>
-    <script src="src/view/static/javascript/about.js"></script>
-</body>
+    <script src="src/view/static/javascript/requests.js"></script>
+    <script src="src/view/static/javascript/subscribe.js"></script>
+</body> 
 </html>

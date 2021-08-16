@@ -1,0 +1,39 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.background {
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(1, 1, 24), rgb(23, 23, 129));
+    bottom: 0;
+}
+.cloud {
+    transform: translateY(40vh);
+}
+main h1{
+    transform: translateX(-10vw);
+    opacity: 0.2;
+    margin: 5rem 0;
+}
+
+.subscribe-container {
+    margin: 0;
+    background-color: rgb(44, 44, 44);
+    background: linear-gradient(to right bottom, rgb(80,80,80), rgb(44, 44, 44));
+}
+
+@media only screen and (max-width: 786px) {
+    .nav-links {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .cloud {
+        transform: translateY(0);
+    }
+}
