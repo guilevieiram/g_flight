@@ -148,7 +148,7 @@ async function getFlights(cityName) {
         loaderOff();
     }
     else if (responseCode === -2) {
-        window.alert("Looks like our servers are down...\nTry again later!")
+        window.alert("We don't know much about that city...\nCome back later and we'll have your results sorted out!")
         loaderOff();
     }
     else {return flights}
@@ -166,6 +166,13 @@ function fillTable(cityName) {
     rowsContainer.innerHTML = '';
     getFlights(cityName).then(flightData => {
         if (typeof(flightData) === "undefined"){return}
+
+        flightData.sort((f1, f2) => {
+            if(f1.price > f2.price) {return 1}
+            if(f2.price > f1.price) {return -1}
+            return 0
+        })
+
         flightData.forEach((flight) => {
             rowsContainer.innerHTML += 
             `
