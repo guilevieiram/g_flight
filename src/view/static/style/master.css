@@ -23,6 +23,7 @@ h2 {
     color: rgb(49, 49, 49);
 }
 button {
+    -webkit-appearance: none;
     border-style: hidden;
     background-color: #11acdd;
     height: 4rem;
