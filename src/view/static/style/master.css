@@ -219,8 +219,8 @@ nav {
     display: grid;
     justify-items: center;
     align-items: center;
-    row-gap: 20px;
     grid-template-columns: auto 70%;
+    -webkit-overflow-scrolling: touch;
 }
 .submit-form * {
     display: inline-block;
