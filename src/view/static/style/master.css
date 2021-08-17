@@ -197,26 +197,24 @@ nav {
     margin: 10vh;
 }
 .subscribe-container {
-    position: relative;
     margin-top: 5vh;
     background-color: rgba(190, 190, 190, 0.425);
     border-radius: 2rem;
     min-width: 25rem;
     max-width: 50rem;
     width: 50%;
+    height: 22rem;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     transform: translateX(200px);
     opacity: 0.2;
 }
 .subscribe-form {
-    position: absolute;
     margin: 2rem auto;
-    height: 100%;
-    max-height: inherit;
+    height: 20rem;
     width: 100%;
     display: grid;
     justify-items: center;
