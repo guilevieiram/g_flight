@@ -253,6 +253,7 @@ label {
     grid-column-end: 3;
 }
 .submit-form-button:hover{
+    -webkit-appearance: none;
     background: linear-gradient(to bottom right, #11acdd, #1fcbff);
     transform: scale(1.02, 1.02);
 }
