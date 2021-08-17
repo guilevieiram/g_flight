@@ -148,7 +148,7 @@ async function getFlights(cityName) {
         loaderOff();
     }
     else if (responseCode === -2) {
-        window.alert("We don't know much about that city...\nCome back later and we'll have your results sorted out!")
+        window.alert("We don't know much about that city...\nCome back in 10 minutes and we'll have your results sorted out!")
         loaderOff();
     }
     else {return flights}
