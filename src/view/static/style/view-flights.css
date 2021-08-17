@@ -155,6 +155,10 @@ nav {
 .content-row {
     width: 100%;
 }
+.city a{
+    color: white;
+}
+
 .content-row img {
     height: 1rem;
     margin-right: 1rem;
