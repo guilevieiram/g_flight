@@ -332,6 +332,9 @@ footer p a{
         transform: translateX(50%);
         cursor: pointer;
     }
+    nav {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
     .nav-links {
         position: absolute;
         top: 5rem;
@@ -342,7 +345,7 @@ footer p a{
         align-items: center;
         height: 93vh;
         width: 30vw;
-        background-color: #ffffff41;
+        background-color: rgba(255, 255, 255, 0.9);
         transform: translateX(100%);
         transition: 0.5s ease-in-out;
     }
