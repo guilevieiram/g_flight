@@ -194,7 +194,7 @@ function addListeners() {
 
     let subscribeButton = document.querySelector('.subscribe-button')
     subscribeButton.addEventListener('click', () => {
-        window.location.href = "/";
+        window.location.href = "/subscribe.html";
     })
 };
 

@@ -228,7 +228,6 @@ nav {
 input[type=text], input[type=email] {
     height: 2rem;
     width: 90%;
-    margin: 0;
     border-radius: 0.5rem;
     border-style: hidden;
     padding-left: 0.5rem;
