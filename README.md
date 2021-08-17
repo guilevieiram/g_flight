@@ -35,7 +35,7 @@ ___
 
 This web aplication uses a MVC (Model, View, Controller) architecture with some additional services included, such as messagers (to contact users), additional databases and API's.
 
-Here are some of the technologies used in this project
+Here are some of the technologies used in this project:
 
 <img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/python/python-original.svg"/>
 <img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/html5/html5-original.svg"/>
@@ -48,6 +48,8 @@ Here are some of the technologies used in this project
 <img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/figma/figma-original.svg"/>
 <img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/flask/flask-original.svg"/>
 
+
+And here is the general software architecture diagram for the application: 
 
 ![software architecture][architecture]
 
