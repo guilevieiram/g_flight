@@ -218,9 +218,11 @@ nav {
     display: grid;
     justify-items: center;
     align-items: center;
-    row-gap: 1.5rem;
+    row-gap: 20px;
     grid-template-columns: auto 70%;
-
+}
+.submit-form * {
+    display: inline-block;
 }
 input[type=text], input[type=email] {
     height: 2rem;
