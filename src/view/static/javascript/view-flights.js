@@ -177,7 +177,7 @@ function fillTable(cityName) {
             rowsContainer.innerHTML += 
             `
                 <div class="content-row">
-                    <p class="city">${flight.city}</p>
+                    <p class="city"><a href=${flight.link}>${flight.city}</a></p>
                     <p class="price">${flight.price.toFixed(2)}</p>
                 </div>
             `

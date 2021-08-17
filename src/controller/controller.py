@@ -157,7 +157,8 @@ class FlaskAPIController(Controller):
 					flights: List[Flight] = flight_model.get_wanted_destinations(from_city=city)
 					flights_list = [{
 						"city": flight.to_city,
-						"price": flight.price 
+						"price": flight.price,
+						"link": flight.link
 					} for flight in flights]
 					return {"code": 1, "flights": flights_list}
 				except KeyError:
@@ -200,6 +201,7 @@ class FlaskAPIController(Controller):
 			message += 	f"leaving on {flight.departure_date.strftime('%d/%m/%y')} "
 			message += 	f"and returning on {flight.return_date.strftime('%d/%m/%y')}.\n"
 			message += 	f"For only {flight.price} euros !\n"
+			message += 	f"Buy now at {flight.link}"
 
 			if flight.stops:
 				message += f"\nThis flight has {len(flight.stops)} stops at {', '.join(flight.stops)}\n"

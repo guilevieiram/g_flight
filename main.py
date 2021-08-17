@@ -24,7 +24,8 @@ def main() -> None:
 	bot = _controller(
 		port=5000,
 		user_interface=_user_interface(
-			backend_endpoint="https://g-flights-backend.herokuapp.com"
+			# backend_endpoint="https://g-flights-backend.herokuapp.com"
+			backend_endpoint="http://127.0.0.1:5000"
 		),
 		messager=_messager(),
 		flight_model=_flight_model(

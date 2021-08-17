@@ -36,6 +36,8 @@ class Flight:
 
 	stops: Optional[list] = None 
 
+	link: Optional[str] = ""
+
 	_id: Optional[int] = None
 
 
@@ -157,7 +159,8 @@ class TequilaFlightModel(FlightModel):
 			else:
 				self.update_data(
 					destination=destination,
-					new_price= (destination.price + flight.price) / 2
+					new_price= (destination.price + flight.price) / 2,
+					new_link=flight.link
 					)
 
 	def set_flight_prices(self, from_city: str) -> None:
@@ -171,7 +174,8 @@ class TequilaFlightModel(FlightModel):
 				flight: Flight = self.get_cheapest_flight(destination)
 				self.update_data(
 					destination=destination,
-					new_price=flight.price
+					new_price=flight.price,
+					new_link=flight.link
 					)
 			except KeyError:
 				self.data_base.delete_table(table=self.table_name(city_name=from_city))
@@ -202,11 +206,12 @@ class TequilaFlightModel(FlightModel):
 			to_code=data["cityCodeTo"],
 			from_airport=data["flyFrom"],
 			to_airport=data["flyTo"],
+			link=data["deep_link"],
 			stops=[route["flyFrom"] for route in self.flight_search_engine.get_routes(routes=data["route"])]
 			)
 
 
-	def update_data(self, destination: Flight, new_price: float) -> None:
+	def update_data(self, destination: Flight, new_price: float, new_link: str) -> None:
 		"""
 		Updates the destination data in the database with a new price.
 		This new price is given by new lowest price.
@@ -218,6 +223,8 @@ class TequilaFlightModel(FlightModel):
 				key=destination._id,
 				key_values=[{
 					"price": new_price
+				},{
+					"link": new_link
 				}]
 				)
 		except KeyError:
@@ -227,6 +234,8 @@ class TequilaFlightModel(FlightModel):
 				key=destination._id,
 				key_values=[{
 					"price": new_price
+				},{
+					"link": new_link
 				}]
 				)
 
@@ -249,7 +258,8 @@ class TequilaFlightModel(FlightModel):
 				to_code=self.flight_search_engine.get_IATA_code(point["city"]),
 				price=point["price"],
 				from_city=from_city,
-				from_code=self.flight_search_engine.get_IATA_code(from_city)
+				from_code=self.flight_search_engine.get_IATA_code(from_city),
+				link=point["link"]
 				) for point in data
 			] 
 
