@@ -31,15 +31,29 @@ As a consequence, I had to learn a large set of skills that later allowed my pro
 Pull requests and issues are always welcome! I am no longer actively developing new features for the project but it is still open to change. So if you see any issues or need new features, please contact me!
 
 ___
-# Project architecture
+# Software architecture
 
 This web aplication uses a MVC (Model, View, Controller) architecture with some additional services included, such as messagers (to contact users), additional databases and API's.
+
+Here are some of the technologies used in this project
+
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/python/python-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/html5/html5-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/css3/css3-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/javascript/javascript-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/heroku/heroku-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/amazonwebservices/amazonwebservices-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/github/github-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/postgresql/postgresql-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/figma/figma-original.svg"/>
+<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/flask/flask-original.svg"/>
+
 
 ![software architecture][architecture]
 
 ## **Technologies and frameworks used**
-
 On each part/layer of the program a set of different software and programming languages had to be used. On this secction we will break down each component, from user to database.
+
 
 ### **Design**
 All the website elements were designed by me, except the social media icons, which are credited on the page.
@@ -68,6 +82,10 @@ The API is hosted on [Heroku][heroku] under this [endpoint][backend-endpoint]. T
 Many of the controller functionalities, such as sending flights to the users and updating flight prices reside on API endpoints through GET requests. 
 This requests are made using Amazon AWS Lambda functions and are activated through weekly triggers.
 - AWS Lambda 
+
+### **Messager**
+All the user app notifications are sent via e-mail. This is done from inside the backend though a SMTP service called Mailgo
+- Mailgo
 
 ### **Flight model**
 The flight model is responsible for doing every action related with flights: destinations, city codes, prices, ...
