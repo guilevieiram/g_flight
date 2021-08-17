@@ -37,16 +37,16 @@ This web aplication uses a MVC (Model, View, Controller) architecture with some 
 
 Here are some of the technologies used in this project
 
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/python/python-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/html5/html5-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/css3/css3-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/javascript/javascript-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/heroku/heroku-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/amazonwebservices/amazonwebservices-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/github/github-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/postgresql/postgresql-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/figma/figma-original.svg"/>
-<img style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/flask/flask-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/python/python-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/html5/html5-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/css3/css3-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/javascript/javascript-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/heroku/heroku-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/amazonwebservices/amazonwebservices-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/github/github-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/postgresql/postgresql-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/figma/figma-original.svg"/>
+<img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/flask/flask-original.svg"/>
 
 
 ![software architecture][architecture]
