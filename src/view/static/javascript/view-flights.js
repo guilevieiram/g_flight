@@ -171,7 +171,7 @@ function fillTable(cityName) {
             `
                 <div class="content-row">
                     <p class="city">${flight.city}</p>
-                    <p class="price">${flight.price}</p>
+                    <p class="price">${flight.price.toFixed(2)}</p>
                 </div>
             `
         });
