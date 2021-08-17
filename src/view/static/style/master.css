@@ -213,9 +213,10 @@ nav {
     opacity: 0.2;
 }
 .subscribe-form {
-    position: relative;
+    position: absolute;
     margin: 2rem auto;
-    height: 90%;
+    height: 100%;
+    max-height: inherit;
     width: 100%;
     display: grid;
     justify-items: center;
