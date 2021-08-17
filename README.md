@@ -49,6 +49,7 @@ Here are some of the technologies used in this project:
 <img align="left" style="padding:5px 20px;" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/flask/flask-original.svg"/>
 
 \
+\
 And here is the general software architecture diagram for the application: 
 
 ![software architecture][architecture]
