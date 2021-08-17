@@ -239,6 +239,7 @@ label {
     font-size: 1.3rem;
 }
 .submit-form-button {
+    -webkit-appearance: none;
     border-style: hidden;
     background-color: #11acdd;
     height: 4rem;
