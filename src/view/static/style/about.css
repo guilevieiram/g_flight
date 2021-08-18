@@ -2,6 +2,9 @@
 main {
     min-height: 100vh;
 }
+strong {
+    font-weight: 600;
+}
 .background {
     position: absolute;
     background: linear-gradient(to bottom, rgb(174, 212, 255), white);
@@ -10,7 +13,7 @@ main {
 .about-paragraph {
     width: 90%;
     max-width: 50rem;
-    padding-top: 20vh;
+    padding-top: 10vh;
     margin: auto;
     text-align: justify;
     opacity: 0.5;
